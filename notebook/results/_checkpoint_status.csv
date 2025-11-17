@@ -3176,3 +3176,8 @@ https://www.h5.scb.se/kommunfakta/pyramider/index.asp,HARD_404
 http://www.gis.scb.se/plan,ERROR
 http://www.gis.scb.se/plan/MultiLayer/map_frames.htm,ERROR
 http://www.myndighetsregistret.scb.se/Domstolar.aspx,HARD_404
+http://www.gis.scb.se/scbkartor/bj_htm/bj_ssd.asp#Befolkning,ERROR
+http://www.sni2007.scb.se/snihierarki2007.asp?sniniva=5&snikod=47111,200
+http://w42.ssd.scb.se/bjssd/sok_link.asp?sokord1=efter%20kommun&xu=c5587001&yp=duwird&lang=1,ERROR
+http://w42.ssd.scb.se/bjssd/sok_link.asp?sokord1=efter+kommun&xu=c5587001&yp=duwird&lang=1,ERROR
+http://api.scb.se/OV0104/v1/doris/sv/ssd/START/BE/BE0101/BE0101Q/UtlSvBakgTot,HARD_404
