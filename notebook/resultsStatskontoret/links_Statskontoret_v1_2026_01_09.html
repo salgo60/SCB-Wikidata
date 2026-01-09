@@ -1,0 +1,2059 @@
+
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <title>statskontoret.se links in Wikipedia</title>
+      <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      table.pivot {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 12px;
+      }
+      table.pivot th, table.pivot td {
+        border: 1px solid #999;
+        padding: 6px 8px;
+        text-align: left;
+        vertical-align: top;
+        white-space: normal;
+      }
+      table.pivot th {
+        cursor: pointer;
+        background: #f2f2f2;
+      }
+      table.pivot th:hover {
+        background: #e2e2e2;
+      }
+      table.pivot thead th {
+        position: sticky;
+        top: 0;
+        background: #f2f2f2;
+        z-index: 2;
+      }
+      table.pivot th::after {
+        content: "";
+        float: right;
+        opacity: 0.4;
+      }
+      table.pivot th.sorted-asc::after {
+        content: " ▲";
+      }
+      table.pivot th.sorted-desc::after {
+        content: " ▼";
+      }
+      /* Row coloring by status */
+      table.pivot tr[data-status="dead"] {
+         background-color: #fdecea;  /* light red */
+      }
+      table.pivot tr[data-status="dead"] td:nth-child(2) i {
+          color: #1565c0;
+        }
+
+      table.pivot tr[data-status="error"] {
+          background-color: #fff4e5;  /* light orange */
+      }
+
+      table.pivot td a {
+        color: #0645ad;
+        text-decoration: none;
+      }
+      table.pivot td a:hover {
+        text-decoration: underline;
+      }
+      .meta {
+        background: #f8f8f8;
+        border: 1px solid #ccc;
+        padding: 12px;
+        margin-bottom: 20px;
+        font-size: 13px;
+      }
+      .meta h2 {
+        margin-top: 0;
+      }
+    </style>
+    
+    </head>
+    <body>
+      <h1>Wikipedia → Statskontoret v1</h1>
+      
+    <div class="meta">
+      <h2>Summary</h2>
+    
+      <p><strong>Rerun:</strong> 2026-01-09 17:53:54</p>
+      <p><strong>Script:</strong>
+         <a href="https://github.com/salgo60/SCB-Wikidata/blob/master/notebook/Statskontoret_54.ipynb" target="_blank">Statskontoret_54.ipynb</a>
+      </p>
+    
+      <p>
+        <strong>Links checked:</strong> 127<br>
+        <strong style="color:#2e7d32;">OK:</strong> 18 (14.2%)<br>
+        <strong style="color:#c62828;">Broken:</strong> 109 (85.8%)<br>
+        &nbsp;&nbsp;↳ Archived: 96<br>
+        &nbsp;&nbsp;↳ Lost: 13<br>
+        <strong style="color:#ef6c00;">Errors:</strong> 0 (0.0%)
+      </p>
+      <p><strong>Issue:</strong>
+         <a href="https://github.com/salgo60/SCB-Wikidata/issues/54" target="_blank">54</a>
+      </p>
+    
+      <p><strong>Datakällor:</strong><br>
+         Wikidata<br>
+         MediaWiki API – exturlusage
+      </p>
+    
+      <h2>Domains with broken links</h2>
+      <p>Top domains ranked by broken-link impact.</p>
+      <table class="dataframe pivot">
+  <thead>
+    <tr style="text-align: right;">
+      <th>domain</th>
+      <th>total_links</th>
+      <th>broken_links</th>
+      <th>error_links</th>
+      <th>broken_pct</th>
+      <th>error_pct</th>
+      <th>problem_pct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>www.statskontoret.se</td>
+      <td>127</td>
+      <td>109</td>
+      <td>0</td>
+      <td>85.8</td>
+      <td>0.0</td>
+      <td>85.8</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    
+      <p>Sorterbar tabell. Klicka på kolumnrubriker för sortering.</p>
+      <table class="dataframe pivot">
+  <thead>
+    <tr style="text-align: right;">
+      <th>status_icon</th>
+      <th>archive</th>
+      <th>lang</th>
+      <th>page_title</th>
+      <th>url</th>
+      <th>wiki_link</th>
+      <th>status</th>
+      <th>reason</th>
+      <th>final_url</th>
+      <th>ia_url</th>
+      <th>ia_status</th>
+      <th>domain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20Fortifications%20Agency" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish Fortifications Agency</a></td>
+      <td><a href="http://www.statskontoret.se/upload/publikationer/2005/2005106.pdf" target="_blank">http://www.statskontoret.se/upload/publikationer/2005/2005106.pdf</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_Fortifications_Agency</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/upload/publikationer/2005/2005106.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240910130641/https://www.statskontoret.se/upload/Publikationer/2000/200041.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/E-government%20in%20Europe" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>E-government in Europe</a></td>
+      <td><a href="http://www.statskontoret.se/upload/Publikationer/2000/200041.pdf" target="_blank">http://www.statskontoret.se/upload/Publikationer/2000/200041.pdf</a></td>
+      <td>https://en.wikipedia.org/wiki/E-government_in_Europe</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/upload/Publikationer/2000/200041.pdf</td>
+      <td>http://web.archive.org/web/20240910130641/https://www.statskontoret.se/upload/Publikationer/2000/200041.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/User%3AKipitis/temporanee" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>User:Kipitis/temporanee</a></td>
+      <td><a href="http://www.statskontoret.se/in-english/publications/2010/a-survey-of-exclusive-rights-or-arrangements/" target="_blank">http://www.statskontoret.se/in-english/publications/2010/a-survey-of-exclusive-rights-or-arrangements/</a></td>
+      <td>https://en.wikipedia.org/wiki/User:Kipitis/temporanee</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/in-english/publications/2010/a-survey-of-exclusive-rights-or-arrangements/</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250428134625/https://www.statskontoret.se/globalassets/publikationer/2004/200418.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/User%3A1Kwords/sandbox" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>User:1Kwords/sandbox</a></td>
+      <td><a href="http://www.statskontoret.se/globalassets/publikationer/2004/200418.pdf" target="_blank">http://www.statskontoret.se/globalassets/publikationer/2004/200418.pdf</a></td>
+      <td>https://en.wikipedia.org/wiki/User:1Kwords/sandbox</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/globalassets/publikationer/2004/200418.pdf</td>
+      <td>http://web.archive.org/web/20250428134625/https://www.statskontoret.se/globalassets/publikationer/2004/200418.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20251126234350/https://www.statskontoret.se/siteassets/publikationer/2010/201014.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/List%20of%20failed%20and%20overbudget%20custom%20software%20projects" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>List of failed and overbudget custom software projects</a></td>
+      <td><a href="https://www.statskontoret.se/siteassets/publikationer/2010/201014.pdf" target="_blank">https://www.statskontoret.se/siteassets/publikationer/2010/201014.pdf</a></td>
+      <td>https://en.wikipedia.org/wiki/List_of_failed_and_overbudget_custom_software_projects</td>
+      <td>ok</td>
+      <td>NaN</td>
+      <td>https://www.statskontoret.se/siteassets/publikationer/2010/201014.pdf</td>
+      <td>http://web.archive.org/web/20251126234350/https://www.statskontoret.se/siteassets/publikationer/2010/201014.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20210803183238/https://www.statskontoret.se/nyheter/mucf-behover-skarpa-kontrollen-av-statsbidrag-till-ideella-organisationer/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20Agency%20for%20Youth%20and%20Civil%20Society" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish Agency for Youth and Civil Society</a></td>
+      <td><a href="https://www.statskontoret.se/nyheter/mucf-behover-skarpa-kontrollen-av-statsbidrag-till-ideella-organisationer/" target="_blank">https://www.statskontoret.se/nyheter/mucf-behover-skarpa-kontrollen-av-statsbidrag-till-ideella-organisationer/</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_Agency_for_Youth_and_Civil_Society</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/nyheter/mucf-behover-skarpa-kontrollen-av-statsbidrag-till-ideella-organisationer/</td>
+      <td>http://web.archive.org/web/20210803183238/https://www.statskontoret.se/nyheter/mucf-behover-skarpa-kontrollen-av-statsbidrag-till-ideella-organisationer/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250117202402/https://www.statskontoret.se/globalassets/publikationer/2017/201713.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20Agency%20for%20Youth%20and%20Civil%20Society" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish Agency for Youth and Civil Society</a></td>
+      <td><a href="https://www.statskontoret.se/globalassets/publikationer/2017/201713.pdf" target="_blank">https://www.statskontoret.se/globalassets/publikationer/2017/201713.pdf</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_Agency_for_Youth_and_Civil_Society</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/globalassets/publikationer/2017/201713.pdf</td>
+      <td>http://web.archive.org/web/20250117202402/https://www.statskontoret.se/globalassets/publikationer/2017/201713.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20210308123723/https://www.statskontoret.se/upload/Publikationer/1999/199903.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>fi</td>
+      <td><a href="https://fi.wikipedia.org/wiki/Per%20capsulam" target="_blank" title="Wikipedia (fi)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Per capsulam</a></td>
+      <td><a href="http://www.statskontoret.se/upload/Publikationer/1999/199903.pdf" target="_blank">http://www.statskontoret.se/upload/Publikationer/1999/199903.pdf</a></td>
+      <td>https://fi.wikipedia.org/wiki/Per_capsulam</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/upload/Publikationer/1999/199903.pdf</td>
+      <td>http://web.archive.org/web/20210308123723/https://www.statskontoret.se/upload/Publikationer/1999/199903.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Statskontoret%20%28Sverige%29" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Statskontoret (Sverige)</a></td>
+      <td><a href="http://www.statskontoret.se/" target="_blank">http://www.statskontoret.se/</a></td>
+      <td>https://no.wikipedia.org/wiki/Statskontoret_(Sverige)</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/L%C3%A4kemedelsverket" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Läkemedelsverket</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Läkemedelsverket</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Bolagsverket" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Bolagsverket</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Bolagsverket</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Spelinspektionen" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Spelinspektionen</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Spelinspektionen</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Svenska%20kraftn%C3%A4t" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Svenska kraftnät</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Svenska_kraftnät</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/%C3%85klagarmyndigheten%20%28Sverige%29" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Åklagarmyndigheten (Sverige)</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Åklagarmyndigheten_(Sverige)</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/S%C3%A4kerhetspolisen" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Säkerhetspolisen</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Säkerhetspolisen</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Kustbevakningen" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Kustbevakningen</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Kustbevakningen</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Kriminalv%C3%A5rden" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Kriminalvården</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Kriminalvården</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/F%C3%B6rsvarets%20radioanstalt" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Försvarets radioanstalt</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Försvarets_radioanstalt</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Migrationsverket%20%28Sverige%29" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Migrationsverket (Sverige)</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Migrationsverket_(Sverige)</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/R%C3%A4ttsmedicinalverket" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Rättsmedicinalverket</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Rättsmedicinalverket</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Luftfartsverket%20%28Sverige%29" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Luftfartsverket (Sverige)</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Luftfartsverket_(Sverige)</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Regeringskansliet" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Regeringskansliet</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Regeringskansliet</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/F%C3%B6rsvarets%20materielverk" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Försvarets materielverk</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Försvarets_materielverk</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Skatteverket" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Skatteverket</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Skatteverket</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Tullverket" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Tullverket</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Tullverket</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Kronofogdemyndigheten" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Kronofogdemyndigheten</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Kronofogdemyndigheten</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Sveriges%20meteorologiska%20och%20hydrologiska%20institut" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Sveriges meteorologiska och hydrologiska institut</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Sveriges_meteorologiska_och_hydrologiska_institut</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Stockholms%20tingsr%C3%A4tt" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Stockholms tingsrätt</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Stockholms_tingsrätt</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Svea%20hovr%C3%A4tt" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Svea hovrätt</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Svea_hovrätt</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/H%C3%B6gsta%20domstolen%20%28Sverige%29" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Högsta domstolen (Sverige)</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Högsta_domstolen_(Sverige)</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Post-%20och%20telestyrelsen" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Post- och telestyrelsen</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Post-_och_telestyrelsen</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Patent-%20och%20registreringsverket" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Patent- och registreringsverket</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Patent-_och_registreringsverket</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/G%C3%B6ta%20hovr%C3%A4tt" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Göta hovrätt</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Göta_hovrätt</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Trafikverket%20%28Sverige%29" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Trafikverket (Sverige)</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Trafikverket_(Sverige)</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Brottsoffermyndigheten" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Brottsoffermyndigheten</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Brottsoffermyndigheten</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/F%C3%B6rsvarsunderr%C3%A4ttelsedomstolen" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Försvarsunderrättelsedomstolen</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Försvarsunderrättelsedomstolen</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/H%C3%B6gsta%20f%C3%B6rvaltningsdomstolen%20%28Sverige%29" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Högsta förvaltningsdomstolen (Sverige)</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Högsta_förvaltningsdomstolen_(Sverige)</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Riksgjeldskontoret" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Riksgjeldskontoret</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Riksgjeldskontoret</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Statens%20haverikommission" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Statens haverikommission</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Statens_haverikommission</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Ekobrottsmyndigheten" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Ekobrottsmyndigheten</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Ekobrottsmyndigheten</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Rymdstyrelsen" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Rymdstyrelsen</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Rymdstyrelsen</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Vetenskapsr%C3%A5det" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Vetenskapsrådet</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Vetenskapsrådet</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Polismyndigheten" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Polismyndigheten</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Polismyndigheten</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Inspektionen%20f%C3%B6r%20v%C3%A5rd%20och%20omsorg" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Inspektionen för vård och omsorg</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Inspektionen_för_vård_och_omsorg</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Naturv%C3%A5rdsverket" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Naturvårdsverket</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Naturvårdsverket</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Hovr%C3%A4tten%20f%C3%B6r%20%C3%96vre%20Norrland" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Hovrätten för Övre Norrland</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Hovrätten_för_Övre_Norrland</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Universitetskanslers%C3%A4mbetet" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Universitetskanslersämbetet</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Universitetskanslersämbetet</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Valmyndigheten" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Valmyndigheten</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Valmyndigheten</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Konkurrensverket" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Konkurrensverket</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Konkurrensverket</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Transportstyrelsen" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Transportstyrelsen</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Transportstyrelsen</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Skogsstyrelsen" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Skogsstyrelsen</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Skogsstyrelsen</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Livsmedelsverket" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Livsmedelsverket</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Livsmedelsverket</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Kommerskollegium" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Kommerskollegium</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Kommerskollegium</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Domstolsverket" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Domstolsverket</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Domstolsverket</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Statens%20institutionsstyrelse" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Statens institutionsstyrelse</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Statens_institutionsstyrelse</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Statens%20servicecenter" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Statens servicecenter</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Statens_servicecenter</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/EH%C3%A4lsomyndigheten" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>EHälsomyndigheten</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/EHälsomyndigheten</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Finansinspektionen%20%28Sverige%29" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Finansinspektionen (Sverige)</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Finansinspektionen_(Sverige)</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Totalf%C3%B6rsvarets%20forskningsinstitut" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Totalförsvarets forskningsinstitut</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Totalförsvarets_forskningsinstitut</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Statens%20inspektion%20f%C3%B6r%20f%C3%B6rsvarsunderr%C3%A4ttelseverksamheten" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Statens inspektion för försvarsunderrättelseverksamheten</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Statens_inspektion_för_försvarsunderrättelseverksamheten</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Fortifikationsverket" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Fortifikationsverket</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Fortifikationsverket</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Myndigheten%20f%C3%B6r%20delaktighet" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Myndigheten för delaktighet</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Myndigheten_för_delaktighet</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Fastighetsm%C3%A4klarinspektionen" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Fastighetsmäklarinspektionen</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Fastighetsmäklarinspektionen</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Folkh%C3%A4lsomyndigheten" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Folkhälsomyndigheten</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Folkhälsomyndigheten</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Diskrimineringsombudsmannen" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Diskrimineringsombudsmannen</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Diskrimineringsombudsmannen</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Integritetsskyddsmyndigheten" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Integritetsskyddsmyndigheten</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Integritetsskyddsmyndigheten</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Mediemyndigheten" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Mediemyndigheten</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Mediemyndigheten</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Myndigheten%20f%C3%B6r%20s%C3%A4kerhet%20och%20integritets%C2%ADskydd" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Myndigheten för säkerhet och integritets­skydd</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Myndigheten_för_säkerhet_och_integritets­skydd</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Myndigheten%20f%C3%B6r%20civilt%20f%C3%B6rsvar" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Myndigheten för civilt försvar</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://no.wikipedia.org/wiki/Myndigheten_för_civilt_försvar</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>ro</td>
+      <td><a href="https://ro.wikipedia.org/wiki/Institutul%20Karolinska" target="_blank" title="Wikipedia (ro)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Institutul Karolinska</a></td>
+      <td><a href="https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx" target="_blank">https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</a></td>
+      <td>https://ro.wikipedia.org/wiki/Institutul_Karolinska</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>http://web.archive.org/web/20250909092515/https://www.statskontoret.se/contentassets/73dfde44d5bc4cffaace77dd47226c69/arsarbetskrafter-i-staten-oppna-data_webben.xlsx</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/F%C3%B6rvaltningsbesv%C3%A4r" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Förvaltningsbesvär</a></td>
+      <td><a href="http://www.statskontoret.se/upload/Publikationer/2012/201206.pdf" target="_blank">http://www.statskontoret.se/upload/Publikationer/2012/201206.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Förvaltningsbesvär</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/upload/Publikationer/2012/201206.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20210308123723/https://www.statskontoret.se/upload/Publikationer/1999/199903.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Per%20capsulam" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Per capsulam</a></td>
+      <td><a href="http://www.statskontoret.se/upload/Publikationer/1999/199903.pdf" target="_blank">http://www.statskontoret.se/upload/Publikationer/1999/199903.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Per_capsulam</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/upload/Publikationer/1999/199903.pdf</td>
+      <td>http://web.archive.org/web/20210308123723/https://www.statskontoret.se/upload/Publikationer/1999/199903.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20210413013429/https://www.statskontoret.se/upload/Publikationer/2004/200428.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Televerket" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Televerket</a></td>
+      <td><a href="http://www.statskontoret.se/upload/Publikationer/2004/200428.pdf" target="_blank">http://www.statskontoret.se/upload/Publikationer/2004/200428.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Televerket</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/upload/Publikationer/2004/200428.pdf</td>
+      <td>http://web.archive.org/web/20210413013429/https://www.statskontoret.se/upload/Publikationer/2004/200428.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304233614/http://statskontoret.se/upload/publikationer/2005/2005121.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/St%C3%A4ngseln%C3%A4mnden" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Stängselnämnden</a></td>
+      <td><a href="http://www.statskontoret.se/upload/Publikationer/2005/2005121.pdf" target="_blank">http://www.statskontoret.se/upload/Publikationer/2005/2005121.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Stängselnämnden</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/upload/Publikationer/2005/2005121.pdf</td>
+      <td>http://web.archive.org/web/20160304233614/http://statskontoret.se/upload/publikationer/2005/2005121.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Laglighetspr%C3%B6vning" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Laglighetsprövning</a></td>
+      <td><a href="http://www.statskontoret.se/upload/Publikationer/2012/201206.pdf" target="_blank">http://www.statskontoret.se/upload/Publikationer/2012/201206.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Laglighetsprövning</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/upload/Publikationer/2012/201206.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20100824014855/http://www.statskontoret.se/upload/Remissvar/2006/2005448.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/F%C3%B6rsvarsmaktens%20hundtj%C3%A4nstenhet" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Försvarsmaktens hundtjänstenhet</a></td>
+      <td><a href="http://www.statskontoret.se/upload/remissvar/2006/2005448.pdf" target="_blank">http://www.statskontoret.se/upload/remissvar/2006/2005448.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Försvarsmaktens_hundtjänstenhet</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/upload/remissvar/2006/2005448.pdf</td>
+      <td>http://web.archive.org/web/20100824014855/http://www.statskontoret.se/upload/Remissvar/2006/2005448.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Statskontoret%20%28gamla%29" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Statskontoret (gamla)</a></td>
+      <td><a href="http://www.statskontoret.se/" target="_blank">http://www.statskontoret.se/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Statskontoret_(gamla)</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20251205222333/https://www.statskontoret.se/upload/Publikationer/2005/200532.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Diskussion%3ALista%20%C3%B6ver%20svenska%20myndigheter%20och%20organisationer" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Diskussion:Lista över svenska myndigheter och organisationer</a></td>
+      <td><a href="http://www.statskontoret.se/upload/Publikationer/2005/200532.pdf" target="_blank">http://www.statskontoret.se/upload/Publikationer/2005/200532.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Diskussion:Lista_över_svenska_myndigheter_och_organisationer</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/upload/Publikationer/2005/200532.pdf</td>
+      <td>http://web.archive.org/web/20251205222333/https://www.statskontoret.se/upload/Publikationer/2005/200532.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304140413/http://www.statskontoret.se/upload/Publikationer/2000/200039.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Anv%C3%A4ndardiskussion%3A82.182.199.110" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Användardiskussion:82.182.199.110</a></td>
+      <td><a href="http://www.statskontoret.se/upload/Publikationer/2000/200039.pdf" target="_blank">http://www.statskontoret.se/upload/Publikationer/2000/200039.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Användardiskussion:82.182.199.110</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/upload/Publikationer/2000/200039.pdf</td>
+      <td>http://web.archive.org/web/20160304140413/http://www.statskontoret.se/upload/Publikationer/2000/200039.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Kustbevakning" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Kustbevakning</a></td>
+      <td><a href="http://www.statskontoret.se/upload/Publikationer/2000/200001.pdf" target="_blank">http://www.statskontoret.se/upload/Publikationer/2000/200001.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Kustbevakning</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/upload/Publikationer/2000/200001.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Institutet%20f%C3%B6r%20utv%C3%A4rdering%20av%20internationellt%20utvecklingssamarbete" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Institutet för utvärdering av internationellt utvecklingssamarbete</a></td>
+      <td><a href="http://www.statskontoret.se/nyhetsarkiv/utvarderingen-av-bistandet-behover-forbattras/" target="_blank">http://www.statskontoret.se/nyhetsarkiv/utvarderingen-av-bistandet-behover-forbattras/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Institutet_för_utvärdering_av_internationellt_utvecklingssamarbete</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/nyhetsarkiv/utvarderingen-av-bistandet-behover-forbattras/</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Kustbevakningsfartyg%20201-serien" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Kustbevakningsfartyg 201-serien</a></td>
+      <td><a href="http://www.statskontoret.se/upload/Publikationer/2000/200001.pdf" target="_blank">http://www.statskontoret.se/upload/Publikationer/2000/200001.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Kustbevakningsfartyg_201-serien</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/upload/Publikationer/2000/200001.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20251205222333/https://www.statskontoret.se/upload/Publikationer/2005/200532.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Sveriges%20myndigheter" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Sveriges myndigheter</a></td>
+      <td><a href="http://www.statskontoret.se/upload/Publikationer/2005/200532.pdf" target="_blank">http://www.statskontoret.se/upload/Publikationer/2005/200532.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Sveriges_myndigheter</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/upload/Publikationer/2005/200532.pdf</td>
+      <td>http://web.archive.org/web/20251205222333/https://www.statskontoret.se/upload/Publikationer/2005/200532.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20210308115119/https://www.statskontoret.se/upload/Publikationer/2014/Om-offentlig-sektor_20_Nationella-samordnare.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Nationell%20samordnare" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Nationell samordnare</a></td>
+      <td><a href="http://www.statskontoret.se/upload/Publikationer/2014/Om-offentlig-sektor_20_Nationella-samordnare.pdf" target="_blank">http://www.statskontoret.se/upload/Publikationer/2014/Om-offentlig-sektor_20_Nationella-samordnare.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Nationell_samordnare</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/upload/Publikationer/2014/Om-offentlig-sektor_20_Nationella-samordnare.pdf</td>
+      <td>http://web.archive.org/web/20210308115119/https://www.statskontoret.se/upload/Publikationer/2014/Om-offentlig-sektor_20_Nationella-samordnare.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20210513000353/https://www.statskontoret.se/globalassets/publikationer/2014/201430.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/F%C3%B6rsvarsexportmyndigheten" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Försvarsexportmyndigheten</a></td>
+      <td><a href="http://www.statskontoret.se/globalassets/publikationer/2014/201430.pdf" target="_blank">http://www.statskontoret.se/globalassets/publikationer/2014/201430.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Försvarsexportmyndigheten</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/globalassets/publikationer/2014/201430.pdf</td>
+      <td>http://web.archive.org/web/20210513000353/https://www.statskontoret.se/globalassets/publikationer/2014/201430.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250112224201/https://www.statskontoret.se/publikationer/2014/utvardering-av-samordningssekretariatet-for-digitalisering-digitalt-bevarande-och-digitalt-tillgangliggorande-digisam/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Riksarkivet%20%28Sverige%29" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Riksarkivet (Sverige)</a></td>
+      <td><a href="http://www.statskontoret.se/publikationer/2014/utvardering-av-samordningssekretariatet-for-digitalisering-digitalt-bevarande-och-digitalt-tillgangliggorande-digisam/" target="_blank">http://www.statskontoret.se/publikationer/2014/utvardering-av-samordningssekretariatet-for-digitalisering-digitalt-bevarande-och-digitalt-tillgangliggorande-digisam/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Riksarkivet_(Sverige)</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/publikationer/2014/utvardering-av-samordningssekretariatet-for-digitalisering-digitalt-bevarande-och-digitalt-tillgangliggorande-digisam/</td>
+      <td>http://web.archive.org/web/20250112224201/https://www.statskontoret.se/publikationer/2014/utvardering-av-samordningssekretariatet-for-digitalisering-digitalt-bevarande-och-digitalt-tillgangliggorande-digisam/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Nordiska%20Afrikainstitutet" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Nordiska Afrikainstitutet</a></td>
+      <td><a href="http://www.statskontoret.se/upload/Publikationer/2013/201303.pdf" target="_blank">http://www.statskontoret.se/upload/Publikationer/2013/201303.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Nordiska_Afrikainstitutet</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/upload/Publikationer/2013/201303.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20161220125237/http://www.statskontoret.se/upload/Publikationer/2012/201228.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Arbetsmarknadsutbildning%20i%20Sverige" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Arbetsmarknadsutbildning i Sverige</a></td>
+      <td><a href="http://www.statskontoret.se/upload/Publikationer/2012/201228.pdf" target="_blank">http://www.statskontoret.se/upload/Publikationer/2012/201228.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Arbetsmarknadsutbildning_i_Sverige</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/upload/Publikationer/2012/201228.pdf</td>
+      <td>http://web.archive.org/web/20161220125237/http://www.statskontoret.se/upload/Publikationer/2012/201228.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250117202402/https://www.statskontoret.se/globalassets/publikationer/2017/201713.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Diskussion%3AMyndigheten%20f%C3%B6r%20ungdoms-%20och%20civilsamh%C3%A4llesfr%C3%A5gor" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Diskussion:Myndigheten för ungdoms- och civilsamhällesfrågor</a></td>
+      <td><a href="http://www.statskontoret.se/globalassets/publikationer/2017/201713.pdf" target="_blank">http://www.statskontoret.se/globalassets/publikationer/2017/201713.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Diskussion:Myndigheten_för_ungdoms-_och_civilsamhällesfrågor</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/globalassets/publikationer/2017/201713.pdf</td>
+      <td>http://web.archive.org/web/20250117202402/https://www.statskontoret.se/globalassets/publikationer/2017/201713.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20181109193733/http://www.statskontoret.se/var-verksamhet/utredningar-utvarderingar-och-uppfoljningar/utvardering-av-ombildningen-av-polisen" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Lena%20Nitz" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Lena Nitz</a></td>
+      <td><a href="http://www.statskontoret.se/var-verksamhet/utredningar-utvarderingar-och-uppfoljningar/utvardering-av-ombildningen-av-polisen" target="_blank">http://www.statskontoret.se/var-verksamhet/utredningar-utvarderingar-och-uppfoljningar/utvardering-av-ombildningen-av-polisen</a></td>
+      <td>https://sv.wikipedia.org/wiki/Lena_Nitz</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/var-verksamhet/utredningar-utvarderingar-och-uppfoljningar/utvardering-av-ombildningen-av-polisen</td>
+      <td>http://web.archive.org/web/20181109193733/http://www.statskontoret.se/var-verksamhet/utredningar-utvarderingar-och-uppfoljningar/utvardering-av-ombildningen-av-polisen</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20210803175451/https://www.statskontoret.se/nyheter/flera-utmaningar-for-varldskulturmuseer/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Statens%20museer%20f%C3%B6r%20v%C3%A4rldskultur" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Statens museer för världskultur</a></td>
+      <td><a href="http://www.statskontoret.se/nyheter/flera-utmaningar-for-varldskulturmuseer/" target="_blank">http://www.statskontoret.se/nyheter/flera-utmaningar-for-varldskulturmuseer/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Statens_museer_för_världskultur</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/nyheter/flera-utmaningar-for-varldskulturmuseer/</td>
+      <td>http://web.archive.org/web/20210803175451/https://www.statskontoret.se/nyheter/flera-utmaningar-for-varldskulturmuseer/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20191114060022/http://www.statskontoret.se/forvaltningskultur/podd/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Transportstyrelsens%20IT-upphandling" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Transportstyrelsens IT-upphandling</a></td>
+      <td><a href="http://www.statskontoret.se/forvaltningskultur/podd/" target="_blank">http://www.statskontoret.se/forvaltningskultur/podd/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Transportstyrelsens_IT-upphandling</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/forvaltningskultur/podd/</td>
+      <td>http://web.archive.org/web/20191114060022/http://www.statskontoret.se/forvaltningskultur/podd/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20210413005238/https://www.statskontoret.se/upload/Publikationer/2003/200311.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Regering" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Regering</a></td>
+      <td><a href="http://www.statskontoret.se/upload/Publikationer/2003/200311.pdf#search=%22ansvarighet%20sou%20demokratiutredningen%22" target="_blank">http://www.statskontoret.se/upload/Publikationer/2003/200311.pdf#search=%22ansvarighet%20sou%20demokratiutredningen%22</a></td>
+      <td>https://sv.wikipedia.org/wiki/Regering</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/upload/Publikationer/2003/200311.pdf#search=%22ansvarighet%20sou%20demokratiutredningen%22</td>
+      <td>http://web.archive.org/web/20210413005238/https://www.statskontoret.se/upload/Publikationer/2003/200311.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Diskussion%3AKommunala%20utj%C3%A4mningssystemet" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Diskussion:Kommunala utjämningssystemet</a></td>
+      <td><a href="http://www.statskontoret.se/globalassets/publikationer/2017/2017105.pdf" target="_blank">http://www.statskontoret.se/globalassets/publikationer/2017/2017105.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Diskussion:Kommunala_utjämningssystemet</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/globalassets/publikationer/2017/2017105.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160430170351/http://statskontoret.se/globalassets/publikationer/2005/200514.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Hem-PC-reformen" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Hem-PC-reformen</a></td>
+      <td><a href="http://www.statskontoret.se/globalassets/publikationer/2005/200514.pdf" target="_blank">http://www.statskontoret.se/globalassets/publikationer/2005/200514.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Hem-PC-reformen</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/globalassets/publikationer/2005/200514.pdf</td>
+      <td>http://web.archive.org/web/20160430170351/http://statskontoret.se/globalassets/publikationer/2005/200514.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20211007045220/https://www.statskontoret.se/globalassets/publikationer/2002/200223.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Blommansatsningen" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Blommansatsningen</a></td>
+      <td><a href="https://www.statskontoret.se/globalassets/publikationer/2002/200223.pdf" target="_blank">https://www.statskontoret.se/globalassets/publikationer/2002/200223.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Blommansatsningen</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/globalassets/publikationer/2002/200223.pdf</td>
+      <td>http://web.archive.org/web/20211007045220/https://www.statskontoret.se/globalassets/publikationer/2002/200223.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20211007045220/https://www.statskontoret.se/globalassets/publikationer/2002/200223.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Utsatt%20omr%C3%A5de" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Utsatt område</a></td>
+      <td><a href="https://www.statskontoret.se/globalassets/publikationer/2002/200223.pdf" target="_blank">https://www.statskontoret.se/globalassets/publikationer/2002/200223.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Utsatt_område</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/globalassets/publikationer/2002/200223.pdf</td>
+      <td>http://web.archive.org/web/20211007045220/https://www.statskontoret.se/globalassets/publikationer/2002/200223.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20210925120716/https://www.statskontoret.se/globalassets/publikationer/2021/2021-1-webb.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Adoption%20i%20Sverige" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Adoption i Sverige</a></td>
+      <td><a href="https://www.statskontoret.se/globalassets/publikationer/2021/2021-1-webb.pdf" target="_blank">https://www.statskontoret.se/globalassets/publikationer/2021/2021-1-webb.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Adoption_i_Sverige</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/globalassets/publikationer/2021/2021-1-webb.pdf</td>
+      <td>http://web.archive.org/web/20210925120716/https://www.statskontoret.se/globalassets/publikationer/2021/2021-1-webb.pdf</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Malldiskussion%3AFaktamall%20Statlig%20utredning" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Malldiskussion:Faktamall Statlig utredning</a></td>
+      <td><a href="https://www.statskontoret.se/globalassets/publikationer/2019/oos36_-udda-faglar-kommittevasendet.pdf" target="_blank">https://www.statskontoret.se/globalassets/publikationer/2019/oos36_-udda-faglar-kommittevasendet.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Malldiskussion:Faktamall_Statlig_utredning</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/globalassets/publikationer/2019/oos36_-udda-faglar-kommittevasendet.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20210916195335/https://www.statskontoret.se/publicerat/publikationer/2019/udda-faglar-i-kommittevasendet.-en-studie-av-otraditionella-kommitteer/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Statlig%20utredning" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Statlig utredning</a></td>
+      <td><a href="https://www.statskontoret.se/publicerat/publikationer/2019/udda-faglar-i-kommittevasendet.-en-studie-av-otraditionella-kommitteer/" target="_blank">https://www.statskontoret.se/publicerat/publikationer/2019/udda-faglar-i-kommittevasendet.-en-studie-av-otraditionella-kommitteer/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Statlig_utredning</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/uppdrag-och-rapporter/rapporter/publikationer/2019/udda-faglar-i-kommittevasendet.-en-studie-av-otraditionella-kommitteer/</td>
+      <td>http://web.archive.org/web/20210916195335/https://www.statskontoret.se/publicerat/publikationer/2019/udda-faglar-i-kommittevasendet.-en-studie-av-otraditionella-kommitteer/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20251016150553/https://www.statskontoret.se/publicerat/publikationer/publikationer/utvardering-av-regeringens-utvecklingsprogram-for-jamstalldhetsintegrering-i-myndigheter.-slutrapport/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/J%C3%A4mst%C3%A4lldhetsintegrering" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Jämställdhetsintegrering</a></td>
+      <td><a href="https://www.statskontoret.se/publicerat/publikationer/publikationer/utvardering-av-regeringens-utvecklingsprogram-for-jamstalldhetsintegrering-i-myndigheter.-slutrapport/" target="_blank">https://www.statskontoret.se/publicerat/publikationer/publikationer/utvardering-av-regeringens-utvecklingsprogram-for-jamstalldhetsintegrering-i-myndigheter.-slutrapport/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Jämställdhetsintegrering</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/uppdrag-och-rapporter/rapporter/publikationer/publikationer/utvardering-av-regeringens-utvecklingsprogram-for-jamstalldhetsintegrering-i-myndigheter.-slutrapport/</td>
+      <td>http://web.archive.org/web/20251016150553/https://www.statskontoret.se/publicerat/publikationer/publikationer/utvardering-av-regeringens-utvecklingsprogram-for-jamstalldhetsintegrering-i-myndigheter.-slutrapport/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20230606070312/https://www.statskontoret.se/fokusomraden/fakta-om-statsforvaltningen/fakta-om-statsforvaltningen/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Diskussion%3AV%C3%A4rdmyndighet" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Diskussion:Värdmyndighet</a></td>
+      <td><a href="https://www.statskontoret.se/fokusomraden/fakta-om-statsforvaltningen/fakta-om-statsforvaltningen/" target="_blank">https://www.statskontoret.se/fokusomraden/fakta-om-statsforvaltningen/fakta-om-statsforvaltningen/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Diskussion:Värdmyndighet</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/fokusomraden/fakta-om-statsforvaltningen/fakta-om-statsforvaltningen/</td>
+      <td>http://web.archive.org/web/20230606070312/https://www.statskontoret.se/fokusomraden/fakta-om-statsforvaltningen/fakta-om-statsforvaltningen/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250911121444/https://www.statskontoret.se/publicerat/publikationer/publikationer/den-statliga-vardegrunden--gemensamma-principer-for-en-god-forvaltning/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Diskussion%3AV%C3%A4rdegrund" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Diskussion:Värdegrund</a></td>
+      <td><a href="https://www.statskontoret.se/publicerat/publikationer/publikationer/den-statliga-vardegrunden--gemensamma-principer-for-en-god-forvaltning/" target="_blank">https://www.statskontoret.se/publicerat/publikationer/publikationer/den-statliga-vardegrunden--gemensamma-principer-for-en-god-forvaltning/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Diskussion:Värdegrund</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/uppdrag-och-rapporter/rapporter/publikationer/publikationer/den-statliga-vardegrunden--gemensamma-principer-for-en-god-forvaltning/</td>
+      <td>http://web.archive.org/web/20250911121444/https://www.statskontoret.se/publicerat/publikationer/publikationer/den-statliga-vardegrunden--gemensamma-principer-for-en-god-forvaltning/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250911121444/https://www.statskontoret.se/publicerat/publikationer/publikationer/den-statliga-vardegrunden--gemensamma-principer-for-en-god-forvaltning/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Anv%C3%A4ndare%3AFWIlkens/Samh%C3%A4llets%20v%C3%A4rdegrund" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Användare:FWIlkens/Samhällets värdegrund</a></td>
+      <td><a href="https://www.statskontoret.se/publicerat/publikationer/publikationer/den-statliga-vardegrunden--gemensamma-principer-for-en-god-forvaltning/" target="_blank">https://www.statskontoret.se/publicerat/publikationer/publikationer/den-statliga-vardegrunden--gemensamma-principer-for-en-god-forvaltning/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Användare:FWIlkens/Samhällets_värdegrund</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/uppdrag-och-rapporter/rapporter/publikationer/publikationer/den-statliga-vardegrunden--gemensamma-principer-for-en-god-forvaltning/</td>
+      <td>http://web.archive.org/web/20250911121444/https://www.statskontoret.se/publicerat/publikationer/publikationer/den-statliga-vardegrunden--gemensamma-principer-for-en-god-forvaltning/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250911121444/https://www.statskontoret.se/publicerat/publikationer/publikationer/den-statliga-vardegrunden--gemensamma-principer-for-en-god-forvaltning/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/V%C3%A4rdegrund" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Värdegrund</a></td>
+      <td><a href="https://www.statskontoret.se/publicerat/publikationer/publikationer/den-statliga-vardegrunden--gemensamma-principer-for-en-god-forvaltning/" target="_blank">https://www.statskontoret.se/publicerat/publikationer/publikationer/den-statliga-vardegrunden--gemensamma-principer-for-en-god-forvaltning/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Värdegrund</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/uppdrag-och-rapporter/rapporter/publikationer/publikationer/den-statliga-vardegrunden--gemensamma-principer-for-en-god-forvaltning/</td>
+      <td>http://web.archive.org/web/20250911121444/https://www.statskontoret.se/publicerat/publikationer/publikationer/den-statliga-vardegrunden--gemensamma-principer-for-en-god-forvaltning/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20230527153824/https://www.statskontoret.se/publicerat/publikationer/publikationer-2018/fler-uppgifter-for-regelradet.-bor-radet-arbeta-mer-med-eu-lagstiftning-och-digitalisering/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/N%C3%A4mnden%20f%C3%B6r%20lagstiftningskontroll" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Nämnden för lagstiftningskontroll</a></td>
+      <td><a href="https://www.statskontoret.se/publicerat/publikationer/publikationer-2018/fler-uppgifter-for-regelradet.-bor-radet-arbeta-mer-med-eu-lagstiftning-och-digitalisering/" target="_blank">https://www.statskontoret.se/publicerat/publikationer/publikationer-2018/fler-uppgifter-for-regelradet.-bor-radet-arbeta-mer-med-eu-lagstiftning-och-digitalisering/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Nämnden_för_lagstiftningskontroll</td>
+      <td>ok</td>
+      <td>NaN</td>
+      <td>https://www.statskontoret.se/uppdrag-och-rapporter/rapporter/2018/fler-uppgifter-for-regelradet.-bor-radet-arbeta-mer-med-eu-lagstiftning-och-digitalisering/</td>
+      <td>http://web.archive.org/web/20230527153824/https://www.statskontoret.se/publicerat/publikationer/publikationer-2018/fler-uppgifter-for-regelradet.-bor-radet-arbeta-mer-med-eu-lagstiftning-och-digitalisering/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Anv%C3%A4ndare%3ABelteshassar/Projekt%20statliga%20utredningar" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Användare:Belteshassar/Projekt statliga utredningar</a></td>
+      <td><a href="https://www.statskontoret.se/siteassets/rapporter-pdf/2019/oos36.pdf" target="_blank">https://www.statskontoret.se/siteassets/rapporter-pdf/2019/oos36.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Användare:Belteshassar/Projekt_statliga_utredningar</td>
+      <td>ok</td>
+      <td>NaN</td>
+      <td>https://www.statskontoret.se/siteassets/rapporter-pdf/2019/oos36.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20251119041655/https://www.statskontoret.se/fokusomraden/fakta-om-statsforvaltningen/myndigheterna-under-regeringen/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Sveriges%20myndigheter" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Sveriges myndigheter</a></td>
+      <td><a href="https://www.statskontoret.se/fokusomraden/fakta-om-statsforvaltningen/myndigheterna-under-regeringen/" target="_blank">https://www.statskontoret.se/fokusomraden/fakta-om-statsforvaltningen/myndigheterna-under-regeringen/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Sveriges_myndigheter</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/fokusomraden/fakta-om-statsforvaltningen/myndigheterna-under-regeringen/</td>
+      <td>http://web.archive.org/web/20251119041655/https://www.statskontoret.se/fokusomraden/fakta-om-statsforvaltningen/myndigheterna-under-regeringen/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20251016165936/https://www.statskontoret.se/fokusomraden/fakta-om-statsforvaltningen/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Sveriges%20myndigheter" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Sveriges myndigheter</a></td>
+      <td><a href="https://www.statskontoret.se/fokusomraden/fakta-om-statsforvaltningen/" target="_blank">https://www.statskontoret.se/fokusomraden/fakta-om-statsforvaltningen/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Sveriges_myndigheter</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/fokusomraden/fakta-om-statsforvaltningen/</td>
+      <td>http://web.archive.org/web/20251016165936/https://www.statskontoret.se/fokusomraden/fakta-om-statsforvaltningen/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250803174624/https://www.statskontoret.se/fokusomraden/fakta-om-statsforvaltningen/myndigheternas-storlek/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Diskussion%3AThomas%20%C3%85ding" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Diskussion:Thomas Åding</a></td>
+      <td><a href="https://www.statskontoret.se/fokusomraden/fakta-om-statsforvaltningen/myndigheternas-storlek/" target="_blank">https://www.statskontoret.se/fokusomraden/fakta-om-statsforvaltningen/myndigheternas-storlek/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Diskussion:Thomas_Åding</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>https://www.statskontoret.se/fokusomraden/fakta-om-statsforvaltningen/myndigheternas-storlek/</td>
+      <td>http://web.archive.org/web/20250803174624/https://www.statskontoret.se/fokusomraden/fakta-om-statsforvaltningen/myndigheternas-storlek/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20251119044511/https://www.statskontoret.se/publicerat/publikationer/publikationer-2024/en-form-for-kollektivt-beslutsfattande--en-kartlaggning-och-provning-av-namndmyndigheter/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Oljekrisn%C3%A4mnden" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Oljekrisnämnden</a></td>
+      <td><a href="https://www.statskontoret.se/publicerat/publikationer/publikationer-2024/en-form-for-kollektivt-beslutsfattande--en-kartlaggning-och-provning-av-namndmyndigheter/" target="_blank">https://www.statskontoret.se/publicerat/publikationer/publikationer-2024/en-form-for-kollektivt-beslutsfattande--en-kartlaggning-och-provning-av-namndmyndigheter/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Oljekrisnämnden</td>
+      <td>ok</td>
+      <td>NaN</td>
+      <td>https://www.statskontoret.se/uppdrag-och-rapporter/rapporter/2024/en-form-for-kollektivt-beslutsfattande--en-kartlaggning-och-provning-av-namndmyndigheter/</td>
+      <td>http://web.archive.org/web/20251119044511/https://www.statskontoret.se/publicerat/publikationer/publikationer-2024/en-form-for-kollektivt-beslutsfattande--en-kartlaggning-och-provning-av-namndmyndigheter/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20251119044511/https://www.statskontoret.se/publicerat/publikationer/publikationer-2024/en-form-for-kollektivt-beslutsfattande--en-kartlaggning-och-provning-av-namndmyndigheter/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/N%C3%A4mnden%20f%C3%B6r%20hemsl%C3%B6jdsfr%C3%A5gor" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Nämnden för hemslöjdsfrågor</a></td>
+      <td><a href="https://www.statskontoret.se/publicerat/publikationer/publikationer-2024/en-form-for-kollektivt-beslutsfattande--en-kartlaggning-och-provning-av-namndmyndigheter/" target="_blank">https://www.statskontoret.se/publicerat/publikationer/publikationer-2024/en-form-for-kollektivt-beslutsfattande--en-kartlaggning-och-provning-av-namndmyndigheter/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Nämnden_för_hemslöjdsfrågor</td>
+      <td>ok</td>
+      <td>NaN</td>
+      <td>https://www.statskontoret.se/uppdrag-och-rapporter/rapporter/2024/en-form-for-kollektivt-beslutsfattande--en-kartlaggning-och-provning-av-namndmyndigheter/</td>
+      <td>http://web.archive.org/web/20251119044511/https://www.statskontoret.se/publicerat/publikationer/publikationer-2024/en-form-for-kollektivt-beslutsfattande--en-kartlaggning-och-provning-av-namndmyndigheter/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3AProjekt%20svenska%20kommuner/PSIdata%20L%C3%A4nstyrelser" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Projekt svenska kommuner/PSIdata Länstyrelser</a></td>
+      <td><a href="http://www.statskontoret.se/" target="_blank">http://www.statskontoret.se/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Projekt_svenska_kommuner/PSIdata_Länstyrelser</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20260103220532/https://www.statskontoret.se/psidata" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3AProjekt%20svenska%20kommuner/PSIdata%20L%C3%A4nstyrelser" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Projekt svenska kommuner/PSIdata Länstyrelser</a></td>
+      <td><a href="http://www.statskontoret.se/psidata" target="_blank">http://www.statskontoret.se/psidata</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Projekt_svenska_kommuner/PSIdata_Länstyrelser</td>
+      <td>dead</td>
+      <td>HTTP 404</td>
+      <td>http://www.statskontoret.se/psidata</td>
+      <td>http://web.archive.org/web/20260103220532/https://www.statskontoret.se/psidata</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Maktmissbruk" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Maktmissbruk</a></td>
+      <td><a href="https://www.statskontoret.se/siteassets/rapporter-pdf/2023/2023_20---utskriftsformat.pdf" target="_blank">https://www.statskontoret.se/siteassets/rapporter-pdf/2023/2023_20---utskriftsformat.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Maktmissbruk</td>
+      <td>ok</td>
+      <td>NaN</td>
+      <td>https://www.statskontoret.se/siteassets/rapporter-pdf/2023/2023_20---utskriftsformat.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250803174326/https://www.statskontoret.se/publicerat/publikationer/publikationer-2022/rattsstaten-i-den-svenska-forvaltningen--en-forskningsantologi/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/R%C3%A4ttsstat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Rättsstat</a></td>
+      <td><a href="https://www.statskontoret.se/publicerat/publikationer/publikationer-2022/rattsstaten-i-den-svenska-forvaltningen--en-forskningsantologi/" target="_blank">https://www.statskontoret.se/publicerat/publikationer/publikationer-2022/rattsstaten-i-den-svenska-forvaltningen--en-forskningsantologi/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Rättsstat</td>
+      <td>ok</td>
+      <td>NaN</td>
+      <td>https://www.statskontoret.se/uppdrag-och-rapporter/rapporter/2022/rattsstaten-i-den-svenska-forvaltningen--en-forskningsantologi/</td>
+      <td>http://web.archive.org/web/20250803174326/https://www.statskontoret.se/publicerat/publikationer/publikationer-2022/rattsstaten-i-den-svenska-forvaltningen--en-forskningsantologi/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Migrationsverket%20%28Sverige%29" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Migrationsverket (Sverige)</a></td>
+      <td><a href="https://www.statskontoret.se/publicerat/publikationer/publikationer-2024/manga-oar-sma--migrationsverkets-styrning-och-uppfoljning-av-den-rattsliga-kvaliteten-i-asylprocessen/" target="_blank">https://www.statskontoret.se/publicerat/publikationer/publikationer-2024/manga-oar-sma--migrationsverkets-styrning-och-uppfoljning-av-den-rattsliga-kvaliteten-i-asylprocessen/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Migrationsverket_(Sverige)</td>
+      <td>ok</td>
+      <td>NaN</td>
+      <td>https://www.statskontoret.se/uppdrag-och-rapporter/rapporter/2024/manga-oar-sma--migrationsverkets-styrning-och-uppfoljning-av-den-rattsliga-kvaliteten-i-asylprocessen/</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20251119050355/https://www.statskontoret.se/publicerat/publikationer/publikationer-2024/manga-oar-sma--migrationsverkets-styrning-och-uppfoljning-av-den-rattsliga-kvaliteten-i-asylprocessen/?publication=true" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Afghanska%20asyls%C3%B6kande%20i%20Sverige%202015%E2%80%932024" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Afghanska asylsökande i Sverige 2015–2024</a></td>
+      <td><a href="https://www.statskontoret.se/publicerat/publikationer/publikationer-2024/manga-oar-sma--migrationsverkets-styrning-och-uppfoljning-av-den-rattsliga-kvaliteten-i-asylprocessen/?publication=true" target="_blank">https://www.statskontoret.se/publicerat/publikationer/publikationer-2024/manga-oar-sma--migrationsverkets-styrning-och-uppfoljning-av-den-rattsliga-kvaliteten-i-asylprocessen/?publication=true</a></td>
+      <td>https://sv.wikipedia.org/wiki/Afghanska_asylsökande_i_Sverige_2015–2024</td>
+      <td>ok</td>
+      <td>NaN</td>
+      <td>https://www.statskontoret.se/uppdrag-och-rapporter/rapporter/2024/manga-oar-sma--migrationsverkets-styrning-och-uppfoljning-av-den-rattsliga-kvaliteten-i-asylprocessen/</td>
+      <td>http://web.archive.org/web/20251119050355/https://www.statskontoret.se/publicerat/publikationer/publikationer-2024/manga-oar-sma--migrationsverkets-styrning-och-uppfoljning-av-den-rattsliga-kvaliteten-i-asylprocessen/?publication=true</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Afghanska%20asyls%C3%B6kande%20i%20Sverige%202015%E2%80%932024" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Afghanska asylsökande i Sverige 2015–2024</a></td>
+      <td><a href="https://www.statskontoret.se/publicerat/publikationer/publikationer-2024/manga-oar-sma--migrationsverkets-styrning-och-uppfoljning-av-den-rattsliga-kvaliteten-i-asylprocessen/" target="_blank">https://www.statskontoret.se/publicerat/publikationer/publikationer-2024/manga-oar-sma--migrationsverkets-styrning-och-uppfoljning-av-den-rattsliga-kvaliteten-i-asylprocessen/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Afghanska_asylsökande_i_Sverige_2015–2024</td>
+      <td>ok</td>
+      <td>NaN</td>
+      <td>https://www.statskontoret.se/uppdrag-och-rapporter/rapporter/2024/manga-oar-sma--migrationsverkets-styrning-och-uppfoljning-av-den-rattsliga-kvaliteten-i-asylprocessen/</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Sveriges%20hantering%20av%20flyktingkrisen%202015" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Sveriges hantering av flyktingkrisen 2015</a></td>
+      <td><a href="https://www.statskontoret.se/publicerat/publikationer/publikationer-2024/manga-oar-sma--migrationsverkets-styrning-och-uppfoljning-av-den-rattsliga-kvaliteten-i-asylprocessen/" target="_blank">https://www.statskontoret.se/publicerat/publikationer/publikationer-2024/manga-oar-sma--migrationsverkets-styrning-och-uppfoljning-av-den-rattsliga-kvaliteten-i-asylprocessen/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Sveriges_hantering_av_flyktingkrisen_2015</td>
+      <td>ok</td>
+      <td>NaN</td>
+      <td>https://www.statskontoret.se/uppdrag-och-rapporter/rapporter/2024/manga-oar-sma--migrationsverkets-styrning-och-uppfoljning-av-den-rattsliga-kvaliteten-i-asylprocessen/</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250418032405/https://www.statskontoret.se/publicerat/publikationer/publikationer-2021/utvardering-av-svenska-kraftnats-hantering-av-transmissionsnatsprojektet-sydvastlanken/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Sydv%C3%A4stl%C3%A4nken" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Sydvästlänken</a></td>
+      <td><a href="https://www.statskontoret.se/publicerat/publikationer/publikationer-2021/utvardering-av-svenska-kraftnats-hantering-av-transmissionsnatsprojektet-sydvastlanken/" target="_blank">https://www.statskontoret.se/publicerat/publikationer/publikationer-2021/utvardering-av-svenska-kraftnats-hantering-av-transmissionsnatsprojektet-sydvastlanken/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Sydvästlänken</td>
+      <td>ok</td>
+      <td>NaN</td>
+      <td>https://www.statskontoret.se/uppdrag-och-rapporter/rapporter/2021/utvardering-av-svenska-kraftnats-hantering-av-transmissionsnatsprojektet-sydvastlanken/</td>
+      <td>http://web.archive.org/web/20250418032405/https://www.statskontoret.se/publicerat/publikationer/publikationer-2021/utvardering-av-svenska-kraftnats-hantering-av-transmissionsnatsprojektet-sydvastlanken/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20260103220532/https://www.statskontoret.se/psidata" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3AProjekt%20svenska%20kommuner/PSIdata%20Myndigheter" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Projekt svenska kommuner/PSIdata Myndigheter</a></td>
+      <td><a href="https://www.statskontoret.se/psidata" target="_blank">https://www.statskontoret.se/psidata</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Projekt_svenska_kommuner/PSIdata_Myndigheter</td>
+      <td>ok</td>
+      <td>NaN</td>
+      <td>https://www.statskontoret.se/psidata</td>
+      <td>http://web.archive.org/web/20260103220532/https://www.statskontoret.se/psidata</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20260104200430/https://www.statskontoret.se/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3AProjekt%20svenska%20kommuner/PSIdata%20L%C3%A4nstyrelser" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Projekt svenska kommuner/PSIdata Länstyrelser</a></td>
+      <td><a href="https://www.statskontoret.se/" target="_blank">https://www.statskontoret.se/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Projekt_svenska_kommuner/PSIdata_Länstyrelser</td>
+      <td>ok</td>
+      <td>NaN</td>
+      <td>https://www.statskontoret.se/</td>
+      <td>http://web.archive.org/web/20260104200430/https://www.statskontoret.se/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20260103220532/https://www.statskontoret.se/psidata" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3AProjekt%20svenska%20kommuner/PSIdata%20L%C3%A4nstyrelser" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Projekt svenska kommuner/PSIdata Länstyrelser</a></td>
+      <td><a href="https://www.statskontoret.se/psidata" target="_blank">https://www.statskontoret.se/psidata</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Projekt_svenska_kommuner/PSIdata_Länstyrelser</td>
+      <td>ok</td>
+      <td>NaN</td>
+      <td>https://www.statskontoret.se/psidata</td>
+      <td>http://web.archive.org/web/20260103220532/https://www.statskontoret.se/psidata</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Kira%20Repka" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Kira Repka</a></td>
+      <td><a href="https://www.statskontoret.se/personal/medarbetare/kira-bergheden/" target="_blank">https://www.statskontoret.se/personal/medarbetare/kira-bergheden/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Kira_Repka</td>
+      <td>ok</td>
+      <td>NaN</td>
+      <td>https://www.statskontoret.se/personal/medarbetare/kira-bergheden/</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20260104200430/https://www.statskontoret.se/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Statskontoret" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Statskontoret</a></td>
+      <td><a href="https://www.statskontoret.se/" target="_blank">https://www.statskontoret.se/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Statskontoret</td>
+      <td>ok</td>
+      <td>NaN</td>
+      <td>https://www.statskontoret.se/</td>
+      <td>http://web.archive.org/web/20260104200430/https://www.statskontoret.se/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20251219123544/https://www.statskontoret.se/kunskapsstod-och-regler/rapportering/informationssystemet-hermes/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Statskontoret" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Statskontoret</a></td>
+      <td><a href="https://www.statskontoret.se/kunskapsstod-och-regler/rapportering/informationssystemet-hermes/" target="_blank">https://www.statskontoret.se/kunskapsstod-och-regler/rapportering/informationssystemet-hermes/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Statskontoret</td>
+      <td>ok</td>
+      <td>NaN</td>
+      <td>https://www.statskontoret.se/kunskapsstod-och-regler/rapportering/informationssystemet-hermes/</td>
+      <td>http://web.archive.org/web/20251219123544/https://www.statskontoret.se/kunskapsstod-och-regler/rapportering/informationssystemet-hermes/</td>
+      <td>available</td>
+      <td>www.statskontoret.se</td>
+    </tr>
+  </tbody>
+</table>
+      
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Propagate status from first cell to row
+        document.querySelectorAll("table.pivot tbody tr").forEach(row => {
+            const statusCell = row.querySelector(".status-icon");
+            if (statusCell) {
+                row.dataset.status = statusCell.dataset.status;
+            }
+        });
+        let showOnlyBroken = false;
+
+        document.querySelectorAll(".status-icon").forEach(icon => {
+            icon.addEventListener("click", event => {
+                event.stopPropagation(); // prevent column sort
+                showOnlyBroken = !showOnlyBroken;
+        
+                document.querySelectorAll("table.pivot tbody tr").forEach(row => {
+                    if (showOnlyBroken) {
+                        row.style.display =
+                            row.dataset.status === "dead" ? "" : "none";
+                    } else {
+                        row.style.display = "";
+                    }
+                });
+            });
+        });
+
+        document.querySelectorAll("table.pivot th").forEach((header, colIndex) => {
+            header.addEventListener("click", () => {
+                const table = header.closest("table");
+                const tbody = table.querySelector("tbody");
+                const rows = Array.from(tbody.querySelectorAll("tr"));
+                const asc = !header.classList.contains("sorted-asc");
+
+                rows.sort((a, b) => {
+                    const A = a.children[colIndex].innerText.trim();
+                    const B = b.children[colIndex].innerText.trim();
+                    const numA = parseFloat(A.replace(",", "."));
+                    const numB = parseFloat(B.replace(",", "."));
+                    if (!isNaN(numA) && !isNaN(numB)) {
+                        return asc ? numA - numB : numB - numA;
+                    }
+                    return asc ? A.localeCompare(B) : B.localeCompare(A);
+                });
+
+                table.querySelectorAll("th").forEach(th =>
+                    th.classList.remove("sorted-asc", "sorted-desc")
+                );
+                header.classList.add(asc ? "sorted-asc" : "sorted-desc");
+                rows.forEach(row => tbody.appendChild(row));
+            });
+        });
+    });
+    </script>
+    
+      <h2>Broken-link summary by Wikipedia language</h2>
+     <p>
+       Languages ranked by broken-link impact (broken + error links).
+     </p>
+    <table class="dataframe pivot">
+  <thead>
+    <tr style="text-align: right;">
+      <th>lang</th>
+      <th>total_links</th>
+      <th>broken_links</th>
+      <th>broken_archived</th>
+      <th>broken_lost</th>
+      <th>broken_pct</th>
+      <th>problem_pct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>no</td>
+      <td>61</td>
+      <td>61</td>
+      <td>60</td>
+      <td>1</td>
+      <td>100.0</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>sv</td>
+      <td>57</td>
+      <td>40</td>
+      <td>41</td>
+      <td>-1</td>
+      <td>70.2</td>
+      <td>70.2</td>
+    </tr>
+    <tr>
+      <td>en</td>
+      <td>7</td>
+      <td>6</td>
+      <td>5</td>
+      <td>1</td>
+      <td>85.7</td>
+      <td>85.7</td>
+    </tr>
+    <tr>
+      <td>fi</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>100.0</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>ro</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>100.0</td>
+      <td>100.0</td>
+    </tr>
+  </tbody>
+</table>
+    </body>
+    </html>
+    
