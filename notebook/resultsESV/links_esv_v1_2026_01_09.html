@@ -1,0 +1,2500 @@
+
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <title>esv.se links in Wikipedia</title>
+      <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      table.pivot {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 12px;
+      }
+      table.pivot th, table.pivot td {
+        border: 1px solid #999;
+        padding: 6px 8px;
+        text-align: left;
+        vertical-align: top;
+        white-space: normal;
+      }
+      table.pivot th {
+        cursor: pointer;
+        background: #f2f2f2;
+      }
+      table.pivot th:hover {
+        background: #e2e2e2;
+      }
+      table.pivot thead th {
+        position: sticky;
+        top: 0;
+        background: #f2f2f2;
+        z-index: 2;
+      }
+      table.pivot th::after {
+        content: "";
+        float: right;
+        opacity: 0.4;
+      }
+      table.pivot th.sorted-asc::after {
+        content: " ▲";
+      }
+      table.pivot th.sorted-desc::after {
+        content: " ▼";
+      }
+      /* Row coloring by status */
+      table.pivot tr[data-status="dead"] {
+         background-color: #fdecea;  /* light red */
+      }
+      table.pivot tr[data-status="dead"] td:nth-child(2) i {
+          color: #1565c0;
+        }
+
+      table.pivot tr[data-status="error"] {
+          background-color: #fff4e5;  /* light orange */
+      }
+
+      table.pivot td a {
+        color: #0645ad;
+        text-decoration: none;
+      }
+      table.pivot td a:hover {
+        text-decoration: underline;
+      }
+      .meta {
+        background: #f8f8f8;
+        border: 1px solid #ccc;
+        padding: 12px;
+        margin-bottom: 20px;
+        font-size: 13px;
+      }
+      .meta h2 {
+        margin-top: 0;
+      }
+    </style>
+    
+    </head>
+    <body>
+      <h1>Wikipedia → ESV v1</h1>
+      
+    <div class="meta">
+      <h2>Summary</h2>
+    
+      <p><strong>Rerun:</strong> 2026-01-09 13:47:14</p>
+      <p><strong>Script:</strong>
+         <a href="https://github.com/salgo60/SCB-Wikidata/blob/master/notebook/ESV_51.ipynb.ipynb" target="_blank">ESV_51.ipynb.ipynb</a>
+      </p>
+    
+      <p>
+        <strong>Links checked:</strong> 154<br>
+        <strong style="color:#2e7d32;">OK:</strong> 80 (51.9%)<br>
+        <strong style="color:#c62828;">Broken:</strong> 74 (48.1%)<br>
+        &nbsp;&nbsp;↳ Archived: 59<br>
+        &nbsp;&nbsp;↳ Lost: 15<br>
+        <strong style="color:#ef6c00;">Errors:</strong> 0 (0.0%)
+      </p>
+      <p><strong>Issue:</strong>
+         <a href="https://github.com/salgo60/SCB-Wikidata/issues/51" target="_blank">51</a>
+      </p>
+    
+      <p><strong>Datakällor:</strong><br>
+         Wikidata<br>
+         MediaWiki API – exturlusage
+      </p>
+    
+      <h2>Domains with broken links</h2>
+      <p>Top domains ranked by broken-link impact.</p>
+      <table class="dataframe pivot">
+  <thead>
+    <tr style="text-align: right;">
+      <th>domain</th>
+      <th>total_links</th>
+      <th>broken_links</th>
+      <th>error_links</th>
+      <th>broken_pct</th>
+      <th>error_pct</th>
+      <th>problem_pct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>datalabb.esv.se</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>esv.se</td>
+      <td>6</td>
+      <td>6</td>
+      <td>0</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>www.esv.se</td>
+      <td>147</td>
+      <td>67</td>
+      <td>0</td>
+      <td>45.6</td>
+      <td>0.0</td>
+      <td>45.6</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    
+      <p>Sorterbar tabell. Klicka på kolumnrubriker för sortering.</p>
+      <table class="dataframe pivot">
+  <thead>
+    <tr style="text-align: right;">
+      <th>status_icon</th>
+      <th>archive</th>
+      <th>lang</th>
+      <th>page_title</th>
+      <th>url</th>
+      <th>wiki_link</th>
+      <th>status</th>
+      <th>final_url</th>
+      <th>ia_url</th>
+      <th>ia_status</th>
+      <th>reason</th>
+      <th>domain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250126205729/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=13316" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>da</td>
+      <td><a href="https://da.wikipedia.org/wiki/Teaterh%C3%B6gskolan%20i%20Stockholm" target="_blank" title="Wikipedia (da)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Teaterhögskolan i Stockholm</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=13316" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=13316</a></td>
+      <td>https://da.wikipedia.org/wiki/Teaterhögskolan_i_Stockholm</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=13316</td>
+      <td>http://web.archive.org/web/20250126205729/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=13316</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>de</td>
+      <td><a href="https://de.wikipedia.org/wiki/F%C3%B6rsvarets%20radioanstalt" target="_blank" title="Wikipedia (de)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Försvarets radioanstalt</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/Index?rbId=24927" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/Index?rbId=24927</a></td>
+      <td>https://de.wikipedia.org/wiki/Försvarets_radioanstalt</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/Index?rbId=24927</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20120212191553/http://www.esv.se/aboutnes.4.349a0e10b3c2567f280002057.html" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/User%20talk%3ATobbeT" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>User talk:TobbeT</a></td>
+      <td><a href="http://www.esv.se/aboutnes.4.349a0e10b3c2567f280002057.html" target="_blank">http://www.esv.se/aboutnes.4.349a0e10b3c2567f280002057.html</a></td>
+      <td>https://en.wikipedia.org/wiki/User_talk:TobbeT</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/aboutnes.4.349a0e10b3c2567f280002057.html</td>
+      <td>http://web.archive.org/web/20120212191553/http://www.esv.se/aboutnes.4.349a0e10b3c2567f280002057.html</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160320205908/http://www.esv.se/2.e1666ffde6cee058000307.html" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20National%20Financial%20Management%20Authority" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish National Financial Management Authority</a></td>
+      <td><a href="http://www.esv.se/2.e1666ffde6cee058000307.html" target="_blank">http://www.esv.se/2.e1666ffde6cee058000307.html</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_National_Financial_Management_Authority</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/2.e1666ffde6cee058000307.html</td>
+      <td>http://web.archive.org/web/20160320205908/http://www.esv.se/2.e1666ffde6cee058000307.html</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160303170037/http://www.esv.se/aboutesv.4.e1666ffde6cee058000398.html" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20National%20Financial%20Management%20Authority" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish National Financial Management Authority</a></td>
+      <td><a href="http://www.esv.se/aboutesv.4.e1666ffde6cee058000398.html" target="_blank">http://www.esv.se/aboutesv.4.e1666ffde6cee058000398.html</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_National_Financial_Management_Authority</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/aboutesv.4.e1666ffde6cee058000398.html</td>
+      <td>http://web.archive.org/web/20160303170037/http://www.esv.se/aboutesv.4.e1666ffde6cee058000398.html</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/National%20Defence%20Radio%20Establishment" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>National Defence Radio Establishment</a></td>
+      <td><a href="http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15516" target="_blank">http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15516</a></td>
+      <td>https://en.wikipedia.org/wiki/National_Defence_Radio_Establishment</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15516</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160303213031/http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14572" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20Authority%20for%20Privacy%20Protection" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish Authority for Privacy Protection</a></td>
+      <td><a href="http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14572" target="_blank">http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14572</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_Authority_for_Privacy_Protection</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14572</td>
+      <td>http://web.archive.org/web/20160303213031/http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14572</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20150924002535/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14567" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20Economic%20Crime%20Authority" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish Economic Crime Authority</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14567" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14567</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_Economic_Crime_Authority</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14567</td>
+      <td>http://web.archive.org/web/20150924002535/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14567</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160303232950/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14576" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20National%20Board%20of%20Forensic%20Medicine" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish National Board of Forensic Medicine</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14576" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14576</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_National_Board_of_Forensic_Medicine</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14576</td>
+      <td>http://web.archive.org/web/20160303232950/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14576</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304030643/http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15542" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20National%20Courts%20Administration" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish National Courts Administration</a></td>
+      <td><a href="http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15542" target="_blank">http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15542</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_National_Courts_Administration</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15542</td>
+      <td>http://web.archive.org/web/20160304030643/http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15542</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160303230852/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15696" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Public%20Health%20Agency%20of%20Sweden" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Public Health Agency of Sweden</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15696" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15696</a></td>
+      <td>https://en.wikipedia.org/wiki/Public_Health_Agency_of_Sweden</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15696</td>
+      <td>http://web.archive.org/web/20160303230852/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15696</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304030649/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14774" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Ombudsman%20for%20Children%20in%20Sweden" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Ombudsman for Children in Sweden</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14774" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14774</a></td>
+      <td>https://en.wikipedia.org/wiki/Ombudsman_for_Children_in_Sweden</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14774</td>
+      <td>http://web.archive.org/web/20160304030649/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14774</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160315232925/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14781" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20Council%20for%20Higher%20Education" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish Council for Higher Education</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14781" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14781</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_Council_for_Higher_Education</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14781</td>
+      <td>http://web.archive.org/web/20160315232925/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14781</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20Fiscal%20Policy%20Council" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish Fiscal Policy Council</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15364" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15364</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_Fiscal_Policy_Council</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15364</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20150926235157/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15983" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20Public%20Employment%20Service" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish Public Employment Service</a></td>
+      <td><a href="http://esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15983" target="_blank">http://esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15983</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_Public_Employment_Service</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15983</td>
+      <td>http://web.archive.org/web/20150926235157/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15983</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20150924002618/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15655" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20Work%20Environment%20Authority" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish Work Environment Authority</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15655" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15655</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_Work_Environment_Authority</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15655</td>
+      <td>http://web.archive.org/web/20150924002618/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15655</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Legal%2C%20Financial%20and%20Administrative%20Services%20Agency" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Legal, Financial and Administrative Services Agency</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15386" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15386</a></td>
+      <td>https://en.wikipedia.org/wiki/Legal,_Financial_and_Administrative_Services_Agency</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15386</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/National%20Property%20Board%20of%20Sweden" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>National Property Board of Sweden</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15581" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15581</a></td>
+      <td>https://en.wikipedia.org/wiki/National_Property_Board_of_Sweden</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15581</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160305060748/http://www.esv.se/verktyg--stod/statsliggaren/regleringsbrev?rbid=16312" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20National%20Council%20for%20Crime%20Prevention" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish National Council for Crime Prevention</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16312" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16312</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_National_Council_for_Crime_Prevention</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16312</td>
+      <td>http://web.archive.org/web/20160305060748/http://www.esv.se/verktyg--stod/statsliggaren/regleringsbrev?rbid=16312</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304034627/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16592" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20Security%20Service" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish Security Service</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16592" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16592</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_Security_Service</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16592</td>
+      <td>http://web.archive.org/web/20160304034627/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16592</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304063953/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16508" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20Police%20Authority" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish Police Authority</a></td>
+      <td><a href="http://esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16508" target="_blank">http://esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16508</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_Police_Authority</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16508</td>
+      <td>http://web.archive.org/web/20160304063953/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16508</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304064001/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16191" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20Commission%20on%20Security%20and%20Integrity%20Protection" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish Commission on Security and Integrity Protection</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16191" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16191</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_Commission_on_Security_and_Integrity_Protection</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16191</td>
+      <td>http://web.archive.org/web/20160304064001/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16191</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Universal%20Business%20Language" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Universal Business Language</a></td>
+      <td><a href="http://www.esv.se/contentassets/5cb651dd8cbf4425bc50f0d4c37c8db8/esv-cirkular-2015-3.pdf" target="_blank">http://www.esv.se/contentassets/5cb651dd8cbf4425bc50f0d4c37c8db8/esv-cirkular-2015-3.pdf</a></td>
+      <td>https://en.wikipedia.org/wiki/Universal_Business_Language</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/contentassets/5cb651dd8cbf4425bc50f0d4c37c8db8/esv-cirkular-2015-3.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20Security%20Service" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish Security Service</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19529" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19529</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_Security_Service</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=19529</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20191017060005/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=15327" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20Prosecution%20Authority" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish Prosecution Authority</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=15327" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=15327</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_Prosecution_Authority</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=15327</td>
+      <td>http://web.archive.org/web/20191017060005/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=15327</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20211209104850/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=18094" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Talk%3ADalarna%20University%20College" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Talk:Dalarna University College</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18094" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18094</a></td>
+      <td>https://en.wikipedia.org/wiki/Talk:Dalarna_University_College</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=18094</td>
+      <td>http://web.archive.org/web/20211209104850/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=18094</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304032457/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16195" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20Migration%20Agency" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish Migration Agency</a></td>
+      <td><a href="http://esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16195" target="_blank">http://esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16195</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_Migration_Agency</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16195</td>
+      <td>http://web.archive.org/web/20160304032457/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16195</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 401" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20210205131946/https://www.esv.se/contentassets/90906ec5da1f4d38bb93da672d667c1e/esv-2020-2-baskontoplan-2020-med-konteringsanvisningar-3.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/BAS%20%28accounting%29" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>BAS (accounting)</a></td>
+      <td><a href="https://www.esv.se/contentassets/90906ec5da1f4d38bb93da672d667c1e/esv-2020-2-baskontoplan-2020-med-konteringsanvisningar-3.pdf" target="_blank">https://www.esv.se/contentassets/90906ec5da1f4d38bb93da672d667c1e/esv-2020-2-baskontoplan-2020-med-konteringsanvisningar-3.pdf</a></td>
+      <td>https://en.wikipedia.org/wiki/BAS_(accounting)</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/contentassets/90906ec5da1f4d38bb93da672d667c1e/esv-2020-2-baskontoplan-2020-med-konteringsanvisningar-3.pdf</td>
+      <td>http://web.archive.org/web/20210205131946/https://www.esv.se/contentassets/90906ec5da1f4d38bb93da672d667c1e/esv-2020-2-baskontoplan-2020-med-konteringsanvisningar-3.pdf</td>
+      <td>available</td>
+      <td>HTTP 401</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250120115151/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=7400" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20Armed%20Forces%20Logistics" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish Armed Forces Logistics</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=7400" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=7400</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_Armed_Forces_Logistics</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=7400</td>
+      <td>http://web.archive.org/web/20250120115151/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=7400</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Artillery%20Regiment%20%282000%29" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Artillery Regiment (2000)</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</a></td>
+      <td>https://en.wikipedia.org/wiki/Artillery_Regiment_(2000)</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/V%C3%A4sternorrland%20Regiment" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Västernorrland Regiment</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</a></td>
+      <td>https://en.wikipedia.org/wiki/Västernorrland_Regiment</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20221206213853/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=19355" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20Military%20Intelligence%20and%20Security%20Service" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish Military Intelligence and Security Service</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=19355" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=19355</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_Military_Intelligence_and_Security_Service</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=19355</td>
+      <td>http://web.archive.org/web/20221206213853/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=19355</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250121111146/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=22934" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Swedish%20Arts%20Council" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Swedish Arts Council</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=22934" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=22934</a></td>
+      <td>https://en.wikipedia.org/wiki/Swedish_Arts_Council</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=22934</td>
+      <td>http://web.archive.org/web/20250121111146/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=22934</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/List%20of%20military%20special%20forces%20units" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>List of military special forces units</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</a></td>
+      <td>https://en.wikipedia.org/wiki/List_of_military_special_forces_units</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160305014310/http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14992" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>fi</td>
+      <td><a href="https://fi.wikipedia.org/wiki/Suojelupoliisi" target="_blank" title="Wikipedia (fi)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Suojelupoliisi</a></td>
+      <td><a href="http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14992" target="_blank">http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14992</a></td>
+      <td>https://fi.wikipedia.org/wiki/Suojelupoliisi</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14992</td>
+      <td>http://web.archive.org/web/20160305014310/http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14992</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>it</td>
+      <td><a href="https://it.wikipedia.org/wiki/Utente%3AAndre63%20wiki/Universal%20Business%20Language%20%28UBL%29" target="_blank" title="Wikipedia (it)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Utente:Andre63 wiki/Universal Business Language (UBL)</a></td>
+      <td><a href="http://www.esv.se/contentassets/5cb651dd8cbf4425bc50f0d4c37c8db8/esv-cirkular-2015-3.pdf" target="_blank">http://www.esv.se/contentassets/5cb651dd8cbf4425bc50f0d4c37c8db8/esv-cirkular-2015-3.pdf</a></td>
+      <td>https://it.wikipedia.org/wiki/Utente:Andre63_wiki/Universal_Business_Language_(UBL)</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/contentassets/5cb651dd8cbf4425bc50f0d4c37c8db8/esv-cirkular-2015-3.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304063953/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16508" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>ms</td>
+      <td><a href="https://ms.wikipedia.org/wiki/Pihak%20Berkuasa%20Polis%20Sweden" target="_blank" title="Wikipedia (ms)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Pihak Berkuasa Polis Sweden</a></td>
+      <td><a href="http://esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16508" target="_blank">http://esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16508</a></td>
+      <td>https://ms.wikipedia.org/wiki/Pihak_Berkuasa_Polis_Sweden</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16508</td>
+      <td>http://web.archive.org/web/20160304063953/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16508</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Trafikverket%20%28Sverige%29" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Trafikverket (Sverige)</a></td>
+      <td><a href="http://www.esv.se/StatsliggarenApp/OpenFile?regleringsbrevId=12615&visningTyp=1&mediaTyp=0&period=2010" target="_blank">http://www.esv.se/StatsliggarenApp/OpenFile?regleringsbrevId=12615&visningTyp=1&mediaTyp=0&period=2010</a></td>
+      <td>https://no.wikipedia.org/wiki/Trafikverket_(Sverige)</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/StatsliggarenApp/OpenFile?regleringsbrevId=12615&visningTyp=1&mediaTyp=0&period=2010</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20140105110327/http://www.esv.se:80/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15744" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/EH%C3%A4lsomyndigheten" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>EHälsomyndigheten</a></td>
+      <td><a href="http://esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15744" target="_blank">http://esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15744</a></td>
+      <td>https://no.wikipedia.org/wiki/EHälsomyndigheten</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15744</td>
+      <td>http://web.archive.org/web/20140105110327/http://www.esv.se:80/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15744</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250123082942/https://www.esv.se/statsliggaren/Regleringsbrev/?RBID=16508" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Bruker%3AMegyeye/Sammenligning%20av%20politiet%20i%20de%20nordiske%20landene" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Bruker:Megyeye/Sammenligning av politiet i de nordiske landene</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/Regleringsbrev/?RBID=16508" target="_blank">https://www.esv.se/statsliggaren/Regleringsbrev/?RBID=16508</a></td>
+      <td>https://no.wikipedia.org/wiki/Bruker:Megyeye/Sammenligning_av_politiet_i_de_nordiske_landene</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/Regleringsbrev/?RBID=16508</td>
+      <td>http://web.archive.org/web/20250123082942/https://www.esv.se/statsliggaren/Regleringsbrev/?RBID=16508</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20140105110327/http://www.esv.se:80/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15744" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>no</td>
+      <td><a href="https://no.wikipedia.org/wiki/Diskusjon%3AEH%C3%A4lsomyndigheten" target="_blank" title="Wikipedia (no)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Diskusjon:EHälsomyndigheten</a></td>
+      <td><a href="http://esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15744" target="_blank">http://esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15744</a></td>
+      <td>https://no.wikipedia.org/wiki/Diskusjon:EHälsomyndigheten</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15744</td>
+      <td>http://web.archive.org/web/20140105110327/http://www.esv.se:80/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15744</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20221210090855/https://www.esv.se/om-esv/verksamhet/esvs-rad/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sq</td>
+      <td><a href="https://sq.wikipedia.org/wiki/Diskutim%3AAdnan%20Dibrani" target="_blank" title="Wikipedia (sq)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Diskutim:Adnan Dibrani</a></td>
+      <td><a href="http://www.esv.se/om-esv/verksamhet/esvs-rad/" target="_blank">http://www.esv.se/om-esv/verksamhet/esvs-rad/</a></td>
+      <td>https://sq.wikipedia.org/wiki/Diskutim:Adnan_Dibrani</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/om-statskontoret/verksamhet/esvs-rad/</td>
+      <td>http://web.archive.org/web/20221210090855/https://www.esv.se/om-esv/verksamhet/esvs-rad/</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20221210090855/https://www.esv.se/om-esv/verksamhet/esvs-rad/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sq</td>
+      <td><a href="https://sq.wikipedia.org/wiki/Adnan%20Dibrani" target="_blank" title="Wikipedia (sq)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Adnan Dibrani</a></td>
+      <td><a href="http://www.esv.se/om-esv/verksamhet/esvs-rad/" target="_blank">http://www.esv.se/om-esv/verksamhet/esvs-rad/</a></td>
+      <td>https://sq.wikipedia.org/wiki/Adnan_Dibrani</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/om-statskontoret/verksamhet/esvs-rad/</td>
+      <td>http://web.archive.org/web/20221210090855/https://www.esv.se/om-esv/verksamhet/esvs-rad/</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160305123738/http://www.esv.se/verktyg--stod/statsliggaren/regleringsbrev?rbid=13327" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Statens%20biografbyr%C3%A5" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Statens biografbyrå</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13327" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13327</a></td>
+      <td>https://sv.wikipedia.org/wiki/Statens_biografbyrå</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13327</td>
+      <td>http://web.archive.org/web/20160305123738/http://www.esv.se/verktyg--stod/statsliggaren/regleringsbrev?rbid=13327</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Diskussion%3ASignalspaning/Arkiv%202008" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Diskussion:Signalspaning/Arkiv 2008</a></td>
+      <td><a href="http://www.esv.se/StatsliggarenApp/OpenFile?regleringsbrevId=10296&visningTyp=1&mediaTyp=0&period=2008" target="_blank">http://www.esv.se/StatsliggarenApp/OpenFile?regleringsbrevId=10296&visningTyp=1&mediaTyp=0&period=2008</a></td>
+      <td>https://sv.wikipedia.org/wiki/Diskussion:Signalspaning/Arkiv_2008</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/StatsliggarenApp/OpenFile?regleringsbrevId=10296&visningTyp=1&mediaTyp=0&period=2008</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304113545/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=8782" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Statens%20uts%C3%A4deskontroll" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Statens utsädeskontroll</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=8782" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=8782</a></td>
+      <td>https://sv.wikipedia.org/wiki/Statens_utsädeskontroll</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=8782</td>
+      <td>http://web.archive.org/web/20160304113545/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=8782</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304113148/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14595" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3AFaktafr%C3%A5gor/Arkiv%202013" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Faktafrågor/Arkiv 2013</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14595" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14595</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Faktafrågor/Arkiv_2013</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14595</td>
+      <td>http://web.archive.org/web/20160304113148/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=14595</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Effektstyrning" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Effektstyrning</a></td>
+      <td><a href="http://www.esv.se/download/18.7fa9d1a611e2a6174bc800076/Microsoft+Word+-+Effektstyrning+i+projekt.pdf" target="_blank">http://www.esv.se/download/18.7fa9d1a611e2a6174bc800076/Microsoft+Word+-+Effektstyrning+i+projekt.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Effektstyrning</td>
+      <td>dead</td>
+      <td>http://www.esv.se/download/18.7fa9d1a611e2a6174bc800076/Microsoft+Word+-+Effektstyrning+i+projekt.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304191945/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12800" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Rederin%C3%A4mnden" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Rederinämnden</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12800" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12800</a></td>
+      <td>https://sv.wikipedia.org/wiki/Rederinämnden</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12800</td>
+      <td>http://web.archive.org/web/20160304191945/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12800</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304113702/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=10854" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Avvecklingsmyndigheten%20f%C3%B6r%20Integrationsverket" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Avvecklingsmyndigheten för Integrationsverket</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=10854" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=10854</a></td>
+      <td>https://sv.wikipedia.org/wiki/Avvecklingsmyndigheten_för_Integrationsverket</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=10854</td>
+      <td>http://web.archive.org/web/20160304113702/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=10854</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160305180730/http://www.esv.se/sv/verktyg--stod/statsliggaren" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Malldiskussion%3AMyndighet/Regleringsbrev" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Malldiskussion:Myndighet/Regleringsbrev</a></td>
+      <td><a href="http://www.esv.se/sv/Verktyg--stod/Statsliggaren/" target="_blank">http://www.esv.se/sv/Verktyg--stod/Statsliggaren/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Malldiskussion:Myndighet/Regleringsbrev</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/sv/Verktyg--stod/Statsliggaren/</td>
+      <td>http://web.archive.org/web/20160305180730/http://www.esv.se/sv/verktyg--stod/statsliggaren</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Radio-%20och%20TV-verket" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Radio- och TV-verket</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12889" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12889</a></td>
+      <td>https://sv.wikipedia.org/wiki/Radio-_och_TV-verket</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12889</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Diskussion%3AFlemingska%20palatset" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Diskussion:Flemingska palatset</a></td>
+      <td><a href="http://www.esv.se/download/18.3064f7ed11c036a9eac80001764/stockholm+kommun.pdf" target="_blank">http://www.esv.se/download/18.3064f7ed11c036a9eac80001764/stockholm+kommun.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Diskussion:Flemingska_palatset</td>
+      <td>dead</td>
+      <td>http://www.esv.se/download/18.3064f7ed11c036a9eac80001764/stockholm+kommun.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160306044416/http://www.esv.se/verktyg--stod/statsliggaren/regleringsbrev?rbid=13751" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Fiskeriverket" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Fiskeriverket</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13751" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13751</a></td>
+      <td>https://sv.wikipedia.org/wiki/Fiskeriverket</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13751</td>
+      <td>http://web.archive.org/web/20160306044416/http://www.esv.se/verktyg--stod/statsliggaren/regleringsbrev?rbid=13751</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304090523/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13346" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/V%C3%A4gverket" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Vägverket</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13346" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13346</a></td>
+      <td>https://sv.wikipedia.org/wiki/Vägverket</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13346</td>
+      <td>http://web.archive.org/web/20160304090523/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13346</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Myndigheten%20f%C3%B6r%20kvalificerad%20yrkesutbildning" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Myndigheten för kvalificerad yrkesutbildning</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12003" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12003</a></td>
+      <td>https://sv.wikipedia.org/wiki/Myndigheten_för_kvalificerad_yrkesutbildning</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12003</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304112835/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12851" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Rikstrafiken" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Rikstrafiken</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12851" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12851</a></td>
+      <td>https://sv.wikipedia.org/wiki/Rikstrafiken</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12851</td>
+      <td>http://web.archive.org/web/20160304112835/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12851</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304092724/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13432" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Banverket" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Banverket</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13432" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13432</a></td>
+      <td>https://sv.wikipedia.org/wiki/Banverket</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13432</td>
+      <td>http://web.archive.org/web/20160304092724/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13432</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20251213220353/https://www.esv.se/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Kungligt%20brev" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Kungligt brev</a></td>
+      <td><a href="http://www.esv.se/" target="_blank">http://www.esv.se/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Kungligt_brev</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/</td>
+      <td>http://web.archive.org/web/20251213220353/https://www.esv.se/</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160305014233/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12439" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Premiepensionsmyndigheten" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Premiepensionsmyndigheten</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12439" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12439</a></td>
+      <td>https://sv.wikipedia.org/wiki/Premiepensionsmyndigheten</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12439</td>
+      <td>http://web.archive.org/web/20160305014233/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=12439</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20150915152827/http://www.esv.se/download/18.2a6892d1128b4a69d2a80001069/ESV+2010-20.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Gunnar%20Str%C3%A4ng" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Gunnar Sträng</a></td>
+      <td><a href="http://www.esv.se/download/18.2a6892d1128b4a69d2a80001069/ESV+2010-20.pdf" target="_blank">http://www.esv.se/download/18.2a6892d1128b4a69d2a80001069/ESV+2010-20.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Gunnar_Sträng</td>
+      <td>dead</td>
+      <td>http://www.esv.se/download/18.2a6892d1128b4a69d2a80001069/ESV+2010-20.pdf</td>
+      <td>http://web.archive.org/web/20150915152827/http://www.esv.se/download/18.2a6892d1128b4a69d2a80001069/ESV+2010-20.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304113318/http://www.esv.se/amnesomraden/Ramavtal-och-upphandling/Statliga-ramavtal/Lone--och-PA-system/Logica-Sverige-AB/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Palasso" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Palasso</a></td>
+      <td><a href="http://www.esv.se/amnesomraden/Ramavtal-och-upphandling/Statliga-ramavtal/Lone--och-PA-system/Logica-Sverige-AB/" target="_blank">http://www.esv.se/amnesomraden/Ramavtal-och-upphandling/Statliga-ramavtal/Lone--och-PA-system/Logica-Sverige-AB/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Palasso</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/amnesomraden/Ramavtal-och-upphandling/Statliga-ramavtal/Lone--och-PA-system/Logica-Sverige-AB/</td>
+      <td>http://web.archive.org/web/20160304113318/http://www.esv.se/amnesomraden/Ramavtal-och-upphandling/Statliga-ramavtal/Lone--och-PA-system/Logica-Sverige-AB/</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304091558/http://www.esv.se/sv/2/Press/Nyheter-och-pressmeddelanden/2013/ESV-tecknar-statligt-ramavtal-for-personalsystem-med-EVRY/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Palasso" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Palasso</a></td>
+      <td><a href="http://www.esv.se/sv/2/Press/Nyheter-och-pressmeddelanden/2013/ESV-tecknar-statligt-ramavtal-for-personalsystem-med-EVRY/" target="_blank">http://www.esv.se/sv/2/Press/Nyheter-och-pressmeddelanden/2013/ESV-tecknar-statligt-ramavtal-for-personalsystem-med-EVRY/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Palasso</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/sv/2/Press/Nyheter-och-pressmeddelanden/2013/ESV-tecknar-statligt-ramavtal-for-personalsystem-med-EVRY/</td>
+      <td>http://web.archive.org/web/20160304091558/http://www.esv.se/sv/2/Press/Nyheter-och-pressmeddelanden/2013/ESV-tecknar-statligt-ramavtal-for-personalsystem-med-EVRY/</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Palasso" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Palasso</a></td>
+      <td><a href="http://www.esv.se/sv/2/Press/Nyheter-och-pressmeddelanden/2012/ESV-forbereder-for-nasta-generation-Lone--och-PA-system/" target="_blank">http://www.esv.se/sv/2/Press/Nyheter-och-pressmeddelanden/2012/ESV-forbereder-for-nasta-generation-Lone--och-PA-system/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Palasso</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/sv/2/Press/Nyheter-och-pressmeddelanden/2012/ESV-forbereder-for-nasta-generation-Lone--och-PA-system/</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20150924002523/http://www.esv.se/PageFiles/2054/tydligare-styrning.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Uppdragsverksamhet" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Uppdragsverksamhet</a></td>
+      <td><a href="http://www.esv.se/PageFiles/2054/tydligare-styrning.pdf" target="_blank">http://www.esv.se/PageFiles/2054/tydligare-styrning.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Uppdragsverksamhet</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/PageFiles/2054/tydligare-styrning.pdf</td>
+      <td>http://web.archive.org/web/20150924002523/http://www.esv.se/PageFiles/2054/tydligare-styrning.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Uppdragsverksamhet" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Uppdragsverksamhet</a></td>
+      <td><a href="http://www.esv.se/PageFiles/11140/2013-42-rapport-avgifter-2012.pdf" target="_blank">http://www.esv.se/PageFiles/11140/2013-42-rapport-avgifter-2012.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Uppdragsverksamhet</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/PageFiles/11140/2013-42-rapport-avgifter-2012.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304091437/http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=11010" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/R%C3%A4ttss%C3%A4kert%20och%20effektivt%20verkst%C3%A4llighetsarbete" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Rättssäkert och effektivt verkställighetsarbete</a></td>
+      <td><a href="http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=11010" target="_blank">http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=11010</a></td>
+      <td>https://sv.wikipedia.org/wiki/Rättssäkert_och_effektivt_verkställighetsarbete</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=11010</td>
+      <td>http://web.archive.org/web/20160304091437/http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=11010</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304101036/http://www.esv.se/amnesomraden/Prognoser-och-utfall/Utfall-for-statens-budget/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Sveriges%20statsbudget" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Sveriges statsbudget</a></td>
+      <td><a href="http://www.esv.se/amnesomraden/Prognoser-och-utfall/Utfall-for-statens-budget/" target="_blank">http://www.esv.se/amnesomraden/Prognoser-och-utfall/Utfall-for-statens-budget/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Sveriges_statsbudget</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/amnesomraden/Prognoser-och-utfall/Utfall-for-statens-budget/</td>
+      <td>http://web.archive.org/web/20160304101036/http://www.esv.se/amnesomraden/Prognoser-och-utfall/Utfall-for-statens-budget/</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160305013858/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16247" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Riksutst%C3%A4llningar" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Riksutställningar</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16247" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16247</a></td>
+      <td>https://sv.wikipedia.org/wiki/Riksutställningar</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16247</td>
+      <td>http://web.archive.org/web/20160305013858/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=16247</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160305014245/http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15399" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Trafikverket" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Trafikverket</a></td>
+      <td><a href="http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15399" target="_blank">http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15399</a></td>
+      <td>https://sv.wikipedia.org/wiki/Trafikverket</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15399</td>
+      <td>http://web.archive.org/web/20160305014245/http://www.esv.se/sv/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15399</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160305014204/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15900" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Anv%C3%A4ndardiskussion%3AJoshua06/Arkiv2015" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Användardiskussion:Joshua06/Arkiv2015</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15900" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15900</a></td>
+      <td>https://sv.wikipedia.org/wiki/Användardiskussion:Joshua06/Arkiv2015</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15900</td>
+      <td>http://web.archive.org/web/20160305014204/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15900</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160305014204/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15900" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/F%C3%B6rsvarsmaktens%20telekommunikations-%20och%20informationssystemf%C3%B6rband" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Försvarsmaktens telekommunikations- och informationssystemförband</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15900" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15900</a></td>
+      <td>https://sv.wikipedia.org/wiki/Försvarsmaktens_telekommunikations-_och_informationssystemförband</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15900</td>
+      <td>http://web.archive.org/web/20160305014204/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=15900</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304112911/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=273" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/N%C3%A4mnden%20f%C3%B6r%20statens%20gruvegendom" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Nämnden för statens gruvegendom</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=273" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=273</a></td>
+      <td>https://sv.wikipedia.org/wiki/Nämnden_för_statens_gruvegendom</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=273</td>
+      <td>http://web.archive.org/web/20160304112911/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=273</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20241217114649/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=16974" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Riksg%C3%A4ldskontoret" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Riksgäldskontoret</a></td>
+      <td><a href="http://www.esv.se/statsliggaren/regleringsbrev/?RBID=16974" target="_blank">http://www.esv.se/statsliggaren/regleringsbrev/?RBID=16974</a></td>
+      <td>https://sv.wikipedia.org/wiki/Riksgäldskontoret</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=16974</td>
+      <td>http://web.archive.org/web/20241217114649/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=16974</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/L%C3%A4nsstyrelsen%20i%20Dalarnas%20l%C3%A4n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Länsstyrelsen i Dalarnas län</a></td>
+      <td><a href="http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank">http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</a></td>
+      <td>https://sv.wikipedia.org/wiki/Länsstyrelsen_i_Dalarnas_län</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/L%C3%A4nsstyrelsen%20i%20V%C3%A4sterbottens%20l%C3%A4n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Länsstyrelsen i Västerbottens län</a></td>
+      <td><a href="http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank">http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</a></td>
+      <td>https://sv.wikipedia.org/wiki/Länsstyrelsen_i_Västerbottens_län</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/L%C3%A4nsstyrelsen%20i%20J%C3%A4mtlands%20l%C3%A4n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Länsstyrelsen i Jämtlands län</a></td>
+      <td><a href="http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank">http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</a></td>
+      <td>https://sv.wikipedia.org/wiki/Länsstyrelsen_i_Jämtlands_län</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/L%C3%A4nsstyrelsen%20i%20V%C3%A4sternorrlands%20l%C3%A4n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Länsstyrelsen i Västernorrlands län</a></td>
+      <td><a href="http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank">http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</a></td>
+      <td>https://sv.wikipedia.org/wiki/Länsstyrelsen_i_Västernorrlands_län</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/L%C3%A4nsstyrelsen%20i%20G%C3%A4vleborgs%20l%C3%A4n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Länsstyrelsen i Gävleborgs län</a></td>
+      <td><a href="http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank">http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</a></td>
+      <td>https://sv.wikipedia.org/wiki/Länsstyrelsen_i_Gävleborgs_län</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/L%C3%A4nsstyrelsen%20i%20V%C3%A4stmanlands%20l%C3%A4n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Länsstyrelsen i Västmanlands län</a></td>
+      <td><a href="http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank">http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</a></td>
+      <td>https://sv.wikipedia.org/wiki/Länsstyrelsen_i_Västmanlands_län</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/L%C3%A4nsstyrelsen%20i%20%C3%96rebro%20l%C3%A4n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Länsstyrelsen i Örebro län</a></td>
+      <td><a href="http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank">http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</a></td>
+      <td>https://sv.wikipedia.org/wiki/Länsstyrelsen_i_Örebro_län</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/L%C3%A4nsstyrelsen%20i%20V%C3%A4stra%20G%C3%B6talands%20l%C3%A4n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Länsstyrelsen i Västra Götalands län</a></td>
+      <td><a href="http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank">http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</a></td>
+      <td>https://sv.wikipedia.org/wiki/Länsstyrelsen_i_Västra_Götalands_län</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/L%C3%A4nsstyrelsen%20i%20Sk%C3%A5ne%20l%C3%A4n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Länsstyrelsen i Skåne län</a></td>
+      <td><a href="http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank">http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</a></td>
+      <td>https://sv.wikipedia.org/wiki/Länsstyrelsen_i_Skåne_län</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/L%C3%A4nsstyrelsen%20i%20Gotlands%20l%C3%A4n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Länsstyrelsen i Gotlands län</a></td>
+      <td><a href="http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank">http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</a></td>
+      <td>https://sv.wikipedia.org/wiki/Länsstyrelsen_i_Gotlands_län</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/L%C3%A4nsstyrelsen%20i%20J%C3%B6nk%C3%B6pings%20l%C3%A4n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Länsstyrelsen i Jönköpings län</a></td>
+      <td><a href="http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank">http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</a></td>
+      <td>https://sv.wikipedia.org/wiki/Länsstyrelsen_i_Jönköpings_län</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/L%C3%A4nsstyrelsen%20i%20%C3%96sterg%C3%B6tlands%20l%C3%A4n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Länsstyrelsen i Östergötlands län</a></td>
+      <td><a href="http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank">http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</a></td>
+      <td>https://sv.wikipedia.org/wiki/Länsstyrelsen_i_Östergötlands_län</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/L%C3%A4nsstyrelsen%20i%20S%C3%B6dermanlands%20l%C3%A4n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Länsstyrelsen i Södermanlands län</a></td>
+      <td><a href="http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank">http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</a></td>
+      <td>https://sv.wikipedia.org/wiki/Länsstyrelsen_i_Södermanlands_län</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/L%C3%A4nsstyrelsen%20i%20Uppsala%20l%C3%A4n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Länsstyrelsen i Uppsala län</a></td>
+      <td><a href="http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank">http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</a></td>
+      <td>https://sv.wikipedia.org/wiki/Länsstyrelsen_i_Uppsala_län</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20150924002526/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13073" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Riksutst%C3%A4llningar" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Riksutställningar</a></td>
+      <td><a href="http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13073" target="_blank">http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13073</a></td>
+      <td>https://sv.wikipedia.org/wiki/Riksutställningar</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13073</td>
+      <td>http://web.archive.org/web/20150924002526/http://www.esv.se/Verktyg--stod/Statsliggaren/Regleringsbrev/?RBID=13073</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20221201102531/https://www.esv.se/contentassets/18728684116b4407ac1a663f3b8e0d02/2016-22-utfallet-for-statens-budget.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Myndigheten%20f%C3%B6r%20ungdoms-%20och%20civilsamh%C3%A4llesfr%C3%A5gor" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Myndigheten för ungdoms- och civilsamhällesfrågor</a></td>
+      <td><a href="http://www.esv.se/contentassets/18728684116b4407ac1a663f3b8e0d02/2016-22-utfallet-for-statens-budget.pdf" target="_blank">http://www.esv.se/contentassets/18728684116b4407ac1a663f3b8e0d02/2016-22-utfallet-for-statens-budget.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Myndigheten_för_ungdoms-_och_civilsamhällesfrågor</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/contentassets/18728684116b4407ac1a663f3b8e0d02/2016-22-utfallet-for-statens-budget.pdf</td>
+      <td>http://web.archive.org/web/20221201102531/https://www.esv.se/contentassets/18728684116b4407ac1a663f3b8e0d02/2016-22-utfallet-for-statens-budget.pdf</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20221210090855/https://www.esv.se/om-esv/verksamhet/esvs-rad/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Adnan%20Dibrani" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Adnan Dibrani</a></td>
+      <td><a href="http://www.esv.se/om-esv/verksamhet/esvs-rad/" target="_blank">http://www.esv.se/om-esv/verksamhet/esvs-rad/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Adnan_Dibrani</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/om-statskontoret/verksamhet/esvs-rad/</td>
+      <td>http://web.archive.org/web/20221210090855/https://www.esv.se/om-esv/verksamhet/esvs-rad/</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220322022102/https://www.esv.se/contentassets/0a21da3f1e524742a6cdc433c03b59a0/att-verka-genom-andra.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Svenska%20Akademien" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Svenska Akademien</a></td>
+      <td><a href="https://www.esv.se/contentassets/0a21da3f1e524742a6cdc433c03b59a0/att-verka-genom-andra.pdf" target="_blank">https://www.esv.se/contentassets/0a21da3f1e524742a6cdc433c03b59a0/att-verka-genom-andra.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Svenska_Akademien</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/contentassets/0a21da3f1e524742a6cdc433c03b59a0/att-verka-genom-andra.pdf</td>
+      <td>http://web.archive.org/web/20220322022102/https://www.esv.se/contentassets/0a21da3f1e524742a6cdc433c03b59a0/att-verka-genom-andra.pdf</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20211023155850/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=7644" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Almn%C3%A4s%20garnison" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Almnäs garnison</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=7644" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=7644</a></td>
+      <td>https://sv.wikipedia.org/wiki/Almnäs_garnison</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=7644</td>
+      <td>http://web.archive.org/web/20211023155850/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=7644</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20180910204250/https://www.esv.se/press/nyheter/2018/digg-tar-over-ansvaret-for-e-handel-och-digitalisering/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Myndigheten%20f%C3%B6r%20digital%20f%C3%B6rvaltning" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Myndigheten för digital förvaltning</a></td>
+      <td><a href="https://www.esv.se/press/nyheter/2018/digg-tar-over-ansvaret-for-e-handel-och-digitalisering/" target="_blank">https://www.esv.se/press/nyheter/2018/digg-tar-over-ansvaret-for-e-handel-och-digitalisering/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Myndigheten_för_digital_förvaltning</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/press/nyheter/2018/digg-tar-over-ansvaret-for-e-handel-och-digitalisering/</td>
+      <td>http://web.archive.org/web/20180910204250/https://www.esv.se/press/nyheter/2018/digg-tar-over-ansvaret-for-e-handel-och-digitalisering/</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20241229041614/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19244" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Myndigheten%20f%C3%B6r%20digital%20f%C3%B6rvaltning" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Myndigheten för digital förvaltning</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19244" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19244</a></td>
+      <td>https://sv.wikipedia.org/wiki/Myndigheten_för_digital_förvaltning</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=19244</td>
+      <td>http://web.archive.org/web/20241229041614/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19244</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Myndigheten%20f%C3%B6r%20digital%20f%C3%B6rvaltning" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Myndigheten för digital förvaltning</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19622" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19622</a></td>
+      <td>https://sv.wikipedia.org/wiki/Myndigheten_för_digital_förvaltning</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=19622</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220810053509/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19530" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Formas" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Formas</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19530" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19530</a></td>
+      <td>https://sv.wikipedia.org/wiki/Formas</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=19530</td>
+      <td>http://web.archive.org/web/20220810053509/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19530</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220427073127/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19497" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Formas" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Formas</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19497" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19497</a></td>
+      <td>https://sv.wikipedia.org/wiki/Formas</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=19497</td>
+      <td>http://web.archive.org/web/20220427073127/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19497</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220129105329/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19937" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Statens%20f%C3%B6rsvarshistoriska%20museer" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Statens försvarshistoriska museer</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19937" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19937</a></td>
+      <td>https://sv.wikipedia.org/wiki/Statens_försvarshistoriska_museer</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=19937</td>
+      <td>http://web.archive.org/web/20220129105329/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19937</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160417012814/http://www.esv.se/pages/regleringsbrevpdf.aspx?RBID=12262&Version=HelaBrevet&File=Myndighet+Skatteverket.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Identitetsbricka" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Identitetsbricka</a></td>
+      <td><a href="https://www.esv.se/Pages/RegleringsbrevPdf.aspx?RBID=12262&Version=HelaBrevet&File=Myndighet+Skatteverket.pdf" target="_blank">https://www.esv.se/Pages/RegleringsbrevPdf.aspx?RBID=12262&Version=HelaBrevet&File=Myndighet+Skatteverket.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Identitetsbricka</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/Pages/RegleringsbrevPdf.aspx?RBID=12262&Version=HelaBrevet&File=Myndighet+Skatteverket.pdf</td>
+      <td>http://web.archive.org/web/20160417012814/http://www.esv.se/pages/regleringsbrevpdf.aspx?RBID=12262&Version=HelaBrevet&File=Myndighet+Skatteverket.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20211022044341/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18844" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Svenska%20studenthemmet%20i%20Paris" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Svenska studenthemmet i Paris</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18844" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18844</a></td>
+      <td>https://sv.wikipedia.org/wiki/Svenska_studenthemmet_i_Paris</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=18844</td>
+      <td>http://web.archive.org/web/20211022044341/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18844</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20241219162100/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19474" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Nordiska%20Afrikainstitutet" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Nordiska Afrikainstitutet</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19474" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19474</a></td>
+      <td>https://sv.wikipedia.org/wiki/Nordiska_Afrikainstitutet</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=19474</td>
+      <td>http://web.archive.org/web/20241219162100/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19474</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20241124203712/https://www.esv.se/contentassets/e0a6a59d7c8f4a2c884e890875723607/2015-24-utfallet-for-statens-budget-2014.pdf/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Merv%C3%A4rdesskatt%20i%20Sverige" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Mervärdesskatt i Sverige</a></td>
+      <td><a href="https://www.esv.se/contentassets/e0a6a59d7c8f4a2c884e890875723607/2015-24-utfallet-for-statens-budget-2014.pdf" target="_blank">https://www.esv.se/contentassets/e0a6a59d7c8f4a2c884e890875723607/2015-24-utfallet-for-statens-budget-2014.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Mervärdesskatt_i_Sverige</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/contentassets/e0a6a59d7c8f4a2c884e890875723607/2015-24-utfallet-for-statens-budget-2014.pdf</td>
+      <td>http://web.archive.org/web/20241124203712/https://www.esv.se/contentassets/e0a6a59d7c8f4a2c884e890875723607/2015-24-utfallet-for-statens-budget-2014.pdf/</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20221130194537/https://www.esv.se/statens-ekonomi/prognos-och-utfall/arsredovisning-for-staten/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Merv%C3%A4rdesskatt%20i%20Sverige" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Mervärdesskatt i Sverige</a></td>
+      <td><a href="https://www.esv.se/statens-ekonomi/prognos-och-utfall/arsredovisning-for-staten/" target="_blank">https://www.esv.se/statens-ekonomi/prognos-och-utfall/arsredovisning-for-staten/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Mervärdesskatt_i_Sverige</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/statens-ekonomi/prognos-och-utfall/arsredovisning-for-staten/</td>
+      <td>http://web.archive.org/web/20221130194537/https://www.esv.se/statens-ekonomi/prognos-och-utfall/arsredovisning-for-staten/</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20241127030619/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19741" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Polarforskningssekretariatet" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Polarforskningssekretariatet</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19741" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19741</a></td>
+      <td>https://sv.wikipedia.org/wiki/Polarforskningssekretariatet</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=19741</td>
+      <td>http://web.archive.org/web/20241127030619/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19741</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160304091558/http://www.esv.se/sv/2/Press/Nyheter-och-pressmeddelanden/2013/ESV-tecknar-statligt-ramavtal-for-personalsystem-med-EVRY/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/EVRY" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>EVRY</a></td>
+      <td><a href="http://www.esv.se/sv/2/Press/Nyheter-och-pressmeddelanden/2013/ESV-tecknar-statligt-ramavtal-for-personalsystem-med-EVRY/" target="_blank">http://www.esv.se/sv/2/Press/Nyheter-och-pressmeddelanden/2013/ESV-tecknar-statligt-ramavtal-for-personalsystem-med-EVRY/</a></td>
+      <td>https://sv.wikipedia.org/wiki/EVRY</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/sv/2/Press/Nyheter-och-pressmeddelanden/2013/ESV-tecknar-statligt-ramavtal-for-personalsystem-med-EVRY/</td>
+      <td>http://web.archive.org/web/20160304091558/http://www.esv.se/sv/2/Press/Nyheter-och-pressmeddelanden/2013/ESV-tecknar-statligt-ramavtal-for-personalsystem-med-EVRY/</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/EVRY" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>EVRY</a></td>
+      <td><a href="http://www.esv.se/sv/2/Press/Nyheter-och-pressmeddelanden/2012/ESV-forbereder-for-nasta-generation-Lone--och-PA-system/" target="_blank">http://www.esv.se/sv/2/Press/Nyheter-och-pressmeddelanden/2012/ESV-forbereder-for-nasta-generation-Lone--och-PA-system/</a></td>
+      <td>https://sv.wikipedia.org/wiki/EVRY</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/sv/2/Press/Nyheter-och-pressmeddelanden/2012/ESV-forbereder-for-nasta-generation-Lone--och-PA-system/</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20210726142012/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=9784" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Arbetslivsinstitutet" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Arbetslivsinstitutet</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=9784" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=9784</a></td>
+      <td>https://sv.wikipedia.org/wiki/Arbetslivsinstitutet</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=9784</td>
+      <td>http://web.archive.org/web/20210726142012/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=9784</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220707013602/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=20580" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/L%C3%A4nsstyrelsen%20i%20Blekinge%20l%C3%A4n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Länsstyrelsen i Blekinge län</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=20580" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=20580</a></td>
+      <td>https://sv.wikipedia.org/wiki/Länsstyrelsen_i_Blekinge_län</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=20580</td>
+      <td>http://web.archive.org/web/20220707013602/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=20580</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220707013602/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=20580" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/L%C3%A4nsstyrelsen%20i%20V%C3%A4rmlands%20l%C3%A4n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Länsstyrelsen i Värmlands län</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=20580" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=20580</a></td>
+      <td>https://sv.wikipedia.org/wiki/Länsstyrelsen_i_Värmlands_län</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=20580</td>
+      <td>http://web.archive.org/web/20220707013602/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=20580</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240706045513/https://www.esv.se/Statsliggaren/Regleringsbrev/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Folkbildningsr%C3%A5det" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Folkbildningsrådet</a></td>
+      <td><a href="https://www.esv.se//statsliggaren/regleringsbrev/" target="_blank">https://www.esv.se//statsliggaren/regleringsbrev/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Folkbildningsrådet</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443//statsliggaren/regleringsbrev/</td>
+      <td>http://web.archive.org/web/20240706045513/https://www.esv.se/Statsliggaren/Regleringsbrev/</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/J%C3%A4mst%C3%A4lldhetsintegrering" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Jämställdhetsintegrering</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=17920" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=17920</a></td>
+      <td>https://sv.wikipedia.org/wiki/Jämställdhetsintegrering</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=17920</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20221204193936/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=18958" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Ann-Marie%20Begler" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Ann-Marie Begler</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=18958" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=18958</a></td>
+      <td>https://sv.wikipedia.org/wiki/Ann-Marie_Begler</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=18958</td>
+      <td>http://web.archive.org/web/20221204193936/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=18958</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/F%C3%B6rsvarsbeslutet%202020" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Försvarsbeslutet 2020</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</a></td>
+      <td>https://sv.wikipedia.org/wiki/Försvarsbeslutet_2020</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/V%C3%A4sternorrlands%20regemente" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Västernorrlands regemente</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</a></td>
+      <td>https://sv.wikipedia.org/wiki/Västernorrlands_regemente</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Dalregementet" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Dalregementet</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</a></td>
+      <td>https://sv.wikipedia.org/wiki/Dalregementet</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/J%C3%A4mtlands%20f%C3%A4ltj%C3%A4gark%C3%A5r" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Jämtlands fältjägarkår</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</a></td>
+      <td>https://sv.wikipedia.org/wiki/Jämtlands_fältjägarkår</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Bergslagens%20artilleriregemente" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Bergslagens artilleriregemente</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</a></td>
+      <td>https://sv.wikipedia.org/wiki/Bergslagens_artilleriregemente</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/%C3%84lvsborgs%20amfibieregemente" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Älvsborgs amfibieregemente</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</a></td>
+      <td>https://sv.wikipedia.org/wiki/Älvsborgs_amfibieregemente</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Stockholms%20amfibieregemente" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Stockholms amfibieregemente</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</a></td>
+      <td>https://sv.wikipedia.org/wiki/Stockholms_amfibieregemente</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Norrlands%20dragonregemente" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Norrlands dragonregemente</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</a></td>
+      <td>https://sv.wikipedia.org/wiki/Norrlands_dragonregemente</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Luftstridsskolan" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Luftstridsskolan</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</a></td>
+      <td>https://sv.wikipedia.org/wiki/Luftstridsskolan</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Artilleriregementet%20%28nya%29" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Artilleriregementet (nya)</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</a></td>
+      <td>https://sv.wikipedia.org/wiki/Artilleriregementet_(nya)</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240706045513/https://www.esv.se/Statsliggaren/Regleringsbrev/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Myndigheten%20f%C3%B6r%20digital%20f%C3%B6rvaltning" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Myndigheten för digital förvaltning</a></td>
+      <td><a href="https://www.esv.se//statsliggaren/regleringsbrev/" target="_blank">https://www.esv.se//statsliggaren/regleringsbrev/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Myndigheten_för_digital_förvaltning</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443//statsliggaren/regleringsbrev/</td>
+      <td>http://web.archive.org/web/20240706045513/https://www.esv.se/Statsliggaren/Regleringsbrev/</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Svenska%20arm%C3%A9n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Svenska armén</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</a></td>
+      <td>https://sv.wikipedia.org/wiki/Svenska_armén</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220922132805/https://www.esv.se/publicerat/momshandledning/4-fakturor/4-2-fakturering-mellan-myndigheter/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Aff%C3%A4rsverk" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Affärsverk</a></td>
+      <td><a href="https://www.esv.se/publicerat/momshandledning/4-fakturor/4-2-fakturering-mellan-myndigheter/" target="_blank">https://www.esv.se/publicerat/momshandledning/4-fakturor/4-2-fakturering-mellan-myndigheter/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Affärsverk</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/uppdrag-och-rapporter/rapporter/momshandledning/4-fakturor/4-2-fakturering-mellan-myndigheter/</td>
+      <td>http://web.archive.org/web/20220922132805/https://www.esv.se/publicerat/momshandledning/4-fakturor/4-2-fakturering-mellan-myndigheter/</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220927143651/https://www.esv.se/utbildningar-och-seminarier/seminarier-och-konferenser/datalabbet-resultaten-i-staten/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Diskussion%3ARegeringen%20Andersson" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Diskussion:Regeringen Andersson</a></td>
+      <td><a href="https://www.esv.se/utbildningar-och-seminarier/seminarier-och-konferenser/datalabbet-resultaten-i-staten/" target="_blank">https://www.esv.se/utbildningar-och-seminarier/seminarier-och-konferenser/datalabbet-resultaten-i-staten/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Diskussion:Regeringen_Andersson</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443/utbildningar-och-seminarier/seminarier-och-konferenser/datalabbet-resultaten-i-staten/</td>
+      <td>http://web.archive.org/web/20220927143651/https://www.esv.se/utbildningar-och-seminarier/seminarier-och-konferenser/datalabbet-resultaten-i-staten/</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Kavalleriet" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Kavalleriet</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</a></td>
+      <td>https://sv.wikipedia.org/wiki/Kavalleriet</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>http://web.archive.org/web/20250803230755/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=21217</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220928060557/https://www.esv.se/publicerat/publikationer/2021/utfallet-for-statens-budget-2020/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Merv%C3%A4rdesskatt%20i%20Sverige" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Mervärdesskatt i Sverige</a></td>
+      <td><a href="https://www.esv.se//publicerat/publikationer/2021/utfallet-for-statens-budget-2020/" target="_blank">https://www.esv.se//publicerat/publikationer/2021/utfallet-for-statens-budget-2020/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Mervärdesskatt_i_Sverige</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443//publicerat/publikationer/2021/utfallet-for-statens-budget-2020/</td>
+      <td>http://web.archive.org/web/20220928060557/https://www.esv.se/publicerat/publikationer/2021/utfallet-for-statens-budget-2020/</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220928004704/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=22369" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Diskussion%3AStatistiska%20centralbyr%C3%A5n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Diskussion:Statistiska centralbyrån</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=22369" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=22369</a></td>
+      <td>https://sv.wikipedia.org/wiki/Diskussion:Statistiska_centralbyrån</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=22369</td>
+      <td>http://web.archive.org/web/20220928004704/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=22369</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20230628144914/https://datalabb.esv.se/ris/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3AWikidatafr%C3%A5gor/Arkiv%202022" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Wikidatafrågor/Arkiv 2022</a></td>
+      <td><a href="https://datalabb.esv.se/ris/" target="_blank">https://datalabb.esv.se/ris/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Wikidatafrågor/Arkiv_2022</td>
+      <td>dead</td>
+      <td>https://datalabb.esv.se/ris/</td>
+      <td>http://web.archive.org/web/20230628144914/https://datalabb.esv.se/ris/</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>datalabb.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250425051802/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=22882" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3ABybrunnen/Arkiv%202022-07" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Bybrunnen/Arkiv 2022-07</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=22882" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=22882</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Bybrunnen/Arkiv_2022-07</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=22882</td>
+      <td>http://web.archive.org/web/20250425051802/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=22882</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240706045513/https://www.esv.se/Statsliggaren/Regleringsbrev/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Inspektionen%20f%C3%B6r%20strategiska%20produkter" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Inspektionen för strategiska produkter</a></td>
+      <td><a href="https://www.esv.se//statsliggaren/regleringsbrev/" target="_blank">https://www.esv.se//statsliggaren/regleringsbrev/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Inspektionen_för_strategiska_produkter</td>
+      <td>dead</td>
+      <td>https://www.statskontoret.se:443//statsliggaren/regleringsbrev/</td>
+      <td>http://web.archive.org/web/20240706045513/https://www.esv.se/Statsliggaren/Regleringsbrev/</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20241229043248/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=22458" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Myndigheten%20f%C3%B6r%20digital%20f%C3%B6rvaltning" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Myndigheten för digital förvaltning</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=22458" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=22458</a></td>
+      <td>https://sv.wikipedia.org/wiki/Myndigheten_för_digital_förvaltning</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=22458</td>
+      <td>http://web.archive.org/web/20241229043248/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=22458</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Formas" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Formas</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=23290" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=23290</a></td>
+      <td>https://sv.wikipedia.org/wiki/Formas</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=23290</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Formas" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Formas</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=23215" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=23215</a></td>
+      <td>https://sv.wikipedia.org/wiki/Formas</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=23215</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/L%C3%A4nsstyrelsen%20i%20Stockholms%20l%C3%A4n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Länsstyrelsen i Stockholms län</a></td>
+      <td><a href="http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223" target="_blank">http://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</a></td>
+      <td>https://sv.wikipedia.org/wiki/Länsstyrelsen_i_Stockholms_län</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>http://web.archive.org/web/20240523112742/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=18223</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240112084618/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=23260" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Vetenskapsr%C3%A5det" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Vetenskapsrådet</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=23260" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=23260</a></td>
+      <td>https://sv.wikipedia.org/wiki/Vetenskapsrådet</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=23260</td>
+      <td>http://web.archive.org/web/20240112084618/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=23260</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250121181856/https://www.esv.se/statsliggaren/regleringsbrev/Index?rbId=10325" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Livsmedelsekonomiska%20institutet" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Livsmedelsekonomiska institutet</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/Index?rbId=10325" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/Index?rbId=10325</a></td>
+      <td>https://sv.wikipedia.org/wiki/Livsmedelsekonomiska_institutet</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/Index?rbId=10325</td>
+      <td>http://web.archive.org/web/20250121181856/https://www.esv.se/statsliggaren/regleringsbrev/Index?rbId=10325</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220930034437/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=22386" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Abort%20i%20Sverige" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Abort i Sverige</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=22386" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=22386</a></td>
+      <td>https://sv.wikipedia.org/wiki/Abort_i_Sverige</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=22386</td>
+      <td>http://web.archive.org/web/20220930034437/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=22386</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20241218165622/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=22852" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Sverigefinl%C3%A4ndarnas%20delegation" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Sverigefinländarnas delegation</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=22852" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=22852</a></td>
+      <td>https://sv.wikipedia.org/wiki/Sverigefinländarnas_delegation</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=22852</td>
+      <td>http://web.archive.org/web/20241218165622/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=22852</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250126185854/https://www.esv.se/Statsliggaren/Regleringsbrev?rbid=22510" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Ekobrottsmyndigheten" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Ekobrottsmyndigheten</a></td>
+      <td><a href="https://www.esv.se/Statsliggaren/Regleringsbrev?rbid=22510" target="_blank">https://www.esv.se/Statsliggaren/Regleringsbrev?rbid=22510</a></td>
+      <td>https://sv.wikipedia.org/wiki/Ekobrottsmyndigheten</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/Statsliggaren/Regleringsbrev?rbid=22510</td>
+      <td>http://web.archive.org/web/20250126185854/https://www.esv.se/Statsliggaren/Regleringsbrev?rbid=22510</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20250222013040/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=23349" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Naprapath%C3%B6gskolan" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Naprapathögskolan</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?rbid=23349" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?rbid=23349</a></td>
+      <td>https://sv.wikipedia.org/wiki/Naprapathögskolan</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?rbid=23349</td>
+      <td>http://web.archive.org/web/20250222013040/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=23349</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Sveriges%20kulturpolitik" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Sveriges kulturpolitik</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev---Listsida/?PeriodId=2023&DepID=16" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev---Listsida/?PeriodId=2023&DepID=16</a></td>
+      <td>https://sv.wikipedia.org/wiki/Sveriges_kulturpolitik</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev---Listsida/?PeriodId=2023&DepID=16</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Kulturdepartementet" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Kulturdepartementet</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev---Listsida/?PeriodId=2023&DepID=16" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev---Listsida/?PeriodId=2023&DepID=16</a></td>
+      <td>https://sv.wikipedia.org/wiki/Kulturdepartementet</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev---Listsida/?PeriodId=2023&DepID=16</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/L%C3%A4nsstyrelsen%20i%20Kronobergs%20l%C3%A4n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Länsstyrelsen i Kronobergs län</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/Index?rbId=24272" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/Index?rbId=24272</a></td>
+      <td>https://sv.wikipedia.org/wiki/Länsstyrelsen_i_Kronobergs_län</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/Index?rbId=24272</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/L%C3%A4nsstyrelsen%20i%20Hallands%20l%C3%A4n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Länsstyrelsen i Hallands län</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/Index?rbId=24272" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/Index?rbId=24272</a></td>
+      <td>https://sv.wikipedia.org/wiki/Länsstyrelsen_i_Hallands_län</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/Index?rbId=24272</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Sj%C3%B6fartsverket" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Sjöfartsverket</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=25186&utm" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=25186&utm</a></td>
+      <td>https://sv.wikipedia.org/wiki/Sjöfartsverket</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=25186&utm</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Str%C3%A5ls%C3%A4kerhetsmyndigheten" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Strålsäkerhetsmyndigheten</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=25003&utm" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=25003&utm</a></td>
+      <td>https://sv.wikipedia.org/wiki/Strålsäkerhetsmyndigheten</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=25003&utm</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220930020656/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=20489" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Sveriges%20geologiska%20unders%C3%B6kning" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Sveriges geologiska undersökning</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=20489" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=20489</a></td>
+      <td>https://sv.wikipedia.org/wiki/Sveriges_geologiska_undersökning</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=20489</td>
+      <td>http://web.archive.org/web/20220930020656/https://www.esv.se/statsliggaren/regleringsbrev/?RBID=20489</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Tullverket" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Tullverket</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=25197" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=25197</a></td>
+      <td>https://sv.wikipedia.org/wiki/Tullverket</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=25197</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240901082304/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=17189" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Diskussion%3AKulturmarxism/Arkiv%202018" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Diskussion:Kulturmarxism/Arkiv 2018</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=17189" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=17189</a></td>
+      <td>https://sv.wikipedia.org/wiki/Diskussion:Kulturmarxism/Arkiv_2018</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=17189</td>
+      <td>http://web.archive.org/web/20240901082304/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=17189</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240901082304/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=17189" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Diskussion%3AKulturmarxism/Arkiv%202021" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Diskussion:Kulturmarxism/Arkiv 2021</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=17189" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=17189</a></td>
+      <td>https://sv.wikipedia.org/wiki/Diskussion:Kulturmarxism/Arkiv_2021</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=17189</td>
+      <td>http://web.archive.org/web/20240901082304/https://www.esv.se/statsliggaren/regleringsbrev/?rbid=17189</td>
+      <td>available</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>zh</td>
+      <td><a href="https://zh.wikipedia.org/wiki/%E7%91%9E%E5%85%B8%E4%BF%9D%E5%AE%89%E8%AD%A6%E5%AF%9F" target="_blank" title="Wikipedia (zh)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>瑞典保安警察</a></td>
+      <td><a href="https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19529" target="_blank">https://www.esv.se/statsliggaren/regleringsbrev/?RBID=19529</a></td>
+      <td>https://zh.wikipedia.org/wiki/瑞典保安警察</td>
+      <td>ok</td>
+      <td>https://www.statskontoret.se:443/statsliggaren/regleringsbrev/?RBID=19529</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>NaN</td>
+      <td>www.esv.se</td>
+    </tr>
+  </tbody>
+</table>
+      
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Propagate status from first cell to row
+        document.querySelectorAll("table.pivot tbody tr").forEach(row => {
+            const statusCell = row.querySelector(".status-icon");
+            if (statusCell) {
+                row.dataset.status = statusCell.dataset.status;
+            }
+        });
+        let showOnlyBroken = false;
+
+        document.querySelectorAll(".status-icon").forEach(icon => {
+            icon.addEventListener("click", event => {
+                event.stopPropagation(); // prevent column sort
+                showOnlyBroken = !showOnlyBroken;
+        
+                document.querySelectorAll("table.pivot tbody tr").forEach(row => {
+                    if (showOnlyBroken) {
+                        row.style.display =
+                            row.dataset.status === "dead" ? "" : "none";
+                    } else {
+                        row.style.display = "";
+                    }
+                });
+            });
+        });
+
+        document.querySelectorAll("table.pivot th").forEach((header, colIndex) => {
+            header.addEventListener("click", () => {
+                const table = header.closest("table");
+                const tbody = table.querySelector("tbody");
+                const rows = Array.from(tbody.querySelectorAll("tr"));
+                const asc = !header.classList.contains("sorted-asc");
+
+                rows.sort((a, b) => {
+                    const A = a.children[colIndex].innerText.trim();
+                    const B = b.children[colIndex].innerText.trim();
+                    const numA = parseFloat(A.replace(",", "."));
+                    const numB = parseFloat(B.replace(",", "."));
+                    if (!isNaN(numA) && !isNaN(numB)) {
+                        return asc ? numA - numB : numB - numA;
+                    }
+                    return asc ? A.localeCompare(B) : B.localeCompare(A);
+                });
+
+                table.querySelectorAll("th").forEach(th =>
+                    th.classList.remove("sorted-asc", "sorted-desc")
+                );
+                header.classList.add(asc ? "sorted-asc" : "sorted-desc");
+                rows.forEach(row => tbody.appendChild(row));
+            });
+        });
+    });
+    </script>
+    
+      <h2>Broken-link summary by Wikipedia language</h2>
+     <p>
+       Languages ranked by broken-link impact (broken + error links).
+     </p>
+    <table class="dataframe pivot">
+  <thead>
+    <tr style="text-align: right;">
+      <th>lang</th>
+      <th>total_links</th>
+      <th>broken_links</th>
+      <th>broken_archived</th>
+      <th>broken_lost</th>
+      <th>broken_pct</th>
+      <th>problem_pct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sv</td>
+      <td>110</td>
+      <td>43</td>
+      <td>91</td>
+      <td>-48</td>
+      <td>39.1</td>
+      <td>39.1</td>
+    </tr>
+    <tr>
+      <td>en</td>
+      <td>32</td>
+      <td>23</td>
+      <td>26</td>
+      <td>-3</td>
+      <td>71.9</td>
+      <td>71.9</td>
+    </tr>
+    <tr>
+      <td>no</td>
+      <td>4</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+      <td>75.0</td>
+      <td>75.0</td>
+    </tr>
+    <tr>
+      <td>sq</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>100.0</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>fi</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>100.0</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>it</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>100.0</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>ms</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>100.0</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>da</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>-1</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>de</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>zh</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+    </body>
+    </html>
+    
