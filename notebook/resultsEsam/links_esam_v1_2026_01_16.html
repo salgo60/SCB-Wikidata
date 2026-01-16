@@ -1,0 +1,1364 @@
+
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <title>riksdagen.se links in Wikipedia</title>
+      <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      table.pivot {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 12px;
+      }
+      table.pivot th, table.pivot td {
+        border: 1px solid #999;
+        padding: 6px 8px;
+        text-align: left;
+        vertical-align: top;
+        white-space: normal;
+      }
+      table.pivot th {
+        cursor: pointer;
+        background: #f2f2f2;
+      }
+      table.pivot th:hover {
+        background: #e2e2e2;
+      }
+      table.pivot thead th {
+        position: sticky;
+        top: 0;
+        background: #f2f2f2;
+        z-index: 2;
+      }
+      table.pivot th::after {
+        content: "";
+        float: right;
+        opacity: 0.4;
+      }
+      table.pivot th.sorted-asc::after {
+        content: " ▲";
+      }
+      table.pivot th.sorted-desc::after {
+        content: " ▼";
+      }
+      /* Row coloring by status */
+      table.pivot tr[data-status="dead"] {
+         background-color: #fdecea;  /* light red */
+      }
+      table.pivot tr[data-status="dead"] td:nth-child(2) i {
+          color: #1565c0;
+        }
+
+      table.pivot tr[data-status="error"] {
+          background-color: #fff4e5;  /* light orange */
+      }
+
+      table.pivot td a {
+        color: #0645ad;
+        text-decoration: none;
+      }
+      table.pivot td a:hover {
+        text-decoration: underline;
+      }
+      .meta {
+        background: #f8f8f8;
+        border: 1px solid #ccc;
+        padding: 12px;
+        margin-bottom: 20px;
+        font-size: 13px;
+      }
+      .meta h2 {
+        margin-top: 0;
+      }
+    </style>
+    
+    </head>
+    <body>
+      <h1>Wikipedia → Riksdagen v1</h1>
+      
+    <div class="meta">
+      <h2>Summary</h2>
+    
+      <p><strong>Rerun:</strong> 2026-01-16 11:54:56</p>
+      <p><strong>Script:</strong>
+         <a href="https://github.com/salgo60/SCB-Wikidata/blob/master/notebook/esam_61.ipynb" target="_blank">esam_61.ipynb</a>
+      </p>
+    
+      <p>
+        <strong>Links checked:</strong> 78<br>
+        <strong style="color:#2e7d32;">OK:</strong> 46 (59.0%)<br>
+        <strong style="color:#c62828;">Broken:</strong> 32 (41.0%)<br>
+        &nbsp;&nbsp;↳ Archived: 31<br>
+        &nbsp;&nbsp;↳ Lost: 1<br>
+        <strong style="color:#ef6c00;">Errors:</strong> 0 (0.0%)
+      </p>
+      <p><strong>Issue:</strong>
+         <a href="https://github.com/salgo60/SCB-Wikidata/issues/61" target="_blank">61</a>
+      </p>
+    
+      <p><strong>Datakällor:</strong><br>
+         Wikidata<br>
+         MediaWiki API – exturlusage
+      </p>
+    
+      <h2>Domains with broken links</h2>
+      <p>Top domains ranked by broken-link impact.</p>
+      <table class="dataframe pivot">
+  <thead>
+    <tr style="text-align: right;">
+      <th>domain</th>
+      <th>total_links</th>
+      <th>broken_links</th>
+      <th>error_links</th>
+      <th>broken_pct</th>
+      <th>error_pct</th>
+      <th>problem_pct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>esamverka.se</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>www.esamverka.se</td>
+      <td>77</td>
+      <td>31</td>
+      <td>0</td>
+      <td>40.3</td>
+      <td>0.0</td>
+      <td>40.3</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    
+      <p>Sorterbar tabell. Klicka på kolumnrubriker för sortering.</p>
+      <table class="dataframe pivot">
+  <thead>
+    <tr style="text-align: right;">
+      <th>status_icon</th>
+      <th>archive</th>
+      <th>lang</th>
+      <th>page_title</th>
+      <th>url</th>
+      <th>wiki_link</th>
+      <th>status</th>
+      <th>final_url</th>
+      <th>ia_url</th>
+      <th>ia_status</th>
+      <th>reason</th>
+      <th>domain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>en</td>
+      <td><a href="https://en.wikipedia.org/wiki/Rocket.Chat" target="_blank" title="Wikipedia (en)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Rocket.Chat</a></td>
+      <td><a href="https://www.esamverka.se/download/18.4a6f5f6917d9204856518c5e/1639137082930/Digital%20collaboration%20platform%20for%20the%20public%20sector.pdf" target="_blank">https://www.esamverka.se/download/18.4a6f5f6917d9204856518c5e/1639137082930/Digital%20collaboration%20platform%20for%20the%20public%20sector.pdf</a></td>
+      <td>https://en.wikipedia.org/wiki/Rocket.Chat</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.4a6f5f6917d9204856518c5e/1639137082930/Digital%20collaboration%20platform%20for%20the%20public%20sector.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20200815021635/https://esamverka.se/vart-arbete/livshandelsedriven-utveckling.html" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Efterlevandeguiden" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Efterlevandeguiden</a></td>
+      <td><a href="http://www.esamverka.se/vart-arbete/livshandelsedriven-utveckling.html" target="_blank">http://www.esamverka.se/vart-arbete/livshandelsedriven-utveckling.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Efterlevandeguiden</td>
+      <td>dead</td>
+      <td>http://www.esamverka.se/vart-arbete/livshandelsedriven-utveckling.html</td>
+      <td>http://web.archive.org/web/20200815021635/https://esamverka.se/vart-arbete/livshandelsedriven-utveckling.html</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20191017013256/http://www.esamverka.se/nyheter/nyheter/2017-09-20-regeringen-vill-inratta-en-digitaliseringsmyndighet.html" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Digitalisering" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Digitalisering</a></td>
+      <td><a href="http://www.esamverka.se/nyheter/nyheter/2017-09-20-regeringen-vill-inratta-en-digitaliseringsmyndighet.html" target="_blank">http://www.esamverka.se/nyheter/nyheter/2017-09-20-regeringen-vill-inratta-en-digitaliseringsmyndighet.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Digitalisering</td>
+      <td>dead</td>
+      <td>http://www.esamverka.se/nyheter/nyheter/2017-09-20-regeringen-vill-inratta-en-digitaliseringsmyndighet.html</td>
+      <td>http://web.archive.org/web/20191017013256/http://www.esamverka.se/nyheter/nyheter/2017-09-20-regeringen-vill-inratta-en-digitaliseringsmyndighet.html</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20191017013256/http://www.esamverka.se/nyheter/nyheter/2017-09-20-regeringen-vill-inratta-en-digitaliseringsmyndighet.html" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Myndigheten%20f%C3%B6r%20digital%20f%C3%B6rvaltning" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Myndigheten för digital förvaltning</a></td>
+      <td><a href="http://www.esamverka.se/nyheter/nyheter/2017-09-20-regeringen-vill-inratta-en-digitaliseringsmyndighet.html" target="_blank">http://www.esamverka.se/nyheter/nyheter/2017-09-20-regeringen-vill-inratta-en-digitaliseringsmyndighet.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Myndigheten_för_digital_förvaltning</td>
+      <td>dead</td>
+      <td>http://www.esamverka.se/nyheter/nyheter/2017-09-20-regeringen-vill-inratta-en-digitaliseringsmyndighet.html</td>
+      <td>http://web.archive.org/web/20191017013256/http://www.esamverka.se/nyheter/nyheter/2017-09-20-regeringen-vill-inratta-en-digitaliseringsmyndighet.html</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20200203182915/http://esamverka.se:80/nyheter/nyheter/2018-08-23-samverkan-inom-esam-fortsatter-samtidigt-som-det-konkreta-samarbetet-med-digg-paborjas.html" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Myndigheten%20f%C3%B6r%20digital%20f%C3%B6rvaltning" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Myndigheten för digital förvaltning</a></td>
+      <td><a href="http://esamverka.se/nyheter/nyheter/2018-08-23-samverkan-inom-esam-fortsatter-samtidigt-som-det-konkreta-samarbetet-med-digg-paborjas.html" target="_blank">http://esamverka.se/nyheter/nyheter/2018-08-23-samverkan-inom-esam-fortsatter-samtidigt-som-det-konkreta-samarbetet-med-digg-paborjas.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Myndigheten_för_digital_förvaltning</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/nyheter/nyheter/2018-08-23-samverkan-inom-esam-fortsatter-samtidigt-som-det-konkreta-samarbetet-med-digg-paborjas.html</td>
+      <td>http://web.archive.org/web/20200203182915/http://esamverka.se:80/nyheter/nyheter/2018-08-23-samverkan-inom-esam-fortsatter-samtidigt-som-det-konkreta-samarbetet-med-digg-paborjas.html</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20191231220010/http://www.esamverka.se:80/stod-och-vagledning/svenskt-ramverk-for-digital-samverkan.html" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/%C3%96ppen%20standard" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Öppen standard</a></td>
+      <td><a href="http://www.esamverka.se/stod-och-vagledning/svenskt-ramverk-for-digital-samverkan.html" target="_blank">http://www.esamverka.se/stod-och-vagledning/svenskt-ramverk-for-digital-samverkan.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Öppen_standard</td>
+      <td>dead</td>
+      <td>http://www.esamverka.se/stod-och-vagledning/svenskt-ramverk-for-digital-samverkan.html</td>
+      <td>http://web.archive.org/web/20191231220010/http://www.esamverka.se:80/stod-och-vagledning/svenskt-ramverk-for-digital-samverkan.html</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220121111306/https://www.esamverka.se/download/18.1d126bc174ad1e6c39c925/1464273075819/Juridisk%20v%C3%A4gledning%20f%C3%B6r%20verksamhetsutveckling%20inom%20e-f%C3%B6rvaltningen%202.0.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112773489" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112773489</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39c925/1464273075819/Juridisk%20v%C3%A4gledning%20f%C3%B6r%20verksamhetsutveckling%20inom%20e-f%C3%B6rvaltningen%202.0.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39c925/1464273075819/Juridisk%20v%C3%A4gledning%20f%C3%B6r%20verksamhetsutveckling%20inom%20e-f%C3%B6rvaltningen%202.0.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112773489</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39c925/1464273075819/Juridisk%20v%C3%A4gledning%20f%C3%B6r%20verksamhetsutveckling%20inom%20e-f%C3%B6rvaltningen%202.0.pdf</td>
+      <td>http://web.archive.org/web/20220121111306/https://www.esamverka.se/download/18.1d126bc174ad1e6c39c925/1464273075819/Juridisk%20v%C3%A4gledning%20f%C3%B6r%20verksamhetsutveckling%20inom%20e-f%C3%B6rvaltningen%202.0.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112773726" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112773726</a></td>
+      <td><a href="https://www.esamverka.se/" target="_blank">https://www.esamverka.se/</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112773726</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112766254" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112766254</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39c6df/1464273265830/Riktlinjer%20f%C3%B6r%20myndigheters%20anv%C3%A4ndning%20av%20sociala%20medier%201.0.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39c6df/1464273265830/Riktlinjer%20f%C3%B6r%20myndigheters%20anv%C3%A4ndning%20av%20sociala%20medier%201.0.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112766254</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39c6df/1464273265830/Riktlinjer%20f%C3%B6r%20myndigheters%20anv%C3%A4ndning%20av%20sociala%20medier%201.0.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826277" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826277</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39ca2b/1598298292560/eSam%20-%20V%C3%A4gledning%20E-legitimation%20och%20E-underskrift%201.1.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39ca2b/1598298292560/eSam%20-%20V%C3%A4gledning%20E-legitimation%20och%20E-underskrift%201.1.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826277</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39ca2b/1598298292560/eSam%20-%20V%C3%A4gledning%20E-legitimation%20och%20E-underskrift%201.1.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826278" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826278</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39ca4e/1464274317741/Elektroniskt%20informationsutbyte%20-%20en%20v%C3%A4gledning%20f%C3%B6r%20utl%C3%A4mnande%20i%20elektronisk%20form.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39ca4e/1464274317741/Elektroniskt%20informationsutbyte%20-%20en%20v%C3%A4gledning%20f%C3%B6r%20utl%C3%A4mnande%20i%20elektronisk%20form.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826278</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39ca4e/1464274317741/Elektroniskt%20informationsutbyte%20-%20en%20v%C3%A4gledning%20f%C3%B6r%20utl%C3%A4mnande%20i%20elektronisk%20form.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826279" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826279</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39c9ca/1585569119723/200303%20analysverktyg%20och%20eget%20utrymme.docx%20final.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39c9ca/1585569119723/200303%20analysverktyg%20och%20eget%20utrymme.docx%20final.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826279</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39c9ca/1585569119723/200303%20analysverktyg%20och%20eget%20utrymme.docx%20final.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826280" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826280</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1ec521a61817ffb56511acf3/1655993640430/ES2022-02%20V%C3%A4gledning%20Bed%C3%B6mning%20och%20utveckling%20av%20chattbotar.pdf" target="_blank">https://www.esamverka.se/download/18.1ec521a61817ffb56511acf3/1655993640430/ES2022-02%20V%C3%A4gledning%20Bed%C3%B6mning%20och%20utveckling%20av%20chattbotar.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826280</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1ec521a61817ffb56511acf3/1655993640430/ES2022-02%20V%C3%A4gledning%20Bed%C3%B6mning%20och%20utveckling%20av%20chattbotar.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826282" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826282</a></td>
+      <td><a href="https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe50/1656583717967/ES2022-04%20V%C3%A4gledning%20Designprinciper%20och%20krav%20f%C3%B6r%20eget%20utrymme.pdf" target="_blank">https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe50/1656583717967/ES2022-04%20V%C3%A4gledning%20Designprinciper%20och%20krav%20f%C3%B6r%20eget%20utrymme.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826282</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe50/1656583717967/ES2022-04%20V%C3%A4gledning%20Designprinciper%20och%20krav%20f%C3%B6r%20eget%20utrymme.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826284" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826284</a></td>
+      <td><a href="https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe51/1656583735311/ES2022-07%20V%C3%A4gledning%20Innovation%20i%20en%20myndighet.pdf" target="_blank">https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe51/1656583735311/ES2022-07%20V%C3%A4gledning%20Innovation%20i%20en%20myndighet.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826284</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe51/1656583735311/ES2022-07%20V%C3%A4gledning%20Innovation%20i%20en%20myndighet.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826285" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826285</a></td>
+      <td><a href="https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe6a/1656583867894/ES2022-01%20V%C3%A4gledning%20Pseudonymisering%20av%20personuppgifter.pdf" target="_blank">https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe6a/1656583867894/ES2022-01%20V%C3%A4gledning%20Pseudonymisering%20av%20personuppgifter.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826285</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe6a/1656583867894/ES2022-01%20V%C3%A4gledning%20Pseudonymisering%20av%20personuppgifter.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826287" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826287</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39c9cb/1576674373880/eSam%20-%20MinaData%20v1.0.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39c9cb/1576674373880/eSam%20-%20MinaData%20v1.0.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826287</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39c9cb/1576674373880/eSam%20-%20MinaData%20v1.0.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826289" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826289</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39ca27/1528808442900/201706_eSam%20-%20Rapport%20-%20En%20effektiv%20informationsf%C3%B6rs%C3%B6rjning.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39ca27/1528808442900/201706_eSam%20-%20Rapport%20-%20En%20effektiv%20informationsf%C3%B6rs%C3%B6rjning.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826289</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39ca27/1528808442900/201706_eSam%20-%20Rapport%20-%20En%20effektiv%20informationsf%C3%B6rs%C3%B6rjning.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220630174725/https://www.esamverka.se/download/18.1d126bc174ad1e6c39cab6/1528807707987/201801_eSam%20-%20Rekommendation%20f%C3%B6r%20identitetsbegrepp.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826292" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826292</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39cab6/1528807707987/201801_eSam%20-%20Rekommendation%20f%C3%B6r%20identitetsbegrepp.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39cab6/1528807707987/201801_eSam%20-%20Rekommendation%20f%C3%B6r%20identitetsbegrepp.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826292</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39cab6/1528807707987/201801_eSam%20-%20Rekommendation%20f%C3%B6r%20identitetsbegrepp.pdf</td>
+      <td>http://web.archive.org/web/20220630174725/https://www.esamverka.se/download/18.1d126bc174ad1e6c39cab6/1528807707987/201801_eSam%20-%20Rekommendation%20f%C3%B6r%20identitetsbegrepp.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826293" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826293</a></td>
+      <td><a href="https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe52/1656583764475/ES2022-03%20Rapport%20Samverkan%20kring%20till%C3%A4mpad%20AI.pdf" target="_blank">https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe52/1656583764475/ES2022-03%20Rapport%20Samverkan%20kring%20till%C3%A4mpad%20AI.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826293</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe52/1656583764475/ES2022-03%20Rapport%20Samverkan%20kring%20till%C3%A4mpad%20AI.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826294" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826294</a></td>
+      <td><a href="https://www.esamverka.se/download/18.74e1936a1808eb1ad123f609/1652347194550/ES2022-09%20Delning%20och%20anv%C3%A4ndning%20av%20%C3%B6ppen%20k%C3%A4llkod.pdf" target="_blank">https://www.esamverka.se/download/18.74e1936a1808eb1ad123f609/1652347194550/ES2022-09%20Delning%20och%20anv%C3%A4ndning%20av%20%C3%B6ppen%20k%C3%A4llkod.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826294</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.74e1936a1808eb1ad123f609/1652347194550/ES2022-09%20Delning%20och%20anv%C3%A4ndning%20av%20%C3%B6ppen%20k%C3%A4llkod.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20221105102359/https://www.esamverka.se/download/18.361cfdb517c0c1bd7ccc40f5/1635233771197/R%C3%A5d%20s%C3%A4krare%20extern%20%C3%B6verf%C3%B6ring%20av%20information%20v1.1%20211026.docx" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826295" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826295</a></td>
+      <td><a href="https://www.esamverka.se/download/18.361cfdb517c0c1bd7ccc40f5/1635233771197/R%C3%A5d%20s%C3%A4krare%20extern%20%C3%B6verf%C3%B6ring%20av%20information%20v1.1%20211026.docx" target="_blank">https://www.esamverka.se/download/18.361cfdb517c0c1bd7ccc40f5/1635233771197/R%C3%A5d%20s%C3%A4krare%20extern%20%C3%B6verf%C3%B6ring%20av%20information%20v1.1%20211026.docx</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826295</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.361cfdb517c0c1bd7ccc40f5/1635233771197/R%C3%A5d%20s%C3%A4krare%20extern%20%C3%B6verf%C3%B6ring%20av%20information%20v1.1%20211026.docx</td>
+      <td>http://web.archive.org/web/20221105102359/https://www.esamverka.se/download/18.361cfdb517c0c1bd7ccc40f5/1635233771197/R%C3%A5d%20s%C3%A4krare%20extern%20%C3%B6verf%C3%B6ring%20av%20information%20v1.1%20211026.docx</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826296" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826296</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39c8ca/1598467569167/eSam%20-%20V%C3%A4gledning%20E-legitimation%20och%20E-underskrift%201.1.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39c8ca/1598467569167/eSam%20-%20V%C3%A4gledning%20E-legitimation%20och%20E-underskrift%201.1.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826296</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39c8ca/1598467569167/eSam%20-%20V%C3%A4gledning%20E-legitimation%20och%20E-underskrift%201.1.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826298" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826298</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39b352/1561720847142/Digitalisera%20r%C3%A4tt%20-%20en%20praktisk%20juridisk%20v%C3%A4gledning.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39b352/1561720847142/Digitalisera%20r%C3%A4tt%20-%20en%20praktisk%20juridisk%20v%C3%A4gledning.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826298</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39b352/1561720847142/Digitalisera%20r%C3%A4tt%20-%20en%20praktisk%20juridisk%20v%C3%A4gledning.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826299" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826299</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39c63d/1598298292306/Eget%20utrymme%20hos%20myndighet%20-%20en%20v%C3%A4gledning%202016.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39c63d/1598298292306/Eget%20utrymme%20hos%20myndighet%20-%20en%20v%C3%A4gledning%202016.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826299</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39c63d/1598298292306/Eget%20utrymme%20hos%20myndighet%20-%20en%20v%C3%A4gledning%202016.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220630174753/https://www.esamverka.se/download/18.1d126bc174ad1e6c39cae2/1598467797623/Outsourcing%20-%20en%20v%C3%A4gledning%20om%20sekretess%20och%20persondataskydd.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826300" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826300</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39cae2/1598467797623/Outsourcing%20-%20en%20v%C3%A4gledning%20om%20sekretess%20och%20persondataskydd.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39cae2/1598467797623/Outsourcing%20-%20en%20v%C3%A4gledning%20om%20sekretess%20och%20persondataskydd.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826300</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39cae2/1598467797623/Outsourcing%20-%20en%20v%C3%A4gledning%20om%20sekretess%20och%20persondataskydd.pdf</td>
+      <td>http://web.archive.org/web/20220630174753/https://www.esamverka.se/download/18.1d126bc174ad1e6c39cae2/1598467797623/Outsourcing%20-%20en%20v%C3%A4gledning%20om%20sekretess%20och%20persondataskydd.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220630174759/https://www.esamverka.se/download/18.1d126bc174ad1e6c39c4db/1576749838091/Outsourcing%202.0%20sekretess%20och%20dataskydd%202019.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826302" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826302</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39c4db/1576749838091/Outsourcing%202.0%20sekretess%20och%20dataskydd%202019.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39c4db/1576749838091/Outsourcing%202.0%20sekretess%20och%20dataskydd%202019.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826302</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39c4db/1576749838091/Outsourcing%202.0%20sekretess%20och%20dataskydd%202019.pdf</td>
+      <td>http://web.archive.org/web/20220630174759/https://www.esamverka.se/download/18.1d126bc174ad1e6c39c4db/1576749838091/Outsourcing%202.0%20sekretess%20och%20dataskydd%202019.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826305" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826305</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1397f64174b9f2d0f566494/1601994763065/V%C3%A4gledning%20f%C3%B6r%20verksamhetsutveckling%20inom%20e-f%C3%B6rvaltningen%203.0.pdf" target="_blank">https://www.esamverka.se/download/18.1397f64174b9f2d0f566494/1601994763065/V%C3%A4gledning%20f%C3%B6r%20verksamhetsutveckling%20inom%20e-f%C3%B6rvaltningen%203.0.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826305</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1397f64174b9f2d0f566494/1601994763065/V%C3%A4gledning%20f%C3%B6r%20verksamhetsutveckling%20inom%20e-f%C3%B6rvaltningen%203.0.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220630174827/https://www.esamverka.se/download/18.2889444f174fe7bcd5c284f/1602063448889/Elektroniskt%20informationsutbyte.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826306" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826306</a></td>
+      <td><a href="https://www.esamverka.se/download/18.2889444f174fe7bcd5c284f/1602063448889/Elektroniskt%20informationsutbyte.pdf" target="_blank">https://www.esamverka.se/download/18.2889444f174fe7bcd5c284f/1602063448889/Elektroniskt%20informationsutbyte.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826306</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.2889444f174fe7bcd5c284f/1602063448889/Elektroniskt%20informationsutbyte.pdf</td>
+      <td>http://web.archive.org/web/20220630174827/https://www.esamverka.se/download/18.2889444f174fe7bcd5c284f/1602063448889/Elektroniskt%20informationsutbyte.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220630174823/https://www.esamverka.se/download/18.1d126bc174ad1e6c39beef/1488372938850/2017%20FAQ%20v%C3%A4gledning%20e-legitimering.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826308" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826308</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39beef/1488372938850/2017%20FAQ%20v%C3%A4gledning%20e-legitimering.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39beef/1488372938850/2017%20FAQ%20v%C3%A4gledning%20e-legitimering.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826308</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39beef/1488372938850/2017%20FAQ%20v%C3%A4gledning%20e-legitimering.pdf</td>
+      <td>http://web.archive.org/web/20220630174823/https://www.esamverka.se/download/18.1d126bc174ad1e6c39beef/1488372938850/2017%20FAQ%20v%C3%A4gledning%20e-legitimering.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826309" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826309</a></td>
+      <td><a href="https://www.esamverka.se/download/18.4472a99d1784abb64fe55a56/1617090726276/V%C3%A4gledning%20Lagringsytor%20210312.pdf" target="_blank">https://www.esamverka.se/download/18.4472a99d1784abb64fe55a56/1617090726276/V%C3%A4gledning%20Lagringsytor%20210312.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826309</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.4472a99d1784abb64fe55a56/1617090726276/V%C3%A4gledning%20Lagringsytor%20210312.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826310" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826310</a></td>
+      <td><a href="https://www.esamverka.se/download/18.4472a99d1784abb64fe55a6e/1617090755211/V%C3%A4gledning%20eget%20utrymme%20hos%20myndighet%20210312.pdf" target="_blank">https://www.esamverka.se/download/18.4472a99d1784abb64fe55a6e/1617090755211/V%C3%A4gledning%20eget%20utrymme%20hos%20myndighet%20210312.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826310</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.4472a99d1784abb64fe55a6e/1617090755211/V%C3%A4gledning%20eget%20utrymme%20hos%20myndighet%20210312.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826312" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826312</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1afa2964179effea5a286f48/1625144886153/V%C3%A4gledning%20programvarulicensiering.pdf" target="_blank">https://www.esamverka.se/download/18.1afa2964179effea5a286f48/1625144886153/V%C3%A4gledning%20programvarulicensiering.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826312</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1afa2964179effea5a286f48/1625144886153/V%C3%A4gledning%20programvarulicensiering.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826314" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826314</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39ca2c/1598298292497/V%C3%A4gledning_R%C3%A4ttsliga%20f%C3%B6ruts%C3%A4ttningar%20f%C3%B6r%20digitalt%20i%20f%C3%B6rsta%20hand.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39ca2c/1598298292497/V%C3%A4gledning_R%C3%A4ttsliga%20f%C3%B6ruts%C3%A4ttningar%20f%C3%B6r%20digitalt%20i%20f%C3%B6rsta%20hand.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826314</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39ca2c/1598298292497/V%C3%A4gledning_R%C3%A4ttsliga%20f%C3%B6ruts%C3%A4ttningar%20f%C3%B6r%20digitalt%20i%20f%C3%B6rsta%20hand.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220630175251/https://www.esamverka.se/download/18.1d126bc174ad1e6c39cafe/1464274177874/R%C3%A4ttsligt%20uttalande%20r%C3%B6jandebegreppet.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826316" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826316</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39cafe/1464274177874/R%C3%A4ttsligt%20uttalande%20r%C3%B6jandebegreppet.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39cafe/1464274177874/R%C3%A4ttsligt%20uttalande%20r%C3%B6jandebegreppet.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826316</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39cafe/1464274177874/R%C3%A4ttsligt%20uttalande%20r%C3%B6jandebegreppet.pdf</td>
+      <td>http://web.archive.org/web/20220630175251/https://www.esamverka.se/download/18.1d126bc174ad1e6c39cafe/1464274177874/R%C3%A4ttsligt%20uttalande%20r%C3%B6jandebegreppet.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826318" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826318</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39c885/1464690679088/R%C3%A4ttsligt%20uttalande%20f%C3%B6r%20sekretess%20enligt%2040%20kap%205%20%C2%A7%20offentlighets-%20och%20sekretesslagen.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39c885/1464690679088/R%C3%A4ttsligt%20uttalande%20f%C3%B6r%20sekretess%20enligt%2040%20kap%205%20%C2%A7%20offentlighets-%20och%20sekretesslagen.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826318</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39c885/1464690679088/R%C3%A4ttsligt%20uttalande%20f%C3%B6r%20sekretess%20enligt%2040%20kap%205%20%C2%A7%20offentlighets-%20och%20sekretesslagen.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826320" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826320</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39cad7/1528807998458/R%C3%A4ttsligt%20uttalande%20inkommandetidpunkten.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39cad7/1528807998458/R%C3%A4ttsligt%20uttalande%20inkommandetidpunkten.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826320</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39cad7/1528807998458/R%C3%A4ttsligt%20uttalande%20inkommandetidpunkten.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220630174900/https://www.esamverka.se/download/18.1d126bc174ad1e6c39cad0/1528808048350/R%C3%A4ttsligt%20uttalande%20Eget%20utrymme%202018.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826321" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826321</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39cad0/1528808048350/R%C3%A4ttsligt%20uttalande%20Eget%20utrymme%202018.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39cad0/1528808048350/R%C3%A4ttsligt%20uttalande%20Eget%20utrymme%202018.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826321</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39cad0/1528808048350/R%C3%A4ttsligt%20uttalande%20Eget%20utrymme%202018.pdf</td>
+      <td>http://web.archive.org/web/20220630174900/https://www.esamverka.se/download/18.1d126bc174ad1e6c39cad0/1528808048350/R%C3%A4ttsligt%20uttalande%20Eget%20utrymme%202018.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826323" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826323</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39cad1/1528808076113/Ra%CC%88ttsligt%20uttalande%20art%2022%20autobeslut.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39cad1/1528808076113/Ra%CC%88ttsligt%20uttalande%20art%2022%20autobeslut.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826323</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39cad1/1528808076113/Ra%CC%88ttsligt%20uttalande%20art%2022%20autobeslut.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826324" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826324</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39cad2/1528808101751/Ra%CC%88ttsligt%20uttalande%20Missbruk%20av%20e-leg%202017.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39cad2/1528808101751/Ra%CC%88ttsligt%20uttalande%20Missbruk%20av%20e-leg%202017.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826324</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39cad2/1528808101751/Ra%CC%88ttsligt%20uttalande%20Missbruk%20av%20e-leg%202017.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220630174906/https://www.esamverka.se/download/18.1d126bc174ad1e6c39cac3/1542007824143/eSam%20-%20Ra%CC%88ttsligt%20uttalande%20om%20ro%CC%88jande%20och%20molntj%C3%A4nster.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826325" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826325</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39cac3/1542007824143/eSam%20-%20Ra%CC%88ttsligt%20uttalande%20om%20ro%CC%88jande%20och%20molntj%C3%A4nster.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39cac3/1542007824143/eSam%20-%20Ra%CC%88ttsligt%20uttalande%20om%20ro%CC%88jande%20och%20molntj%C3%A4nster.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826325</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39cac3/1542007824143/eSam%20-%20Ra%CC%88ttsligt%20uttalande%20om%20ro%CC%88jande%20och%20molntj%C3%A4nster.pdf</td>
+      <td>http://web.archive.org/web/20220630174906/https://www.esamverka.se/download/18.1d126bc174ad1e6c39cac3/1542007824143/eSam%20-%20Ra%CC%88ttsligt%20uttalande%20om%20ro%CC%88jande%20och%20molntj%C3%A4nster.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220630175149/https://www.esamverka.se/download/18.1d126bc174ad1e6c39caf4/1568977769756/Kompletterande%20information%20om%20molnfr%C3%A5gan%202019-09.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826326" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826326</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39caf4/1568977769756/Kompletterande%20information%20om%20molnfr%C3%A5gan%202019-09.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39caf4/1568977769756/Kompletterande%20information%20om%20molnfr%C3%A5gan%202019-09.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826326</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39caf4/1568977769756/Kompletterande%20information%20om%20molnfr%C3%A5gan%202019-09.pdf</td>
+      <td>http://web.archive.org/web/20220630175149/https://www.esamverka.se/download/18.1d126bc174ad1e6c39caf4/1568977769756/Kompletterande%20information%20om%20molnfr%C3%A5gan%202019-09.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826327" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826327</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39cafd/1511878443000/R%C3%A4ttsligt%20uttalande%20Eget%20utrymme%202017.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39cafd/1511878443000/R%C3%A4ttsligt%20uttalande%20Eget%20utrymme%202017.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826327</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39cafd/1511878443000/R%C3%A4ttsligt%20uttalande%20Eget%20utrymme%202017.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220630174908/https://www.esamverka.se/download/18.1d126bc174ad1e6c39c6c6/1498546141169/Informationsskyldighet%20enligt%20dataskyddsf%C3%B6rordningen%20170217.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826329" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826329</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39c6c6/1498546141169/Informationsskyldighet%20enligt%20dataskyddsf%C3%B6rordningen%20170217.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39c6c6/1498546141169/Informationsskyldighet%20enligt%20dataskyddsf%C3%B6rordningen%20170217.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826329</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39c6c6/1498546141169/Informationsskyldighet%20enligt%20dataskyddsf%C3%B6rordningen%20170217.pdf</td>
+      <td>http://web.archive.org/web/20220630174908/https://www.esamverka.se/download/18.1d126bc174ad1e6c39c6c6/1498546141169/Informationsskyldighet%20enligt%20dataskyddsf%C3%B6rordningen%20170217.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826331" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826331</a></td>
+      <td><a href="https://www.esamverka.se/download/18.24752069177d2c0b5d822b39/1614594125303/PM%20inkommande%20handlingar%2020171031.pdf" target="_blank">https://www.esamverka.se/download/18.24752069177d2c0b5d822b39/1614594125303/PM%20inkommande%20handlingar%2020171031.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826331</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.24752069177d2c0b5d822b39/1614594125303/PM%20inkommande%20handlingar%2020171031.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826332" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826332</a></td>
+      <td><a href="https://www.esamverka.se/download/18.24752069177d2c0b5d823993/1614608608771/PM%20Eget%20utrymme%20november%2020171122.pdf" target="_blank">https://www.esamverka.se/download/18.24752069177d2c0b5d823993/1614608608771/PM%20Eget%20utrymme%20november%2020171122.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826332</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.24752069177d2c0b5d823993/1614608608771/PM%20Eget%20utrymme%20november%2020171122.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826334" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826334</a></td>
+      <td><a href="https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe6c/1656583915057/ES2022-06%20Promemoria%20En%20modern%20registerf%C3%B6rfattning.pdf" target="_blank">https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe6c/1656583915057/ES2022-06%20Promemoria%20En%20modern%20registerf%C3%B6rfattning.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826334</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe6c/1656583915057/ES2022-06%20Promemoria%20En%20modern%20registerf%C3%B6rfattning.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826335" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826335</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39cb0b/1562066744454/Checklista%20R%C3%A4ttsliga%20f%C3%B6ruts%C3%A4ttningar%20i%20utvecklingsinsatser%202.0.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39cb0b/1562066744454/Checklista%20R%C3%A4ttsliga%20f%C3%B6ruts%C3%A4ttningar%20i%20utvecklingsinsatser%202.0.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826335</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39cb0b/1562066744454/Checklista%20R%C3%A4ttsliga%20f%C3%B6ruts%C3%A4ttningar%20i%20utvecklingsinsatser%202.0.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220630174933/https://www.esamverka.se/download/18.1d126bc174ad1e6c39cabd/1530622293881/Olaglig%20anv%C3%A4ndning%20av%20e-legitimation_1806.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826337" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826337</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39cabd/1530622293881/Olaglig%20anv%C3%A4ndning%20av%20e-legitimation_1806.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39cabd/1530622293881/Olaglig%20anv%C3%A4ndning%20av%20e-legitimation_1806.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826337</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39cabd/1530622293881/Olaglig%20anv%C3%A4ndning%20av%20e-legitimation_1806.pdf</td>
+      <td>http://web.archive.org/web/20220630174933/https://www.esamverka.se/download/18.1d126bc174ad1e6c39cabd/1530622293881/Olaglig%20anv%C3%A4ndning%20av%20e-legitimation_1806.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220121105929/https://www.esamverka.se/download/18.1d126bc174ad1e6c39c88c/1542008743030/Checklista%20om%20molntj%C3%A4nster_2018.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826338" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826338</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39c88c/1542008743030/Checklista%20om%20molntj%C3%A4nster_2018.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39c88c/1542008743030/Checklista%20om%20molntj%C3%A4nster_2018.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826338</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39c88c/1542008743030/Checklista%20om%20molntj%C3%A4nster_2018.pdf</td>
+      <td>http://web.archive.org/web/20220121105929/https://www.esamverka.se/download/18.1d126bc174ad1e6c39c88c/1542008743030/Checklista%20om%20molntj%C3%A4nster_2018.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220630174929/https://www.esamverka.se/download/18.1d126bc174ad1e6c39c5e6/1488546069471/Checklista_Dataskyddsombud_2017.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826339" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826339</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39c5e6/1488546069471/Checklista_Dataskyddsombud_2017.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39c5e6/1488546069471/Checklista_Dataskyddsombud_2017.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826339</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39c5e6/1488546069471/Checklista_Dataskyddsombud_2017.pdf</td>
+      <td>http://web.archive.org/web/20220630174929/https://www.esamverka.se/download/18.1d126bc174ad1e6c39c5e6/1488546069471/Checklista_Dataskyddsombud_2017.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826341" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826341</a></td>
+      <td><a href="https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe78/1656583943622/ES2022-08%20Checklista%20Juridik%20vid%20anv%C3%A4ndning%20av%20AI.pdf" target="_blank">https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe78/1656583943622/ES2022-08%20Checklista%20Juridik%20vid%20anv%C3%A4ndning%20av%20AI.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826341</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe78/1656583943622/ES2022-08%20Checklista%20Juridik%20vid%20anv%C3%A4ndning%20av%20AI.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826342" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826342</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39c4e0/1588230902739/V%C3%A4gledning%20it-avtal%20200414%20.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39c4e0/1588230902739/V%C3%A4gledning%20it-avtal%20200414%20.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826342</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39c4e0/1588230902739/V%C3%A4gledning%20it-avtal%20200414%20.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220630175319/https://www.esamverka.se/download/18.24752069177d2c0b5d83068e/1615465835726/eSam%20Allm%C3%A4nna%20villkor%20f%C3%B6r%20it-drift%20201127.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826343" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826343</a></td>
+      <td><a href="https://www.esamverka.se/download/18.24752069177d2c0b5d83068e/1615465835726/eSam%20Allm%C3%A4nna%20villkor%20f%C3%B6r%20it-drift%20201127.pdf" target="_blank">https://www.esamverka.se/download/18.24752069177d2c0b5d83068e/1615465835726/eSam%20Allm%C3%A4nna%20villkor%20f%C3%B6r%20it-drift%20201127.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826343</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.24752069177d2c0b5d83068e/1615465835726/eSam%20Allm%C3%A4nna%20villkor%20f%C3%B6r%20it-drift%20201127.pdf</td>
+      <td>http://web.archive.org/web/20220630175319/https://www.esamverka.se/download/18.24752069177d2c0b5d83068e/1615465835726/eSam%20Allm%C3%A4nna%20villkor%20f%C3%B6r%20it-drift%20201127.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220630174950/https://www.esamverka.se/download/18.24752069177d2c0b5d83068f/1614848412281/Alternativ%20text%20ensidig%20sekretess%20av%20it-drift%20210225.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826346" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826346</a></td>
+      <td><a href="https://www.esamverka.se/download/18.24752069177d2c0b5d83068f/1614848412281/Alternativ%20text%20ensidig%20sekretess%20av%20it-drift%20210225.pdf" target="_blank">https://www.esamverka.se/download/18.24752069177d2c0b5d83068f/1614848412281/Alternativ%20text%20ensidig%20sekretess%20av%20it-drift%20210225.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826346</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.24752069177d2c0b5d83068f/1614848412281/Alternativ%20text%20ensidig%20sekretess%20av%20it-drift%20210225.pdf</td>
+      <td>http://web.archive.org/web/20220630174950/https://www.esamverka.se/download/18.24752069177d2c0b5d83068f/1614848412281/Alternativ%20text%20ensidig%20sekretess%20av%20it-drift%20210225.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220121110633/https://www.esamverka.se/download/18.24752069177d2c0b5d830690/1614848430267/Kommentar%20eSams%20Allm%C3%A4nna%20villkor%20it-drift%20210121.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826350" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826350</a></td>
+      <td><a href="https://www.esamverka.se/download/18.24752069177d2c0b5d830690/1614848430267/Kommentar%20eSams%20Allm%C3%A4nna%20villkor%20it-drift%20210121.pdf" target="_blank">https://www.esamverka.se/download/18.24752069177d2c0b5d830690/1614848430267/Kommentar%20eSams%20Allm%C3%A4nna%20villkor%20it-drift%20210121.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826350</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.24752069177d2c0b5d830690/1614848430267/Kommentar%20eSams%20Allm%C3%A4nna%20villkor%20it-drift%20210121.pdf</td>
+      <td>http://web.archive.org/web/20220121110633/https://www.esamverka.se/download/18.24752069177d2c0b5d830690/1614848430267/Kommentar%20eSams%20Allm%C3%A4nna%20villkor%20it-drift%20210121.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826351" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826351</a></td>
+      <td><a href="https://www.esamverka.se/download/18.24752069177d2c0b5d830abb/1614853920963/Kommentar%20Allm%C3%A4nna%20villkor%20it-konsultj%C3%A4nster%20201126.pdf" target="_blank">https://www.esamverka.se/download/18.24752069177d2c0b5d830abb/1614853920963/Kommentar%20Allm%C3%A4nna%20villkor%20it-konsultj%C3%A4nster%20201126.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826351</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.24752069177d2c0b5d830abb/1614853920963/Kommentar%20Allm%C3%A4nna%20villkor%20it-konsultj%C3%A4nster%20201126.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220121105230/https://www.esamverka.se/download/18.4472a99d1784abb64fe55a91/1617090802466/eSams%20Allm%C3%A4nna%20villkor%20f%C3%B6r%20it-support%20210312.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826352" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826352</a></td>
+      <td><a href="https://www.esamverka.se/download/18.4472a99d1784abb64fe55a91/1617090802466/eSams%20Allm%C3%A4nna%20villkor%20f%C3%B6r%20it-support%20210312.pdf" target="_blank">https://www.esamverka.se/download/18.4472a99d1784abb64fe55a91/1617090802466/eSams%20Allm%C3%A4nna%20villkor%20f%C3%B6r%20it-support%20210312.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826352</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.4472a99d1784abb64fe55a91/1617090802466/eSams%20Allm%C3%A4nna%20villkor%20f%C3%B6r%20it-support%20210312.pdf</td>
+      <td>http://web.archive.org/web/20220121105230/https://www.esamverka.se/download/18.4472a99d1784abb64fe55a91/1617090802466/eSams%20Allm%C3%A4nna%20villkor%20f%C3%B6r%20it-support%20210312.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220630175305/https://www.esamverka.se/download/18.4472a99d1784abb64fe55a92/1617090817392/Alternativ%20text%20ensidig%20sekretess%20av%20it-support%20210312.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826353" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826353</a></td>
+      <td><a href="https://www.esamverka.se/download/18.4472a99d1784abb64fe55a92/1617090817392/Alternativ%20text%20ensidig%20sekretess%20av%20it-support%20210312.pdf" target="_blank">https://www.esamverka.se/download/18.4472a99d1784abb64fe55a92/1617090817392/Alternativ%20text%20ensidig%20sekretess%20av%20it-support%20210312.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826353</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.4472a99d1784abb64fe55a92/1617090817392/Alternativ%20text%20ensidig%20sekretess%20av%20it-support%20210312.pdf</td>
+      <td>http://web.archive.org/web/20220630175305/https://www.esamverka.se/download/18.4472a99d1784abb64fe55a92/1617090817392/Alternativ%20text%20ensidig%20sekretess%20av%20it-support%20210312.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826354" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826354</a></td>
+      <td><a href="https://www.esamverka.se/download/18.78b492bf17917b0c72fc91df/1622020920481/Kommentarer%20till%20allm%C3%A4nna%20villkor%20f%C3%B6r%20it-support%20210324.pdf" target="_blank">https://www.esamverka.se/download/18.78b492bf17917b0c72fc91df/1622020920481/Kommentarer%20till%20allm%C3%A4nna%20villkor%20f%C3%B6r%20it-support%20210324.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826354</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.78b492bf17917b0c72fc91df/1622020920481/Kommentarer%20till%20allm%C3%A4nna%20villkor%20f%C3%B6r%20it-support%20210324.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220630175254/https://www.esamverka.se/download/18.a9fb3aa17ce4b6615c2c20c/1636475018736/Allm%C3%A4nna%20villkor%20f%C3%B6r%20itkonsulttj%C3%A4nster%20200623.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826355" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826355</a></td>
+      <td><a href="https://www.esamverka.se/download/18.a9fb3aa17ce4b6615c2c20c/1636475018736/Allm%C3%A4nna%20villkor%20f%C3%B6r%20itkonsulttj%C3%A4nster%20200623.pdf" target="_blank">https://www.esamverka.se/download/18.a9fb3aa17ce4b6615c2c20c/1636475018736/Allm%C3%A4nna%20villkor%20f%C3%B6r%20itkonsulttj%C3%A4nster%20200623.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826355</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.a9fb3aa17ce4b6615c2c20c/1636475018736/Allm%C3%A4nna%20villkor%20f%C3%B6r%20itkonsulttj%C3%A4nster%20200623.pdf</td>
+      <td>http://web.archive.org/web/20220630175254/https://www.esamverka.se/download/18.a9fb3aa17ce4b6615c2c20c/1636475018736/Allm%C3%A4nna%20villkor%20f%C3%B6r%20itkonsulttj%C3%A4nster%20200623.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220630174954/https://www.esamverka.se/download/18.4a6f5f6917d92048565195d2/1639144071672/211201%20Allm%C3%A4nna%20villkor%20f%C3%B6r%20agila%20it-projekt.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826356" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826356</a></td>
+      <td><a href="https://www.esamverka.se/download/18.4a6f5f6917d92048565195d2/1639144071672/211201%20Allm%C3%A4nna%20villkor%20f%C3%B6r%20agila%20it-projekt.pdf" target="_blank">https://www.esamverka.se/download/18.4a6f5f6917d92048565195d2/1639144071672/211201%20Allm%C3%A4nna%20villkor%20f%C3%B6r%20agila%20it-projekt.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826356</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.4a6f5f6917d92048565195d2/1639144071672/211201%20Allm%C3%A4nna%20villkor%20f%C3%B6r%20agila%20it-projekt.pdf</td>
+      <td>http://web.archive.org/web/20220630174954/https://www.esamverka.se/download/18.4a6f5f6917d92048565195d2/1639144071672/211201%20Allm%C3%A4nna%20villkor%20f%C3%B6r%20agila%20it-projekt.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220630175306/https://www.esamverka.se/download/18.4a6f5f6917d92048565195d3/1639144091985/211201%20Allm%C3%A4nna%20villkor%20f%C3%B6r%20it-projekt.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826357" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826357</a></td>
+      <td><a href="https://www.esamverka.se/download/18.4a6f5f6917d92048565195d3/1639144091985/211201%20Allm%C3%A4nna%20villkor%20f%C3%B6r%20it-projekt.pdf" target="_blank">https://www.esamverka.se/download/18.4a6f5f6917d92048565195d3/1639144091985/211201%20Allm%C3%A4nna%20villkor%20f%C3%B6r%20it-projekt.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826357</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.4a6f5f6917d92048565195d3/1639144091985/211201%20Allm%C3%A4nna%20villkor%20f%C3%B6r%20it-projekt.pdf</td>
+      <td>http://web.archive.org/web/20220630175306/https://www.esamverka.se/download/18.4a6f5f6917d92048565195d3/1639144091985/211201%20Allm%C3%A4nna%20villkor%20f%C3%B6r%20it-projekt.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220630175310/https://www.esamverka.se/download/18.4a6f5f6917d92048565195d4/1639144103481/211201%20ensidig%20sekretess%20it-projekt%20och%20agila%20it-projekt.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826358" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826358</a></td>
+      <td><a href="https://www.esamverka.se/download/18.4a6f5f6917d92048565195d4/1639144103481/211201%20ensidig%20sekretess%20it-projekt%20och%20agila%20it-projekt.pdf" target="_blank">https://www.esamverka.se/download/18.4a6f5f6917d92048565195d4/1639144103481/211201%20ensidig%20sekretess%20it-projekt%20och%20agila%20it-projekt.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826358</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.4a6f5f6917d92048565195d4/1639144103481/211201%20ensidig%20sekretess%20it-projekt%20och%20agila%20it-projekt.pdf</td>
+      <td>http://web.archive.org/web/20220630175310/https://www.esamverka.se/download/18.4a6f5f6917d92048565195d4/1639144103481/211201%20ensidig%20sekretess%20it-projekt%20och%20agila%20it-projekt.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826360" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826360</a></td>
+      <td><a href="https://www.esamverka.se/download/18.4e1610117dbd469b5ca1312/1641892195480/Kommentar%20Allma%CC%88nna%20villkor%20it-projekt%20och%20agila%20it-projekt%20211201.pdf" target="_blank">https://www.esamverka.se/download/18.4e1610117dbd469b5ca1312/1641892195480/Kommentar%20Allma%CC%88nna%20villkor%20it-projekt%20och%20agila%20it-projekt%20211201.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826360</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.4e1610117dbd469b5ca1312/1641892195480/Kommentar%20Allma%CC%88nna%20villkor%20it-projekt%20och%20agila%20it-projekt%20211201.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826361" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826361</a></td>
+      <td><a href="https://www.esamverka.se/download/18.6590d943179efdbb16883883/1625040452917/210630%20Rapport%20vidareutnyttjande%20av%20data_1.0.pdf" target="_blank">https://www.esamverka.se/download/18.6590d943179efdbb16883883/1625040452917/210630%20Rapport%20vidareutnyttjande%20av%20data_1.0.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826361</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.6590d943179efdbb16883883/1625040452917/210630%20Rapport%20vidareutnyttjande%20av%20data_1.0.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826363" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826363</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39cb10/1498033050119/Expertgrupp%20s%C3%A4kerhet%20-%20rapport%20v1.0.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39cb10/1498033050119/Expertgrupp%20s%C3%A4kerhet%20-%20rapport%20v1.0.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826363</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39cb10/1498033050119/Expertgrupp%20s%C3%A4kerhet%20-%20rapport%20v1.0.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826365" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826365</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39caef/1561613720069/Organisering%20f%C3%B6r%20s%C3%A4kerhet%201.0.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39caef/1561613720069/Organisering%20f%C3%B6r%20s%C3%A4kerhet%201.0.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826365</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39caef/1561613720069/Organisering%20f%C3%B6r%20s%C3%A4kerhet%201.0.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826366" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826366</a></td>
+      <td><a href="https://www.esamverka.se/download/18.2592ea441774291f4c756db/1611825241932/PM%20Teknik%20och%20molntj%C3%A4nster%201.0%202021.pdf" target="_blank">https://www.esamverka.se/download/18.2592ea441774291f4c756db/1611825241932/PM%20Teknik%20och%20molntj%C3%A4nster%201.0%202021.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826366</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.2592ea441774291f4c756db/1611825241932/PM%20Teknik%20och%20molntj%C3%A4nster%201.0%202021.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826367" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826367</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1ec521a61817ffb56514fea9/1656598104185/Tekniska%20f%C3%B6ruts%C3%A4ttningar%20i%20molntj%C3%A4nster%202.0_2022.pdf" target="_blank">https://www.esamverka.se/download/18.1ec521a61817ffb56514fea9/1656598104185/Tekniska%20f%C3%B6ruts%C3%A4ttningar%20i%20molntj%C3%A4nster%202.0_2022.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826367</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1ec521a61817ffb56514fea9/1656598104185/Tekniska%20f%C3%B6ruts%C3%A4ttningar%20i%20molntj%C3%A4nster%202.0_2022.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826368" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826368</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39caf9/1600692578260/Verksamhetsber%C3%A4ttelse%202016-2017.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39caf9/1600692578260/Verksamhetsber%C3%A4ttelse%202016-2017.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826368</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39caf9/1600692578260/Verksamhetsber%C3%A4ttelse%202016-2017.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826370" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826370</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39caf7/1600692578274/Verksamhetsber%C3%A4ttelse%202017-2018.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39caf7/1600692578274/Verksamhetsber%C3%A4ttelse%202017-2018.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826370</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39caf7/1600692578274/Verksamhetsber%C3%A4ttelse%202017-2018.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826373" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826373</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39caf8/1600692578291/Verksamhetsber%C3%A4ttelse%202018-2019.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39caf8/1600692578291/Verksamhetsber%C3%A4ttelse%202018-2019.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826373</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39caf8/1600692578291/Verksamhetsber%C3%A4ttelse%202018-2019.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826375" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826375</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39caf2/1600692779862/Verksamhetsber%C3%A4ttelse%202019-2020.pdf" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39caf2/1600692779862/Verksamhetsber%C3%A4ttelse%202019-2020.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826375</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39caf2/1600692779862/Verksamhetsber%C3%A4ttelse%202019-2020.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826376" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826376</a></td>
+      <td><a href="https://www.esamverka.se/download/18.285cc221179efba035a8c871/1625212989425/Verksamhetsber%C3%A4ttelse%202020-2021.pdf" target="_blank">https://www.esamverka.se/download/18.285cc221179efba035a8c871/1625212989425/Verksamhetsber%C3%A4ttelse%202020-2021.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826376</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/download/18.285cc221179efba035a8c871/1625212989425/Verksamhetsber%C3%A4ttelse%202020-2021.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220808092602/https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe98/1656584048075/eSams%20plan%2022-23%20med%20bilaga.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826377" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826377</a></td>
+      <td><a href="https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe98/1656584048075/eSams%20plan%2022-23%20med%20bilaga.pdf" target="_blank">https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe98/1656584048075/eSams%20plan%2022-23%20med%20bilaga.pdf</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826377</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe98/1656584048075/eSams%20plan%2022-23%20med%20bilaga.pdf</td>
+      <td>http://web.archive.org/web/20220808092602/https://www.esamverka.se/download/18.2191f2561817fd04d7c4fe98/1656584048075/eSams%20plan%2022-23%20med%20bilaga.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220630175009/https://www.esamverka.se/download/18.1d126bc174ad1e6c39cb03/1467108692004/Metamodell%20V1.0.zip" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112826378" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112826378</a></td>
+      <td><a href="https://www.esamverka.se/download/18.1d126bc174ad1e6c39cb03/1467108692004/Metamodell%20V1.0.zip" target="_blank">https://www.esamverka.se/download/18.1d126bc174ad1e6c39cb03/1467108692004/Metamodell%20V1.0.zip</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112826378</td>
+      <td>dead</td>
+      <td>https://www.esamverka.se/download/18.1d126bc174ad1e6c39cb03/1467108692004/Metamodell%20V1.0.zip</td>
+      <td>http://web.archive.org/web/20220630175009/https://www.esamverka.se/download/18.1d126bc174ad1e6c39cb03/1467108692004/Metamodell%20V1.0.zip</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>www.esamverka.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="ok" title="OK: nan" style="color:#2e7d32; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-check"></i></span></td>
+      <td></td>
+      <td>special</td>
+      <td><a href="https://special.wikipedia.org/wiki/Q112773726" target="_blank" title="Wikipedia (special)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Q112773726</a></td>
+      <td><a href="https://www.esamverka.se/om-esam/om-esam.html" target="_blank">https://www.esamverka.se/om-esam/om-esam.html</a></td>
+      <td>https://special.wikipedia.org/wiki/Q112773726</td>
+      <td>ok</td>
+      <td>https://www.esamverka.se/om-esam/om-esam.html</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>NaN</td>
+      <td>www.esamverka.se</td>
+    </tr>
+  </tbody>
+</table>
+      
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Propagate status from first cell to row
+        document.querySelectorAll("table.pivot tbody tr").forEach(row => {
+            const statusCell = row.querySelector(".status-icon");
+            if (statusCell) {
+                row.dataset.status = statusCell.dataset.status;
+            }
+        });
+        let showOnlyBroken = false;
+
+        document.querySelectorAll(".status-icon").forEach(icon => {
+            icon.addEventListener("click", event => {
+                event.stopPropagation(); // prevent column sort
+                showOnlyBroken = !showOnlyBroken;
+        
+                document.querySelectorAll("table.pivot tbody tr").forEach(row => {
+                    if (showOnlyBroken) {
+                        row.style.display =
+                            row.dataset.status === "dead" ? "" : "none";
+                    } else {
+                        row.style.display = "";
+                    }
+                });
+            });
+        });
+
+        document.querySelectorAll("table.pivot th").forEach((header, colIndex) => {
+            header.addEventListener("click", () => {
+                const table = header.closest("table");
+                const tbody = table.querySelector("tbody");
+                const rows = Array.from(tbody.querySelectorAll("tr"));
+                const asc = !header.classList.contains("sorted-asc");
+
+                rows.sort((a, b) => {
+                    const A = a.children[colIndex].innerText.trim();
+                    const B = b.children[colIndex].innerText.trim();
+                    const numA = parseFloat(A.replace(",", "."));
+                    const numB = parseFloat(B.replace(",", "."));
+                    if (!isNaN(numA) && !isNaN(numB)) {
+                        return asc ? numA - numB : numB - numA;
+                    }
+                    return asc ? A.localeCompare(B) : B.localeCompare(A);
+                });
+
+                table.querySelectorAll("th").forEach(th =>
+                    th.classList.remove("sorted-asc", "sorted-desc")
+                );
+                header.classList.add(asc ? "sorted-asc" : "sorted-desc");
+                rows.forEach(row => tbody.appendChild(row));
+            });
+        });
+    });
+    </script>
+    
+      <h2>Broken-link summary by Wikipedia language</h2>
+     <p>
+       Languages ranked by broken-link impact (broken + error links).
+     </p>
+    <table class="dataframe pivot">
+  <thead>
+    <tr style="text-align: right;">
+      <th>lang</th>
+      <th>total_links</th>
+      <th>broken_links</th>
+      <th>broken_archived</th>
+      <th>broken_lost</th>
+      <th>broken_pct</th>
+      <th>problem_pct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>special</td>
+      <td>72</td>
+      <td>27</td>
+      <td>26</td>
+      <td>1</td>
+      <td>37.5</td>
+      <td>37.5</td>
+    </tr>
+    <tr>
+      <td>sv</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>0</td>
+      <td>100.0</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>en</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0.0</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+    </body>
+    </html>
+    

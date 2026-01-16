@@ -1,0 +1,1064 @@
+,lang_code,lang_name,project,url,dbname,site_name,closed
+0,aa,Qafár af,,https://aa.wikipedia.org,aawiki,Wikipedia,False
+1,aa,Qafár af,,https://aa.wiktionary.org,aawiktionary,Wiktionary,False
+2,aa,Qafár af,,https://aa.wikibooks.org,aawikibooks,Wikibooks,False
+3,ab,аԥсшәа,,https://ab.wikipedia.org,abwiki,Авикипедиа,False
+4,ab,аԥсшәа,,https://ab.wiktionary.org,abwiktionary,Wiktionary,False
+5,ace,Acèh,,https://ace.wikipedia.org,acewiki,Wikipedia,False
+6,ady,адыгабзэ,,https://ady.wikipedia.org,adywiki,Википедие,False
+7,af,Afrikaans,,https://af.wikipedia.org,afwiki,Wikipedia,False
+8,af,Afrikaans,,https://af.wiktionary.org,afwiktionary,Wiktionary,False
+9,af,Afrikaans,,https://af.wikibooks.org,afwikibooks,Wikibooks,False
+10,af,Afrikaans,,https://af.wikiquote.org,afwikiquote,Wikiquote,False
+11,ak,,,https://ak.wikipedia.org,akwiki,Wikipedia,False
+12,ak,,,https://ak.wiktionary.org,akwiktionary,Wiktionary,False
+13,ak,,,https://ak.wikibooks.org,akwikibooks,Wikibooks,False
+14,alt,алтай тил,,https://alt.wikipedia.org,altwiki,Википедия,False
+15,am,አማርኛ,,https://am.wikipedia.org,amwiki,ውክፔዲያ,False
+16,am,አማርኛ,,https://am.wiktionary.org,amwiktionary,Wiktionary,False
+17,am,አማርኛ,,https://am.wikiquote.org,amwikiquote,Wikiquote,False
+18,ami,Pangcah,,https://ami.wikipedia.org,amiwiki,Wikipedia,False
+19,an,aragonés,,https://an.wikipedia.org,anwiki,Wikipedia,False
+20,an,aragonés,,https://an.wiktionary.org,anwiktionary,Wiktionary,False
+21,ang,Ænglisc,,https://ang.wikipedia.org,angwiki,Wikipǣdia,False
+22,ang,Ænglisc,,https://ang.wiktionary.org,angwiktionary,Wikiwordbōc,False
+23,ang,Ænglisc,,https://ang.wikibooks.org,angwikibooks,Wikibooks,False
+24,ang,Ænglisc,,https://ang.wikiquote.org,angwikiquote,Wikiquote,False
+25,ang,Ænglisc,,https://ang.wikisource.org,angwikisource,Wicifruma,False
+26,ann,Obolo,,https://ann.wikipedia.org,annwiki,Wìkìpedia,False
+27,anp,अंगिका,,https://anp.wikipedia.org,anpwiki,विकिपीडिया,False
+28,ar,العربية,,https://ar.wikipedia.org,arwiki,ويكيبيديا,False
+29,ar,العربية,,https://ar.wiktionary.org,arwiktionary,ويكاموس,False
+30,ar,العربية,,https://ar.wikibooks.org,arwikibooks,ويكي الكتب,False
+31,ar,العربية,,https://ar.wikinews.org,arwikinews,ويكي الأخبار,False
+32,ar,العربية,,https://ar.wikiquote.org,arwikiquote,ويكي الاقتباس,False
+33,ar,العربية,,https://ar.wikisource.org,arwikisource,ويكي مصدر,False
+34,ar,العربية,,https://ar.wikiversity.org,arwikiversity,ويكي الجامعة,False
+35,arc,ܐܪܡܝܐ,,https://arc.wikipedia.org,arcwiki,ܘܝܩܝܦܕܝܐ,False
+36,ary,الدارجة,,https://ary.wikipedia.org,arywiki,ويكيپيديا,False
+37,arz,مصرى,,https://arz.wikipedia.org,arzwiki,ويكيبيديا,False
+38,as,অসমীয়া,,https://as.wikipedia.org,aswiki,অসমীয়া ৱিকিপিডিয়া,False
+39,as,অসমীয়া,,https://as.wiktionary.org,aswiktionary,Wiktionary,False
+40,as,অসমীয়া,,https://as.wikibooks.org,aswikibooks,Wikibooks,False
+41,as,অসমীয়া,,https://as.wikiquote.org,aswikiquote,ৱিকিউদ্ধৃতি,False
+42,as,অসমীয়া,,https://as.wikisource.org,aswikisource,ৱিকিউৎস,False
+43,ast,asturianu,,https://ast.wikipedia.org,astwiki,Wikipedia,False
+44,ast,asturianu,,https://ast.wiktionary.org,astwiktionary,Wikcionariu,False
+45,ast,asturianu,,https://ast.wikibooks.org,astwikibooks,Wikibooks,False
+46,ast,asturianu,,https://ast.wikiquote.org,astwikiquote,Wikiquote,False
+47,atj,Atikamekw,,https://atj.wikipedia.org,atjwiki,Wikipetcia,False
+48,av,авар,,https://av.wikipedia.org,avwiki,Wikipedia,False
+49,av,авар,,https://av.wiktionary.org,avwiktionary,Wiktionary,False
+50,avk,Kotava,,https://avk.wikipedia.org,avkwiki,Wikipedia,False
+51,awa,अवधी,,https://awa.wikipedia.org,awawiki,विकिपीडिया,False
+52,ay,Aymar aru,,https://ay.wikipedia.org,aywiki,Wikipedia,False
+53,ay,Aymar aru,,https://ay.wiktionary.org,aywiktionary,Wiktionary,False
+54,ay,Aymar aru,,https://ay.wikibooks.org,aywikibooks,Wikibooks,False
+55,az,azərbaycanca,,https://az.wikipedia.org,azwiki,Vikipediya,False
+56,az,azərbaycanca,,https://az.wiktionary.org,azwiktionary,Vikilüğət,False
+57,az,azərbaycanca,,https://az.wikibooks.org,azwikibooks,Vikikitab,False
+58,az,azərbaycanca,,https://az.wikiquote.org,azwikiquote,Vikisitat,False
+59,az,azərbaycanca,,https://az.wikisource.org,azwikisource,Vikimənbə,False
+60,azb,تۆرکجه,,https://azb.wikipedia.org,azbwiki,ویکی‌پدیا,False
+61,ba,башҡортса,,https://ba.wikipedia.org,bawiki,Википедия,False
+62,ba,башҡортса,,https://ba.wikibooks.org,bawikibooks,Викидәреслек,False
+63,ban,Basa Bali,,https://ban.wikipedia.org,banwiki,Wikipédia,False
+64,ban,Basa Bali,,https://ban.wikisource.org,banwikisource,Wikisource,False
+65,bar,Boarisch,,https://bar.wikipedia.org,barwiki,Wikipedia,False
+66,bbc,Batak Toba,,https://bbc.wikipedia.org,bbcwiki,Wikipedia,False
+67,bcl,Bikol Central,,https://bcl.wikipedia.org,bclwiki,Wikipedia,False
+68,bcl,Bikol Central,,https://bcl.wiktionary.org,bclwiktionary,Wiksyunaryo,False
+69,bcl,Bikol Central,,https://bcl.wikiquote.org,bclwikiquote,Wikiquote,False
+70,bcl,Bikol Central,,https://bcl.wikisource.org,bclwikisource,Wikisource,False
+71,bdr,Bajau Sama,,https://bdr.wikipedia.org,bdrwiki,Wikipidia,False
+72,be,беларуская,,https://be.wikipedia.org,bewiki,Вікіпедыя,False
+73,be,беларуская,,https://be.wiktionary.org,bewiktionary,Вікіслоўнік,False
+74,be,беларуская,,https://be.wikibooks.org,bewikibooks,Вікікнігі,False
+75,be,беларуская,,https://be.wikiquote.org,bewikiquote,Wikiquote,False
+76,be,беларуская,,https://be.wikisource.org,bewikisource,Вікікрыніцы,False
+77,be-tarask,беларуская (тарашкевіца),,https://be-tarask.wikipedia.org,be_x_oldwiki,Вікіпэдыя,False
+78,bew,Betawi,,https://bew.wikipedia.org,bewwiki,Wikipédi,False
+79,bew,Betawi,,https://bew.wiktionary.org,bewwiktionary,Wikikamus,False
+80,bg,български,,https://bg.wikipedia.org,bgwiki,Уикипедия,False
+81,bg,български,,https://bg.wiktionary.org,bgwiktionary,Уикиречник,False
+82,bg,български,,https://bg.wikibooks.org,bgwikibooks,Уикикниги,False
+83,bg,български,,https://bg.wikinews.org,bgwikinews,Уикиновини,False
+84,bg,български,,https://bg.wikiquote.org,bgwikiquote,Уикицитат,False
+85,bg,български,,https://bg.wikisource.org,bgwikisource,Уикиизточник,False
+86,bh,भोजपुरी,,https://bh.wikipedia.org,bhwiki,विकिपीडिया,False
+87,bh,भोजपुरी,,https://bh.wiktionary.org,bhwiktionary,Wiktionary,False
+88,bi,Bislama,,https://bi.wikipedia.org,biwiki,Wikipedia,False
+89,bi,Bislama,,https://bi.wiktionary.org,biwiktionary,Wiktionary,False
+90,bi,Bislama,,https://bi.wikibooks.org,biwikibooks,Wikibooks,False
+91,bjn,Banjar,,https://bjn.wikipedia.org,bjnwiki,Wikipidia,False
+92,bjn,Banjar,,https://bjn.wiktionary.org,bjnwiktionary,Wiktionary,False
+93,bjn,Banjar,,https://bjn.wikiquote.org,bjnwikiquote,Wikipapadah,False
+94,blk,ပအိုဝ်ႏဘာႏသာႏ,,https://blk.wikipedia.org,blkwiki,ဝီခီပီးဒီးယား,False
+95,blk,ပအိုဝ်ႏဘာႏသာႏ,,https://blk.wiktionary.org,blkwiktionary,ဝိစ်သိဉ်နရီ,False
+96,bm,bamanankan,,https://bm.wikipedia.org,bmwiki,Wikipedia,False
+97,bm,bamanankan,,https://bm.wiktionary.org,bmwiktionary,Wiktionary,False
+98,bm,bamanankan,,https://bm.wikibooks.org,bmwikibooks,Wikibooks,False
+99,bm,bamanankan,,https://bm.wikiquote.org,bmwikiquote,Wikiquote,False
+100,bn,বাংলা,,https://bn.wikipedia.org,bnwiki,উইকিপিডিয়া,False
+101,bn,বাংলা,,https://bn.wiktionary.org,bnwiktionary,উইকিঅভিধান,False
+102,bn,বাংলা,,https://bn.wikibooks.org,bnwikibooks,উইকিবই,False
+103,bn,বাংলা,,https://bn.wikiquote.org,bnwikiquote,উইকিউক্তি,False
+104,bn,বাংলা,,https://bn.wikisource.org,bnwikisource,উইকিসংকলন,False
+105,bn,বাংলা,,https://bn.wikivoyage.org,bnwikivoyage,উইকিভ্রমণ,False
+106,bo,བོད་ཡིག,,https://bo.wikipedia.org,bowiki,Wikipedia,False
+107,bo,བོད་ཡིག,,https://bo.wiktionary.org,bowiktionary,Wiktionary,False
+108,bo,བོད་ཡིག,,https://bo.wikibooks.org,bowikibooks,Wikibooks,False
+109,bpy,বিষ্ণুপ্রিয়া মণিপুরী,,https://bpy.wikipedia.org,bpywiki,উইকিপিডিয়া,False
+110,br,brezhoneg,,https://br.wikipedia.org,brwiki,Wikipedia,False
+111,br,brezhoneg,,https://br.wiktionary.org,brwiktionary,Wikeriadur,False
+112,br,brezhoneg,,https://br.wikiquote.org,brwikiquote,Wikiarroud,False
+113,br,brezhoneg,,https://br.wikisource.org,brwikisource,Wikimammenn,False
+114,bs,bosanski,,https://bs.wikipedia.org,bswiki,Wikipedia,False
+115,bs,bosanski,,https://bs.wiktionary.org,bswiktionary,Wikirječnik,False
+116,bs,bosanski,,https://bs.wikibooks.org,bswikibooks,Wikiknjige,False
+117,bs,bosanski,,https://bs.wikinews.org,bswikinews,Wikivijesti,False
+118,bs,bosanski,,https://bs.wikiquote.org,bswikiquote,Wikicitati,False
+119,bs,bosanski,,https://bs.wikisource.org,bswikisource,Wikizvor,False
+120,btm,Batak Mandailing,,https://btm.wikipedia.org,btmwiki,Wikipedia,False
+121,btm,Batak Mandailing,,https://btm.wiktionary.org,btmwiktionary,Wikikamus,False
+122,bug,Basa Ugi,,https://bug.wikipedia.org,bugwiki,Wikipedia,False
+123,bxr,буряад,,https://bxr.wikipedia.org,bxrwiki,Wikipedia,False
+124,ca,català,,https://ca.wikipedia.org,cawiki,Viquipèdia,False
+125,ca,català,,https://ca.wiktionary.org,cawiktionary,Viccionari,False
+126,ca,català,,https://ca.wikibooks.org,cawikibooks,Viquillibres,False
+127,ca,català,,https://ca.wikinews.org,cawikinews,Viquinotícies,False
+128,ca,català,,https://ca.wikiquote.org,cawikiquote,Viquidites,False
+129,ca,català,,https://ca.wikisource.org,cawikisource,Viquitexts,False
+130,cbk-zam,Chavacano de Zamboanga,,https://cbk-zam.wikipedia.org,cbk_zamwiki,Wikipedia,False
+131,cdo,閩東語 / Mìng-dĕ̤ng-ngṳ̄,,https://cdo.wikipedia.org,cdowiki,Wikipedia,False
+132,ce,нохчийн,,https://ce.wikipedia.org,cewiki,Википеди,False
+133,ceb,Cebuano,,https://ceb.wikipedia.org,cebwiki,Wikipedia,False
+134,ch,Chamoru,,https://ch.wikipedia.org,chwiki,Wikipedia,False
+135,ch,Chamoru,,https://ch.wiktionary.org,chwiktionary,Wiktionary,False
+136,ch,Chamoru,,https://ch.wikibooks.org,chwikibooks,Wikibooks,False
+137,cho,Chahta anumpa,,https://cho.wikipedia.org,chowiki,Wikipedia,False
+138,chr,ᏣᎳᎩ,,https://chr.wikipedia.org,chrwiki,Wikipedia,False
+139,chr,ᏣᎳᎩ,,https://chr.wiktionary.org,chrwiktionary,Wiktionary,False
+140,chy,Tsetsêhestâhese,,https://chy.wikipedia.org,chywiki,Tsétsêhéstâhese Wikipedia,False
+141,ckb,کوردی,,https://ckb.wikipedia.org,ckbwiki,ویکیپیدیا,False
+142,ckb,کوردی,,https://ckb.wiktionary.org,ckbwiktionary,ویکیفەرھەنگ,False
+143,co,corsu,,https://co.wikipedia.org,cowiki,Wikipedia,False
+144,co,corsu,,https://co.wiktionary.org,cowiktionary,Wiktionary,False
+145,co,corsu,,https://co.wikibooks.org,cowikibooks,Wikibooks,False
+146,co,corsu,,https://co.wikiquote.org,cowikiquote,Wikiquote,False
+147,cr,Nēhiyawēwin / ᓀᐦᐃᔭᐍᐏᐣ,,https://cr.wikipedia.org,crwiki,Wikipedia,False
+148,cr,Nēhiyawēwin / ᓀᐦᐃᔭᐍᐏᐣ,,https://cr.wiktionary.org,crwiktionary,Wiktionary,False
+149,cr,Nēhiyawēwin / ᓀᐦᐃᔭᐍᐏᐣ,,https://cr.wikiquote.org,crwikiquote,Wikiquote,False
+150,crh,qırımtatarca,,https://crh.wikipedia.org,crhwiki,Vikipediya,False
+151,cs,čeština,,https://cs.wikipedia.org,cswiki,Wikipedie,False
+152,cs,čeština,,https://cs.wiktionary.org,cswiktionary,Wikislovník,False
+153,cs,čeština,,https://cs.wikibooks.org,cswikibooks,Wikiknihy,False
+154,cs,čeština,,https://cs.wikinews.org,cswikinews,Wikizprávy,False
+155,cs,čeština,,https://cs.wikiquote.org,cswikiquote,Wikicitáty,False
+156,cs,čeština,,https://cs.wikisource.org,cswikisource,Wikizdroje,False
+157,cs,čeština,,https://cs.wikiversity.org,cswikiversity,Wikiverzita,False
+158,cs,čeština,,https://cs.wikivoyage.org,cswikivoyage,Wikicesty,False
+159,csb,kaszëbsczi,,https://csb.wikipedia.org,csbwiki,Wikipedia,False
+160,csb,kaszëbsczi,,https://csb.wiktionary.org,csbwiktionary,Wiktionary,False
+161,cu,словѣньскъ / ⰔⰎⰑⰂⰡⰐⰠⰔⰍⰟ,,https://cu.wikipedia.org,cuwiki,Википєдїꙗ,False
+162,cv,чӑвашла,,https://cv.wikipedia.org,cvwiki,Википеди,False
+163,cv,чӑвашла,,https://cv.wikibooks.org,cvwikibooks,Wikibooks,False
+164,cy,Cymraeg,,https://cy.wikipedia.org,cywiki,Wicipedia,False
+165,cy,Cymraeg,,https://cy.wiktionary.org,cywiktionary,Wiciadur,False
+166,cy,Cymraeg,,https://cy.wikibooks.org,cywikibooks,Wicilyfrau,False
+167,cy,Cymraeg,,https://cy.wikiquote.org,cywikiquote,Wikiquote,False
+168,cy,Cymraeg,,https://cy.wikisource.org,cywikisource,Wicidestun,False
+169,da,dansk,,https://da.wikipedia.org,dawiki,Wikipedia,False
+170,da,dansk,,https://da.wiktionary.org,dawiktionary,Wiktionary,False
+171,da,dansk,,https://da.wikibooks.org,dawikibooks,Wikibooks,False
+172,da,dansk,,https://da.wikiquote.org,dawikiquote,Wikiquote,False
+173,da,dansk,,https://da.wikisource.org,dawikisource,Wikisource,False
+174,dag,dagbanli,,https://dag.wikipedia.org,dagwiki,Dagbani Wikipedia,False
+175,de,Deutsch,,https://de.wikipedia.org,dewiki,Wikipedia,False
+176,de,Deutsch,,https://de.wiktionary.org,dewiktionary,Wiktionary,False
+177,de,Deutsch,,https://de.wikibooks.org,dewikibooks,Wikibooks,False
+178,de,Deutsch,,https://de.wikinews.org,dewikinews,Wikinews,False
+179,de,Deutsch,,https://de.wikiquote.org,dewikiquote,Wikiquote,False
+180,de,Deutsch,,https://de.wikisource.org,dewikisource,Wikisource,False
+181,de,Deutsch,,https://de.wikiversity.org,dewikiversity,Wikiversity,False
+182,de,Deutsch,,https://de.wikivoyage.org,dewikivoyage,Wikivoyage,False
+183,dga,Dagaare,,https://dga.wikipedia.org,dgawiki,Wikipiideɛ,False
+184,din,Thuɔŋjäŋ,,https://din.wikipedia.org,dinwiki,Wikipedia,False
+185,diq,Zazaki,,https://diq.wikipedia.org,diqwiki,Wikipedia,False
+186,diq,Zazaki,,https://diq.wiktionary.org,diqwiktionary,Wikiqısebend,False
+187,dsb,dolnoserbski,,https://dsb.wikipedia.org,dsbwiki,Wikipedija,False
+188,dtp,Kadazandusun,,https://dtp.wikipedia.org,dtpwiki,Wikipedia,False
+189,dty,डोटेली,,https://dty.wikipedia.org,dtywiki,विकिपिडिया,False
+190,dv,ދިވެހިބަސް,,https://dv.wikipedia.org,dvwiki,ވިކިޕީޑިއާ,False
+191,dv,ދިވެހިބަސް,,https://dv.wiktionary.org,dvwiktionary,ވިކިރަދީފު,False
+192,dz,ཇོང་ཁ,,https://dz.wikipedia.org,dzwiki,Wikipedia,False
+193,dz,ཇོང་ཁ,,https://dz.wiktionary.org,dzwiktionary,Wiktionary,False
+194,ee,eʋegbe,,https://ee.wikipedia.org,eewiki,Wikipedia,False
+195,el,Ελληνικά,,https://el.wikipedia.org,elwiki,Βικιπαίδεια,False
+196,el,Ελληνικά,,https://el.wiktionary.org,elwiktionary,Βικιλεξικό,False
+197,el,Ελληνικά,,https://el.wikibooks.org,elwikibooks,Βικιβιβλία,False
+198,el,Ελληνικά,,https://el.wikinews.org,elwikinews,Βικινέα,False
+199,el,Ελληνικά,,https://el.wikiquote.org,elwikiquote,Βικιφθέγματα,False
+200,el,Ελληνικά,,https://el.wikisource.org,elwikisource,Βικιθήκη,False
+201,el,Ελληνικά,,https://el.wikiversity.org,elwikiversity,Βικιεπιστήμιο,False
+202,el,Ελληνικά,,https://el.wikivoyage.org,elwikivoyage,Βικιταξίδια,False
+203,eml,emiliàn e rumagnòl,,https://eml.wikipedia.org,emlwiki,Wikipedia,False
+204,en,English,,https://en.wikipedia.org,enwiki,Wikipedia,False
+205,en,English,,https://en.wiktionary.org,enwiktionary,Wiktionary,False
+206,en,English,,https://en.wikibooks.org,enwikibooks,Wikibooks,False
+207,en,English,,https://en.wikinews.org,enwikinews,Wikinews,False
+208,en,English,,https://en.wikiquote.org,enwikiquote,Wikiquote,False
+209,en,English,,https://en.wikisource.org,enwikisource,Wikisource,False
+210,en,English,,https://en.wikiversity.org,enwikiversity,Wikiversity,False
+211,en,English,,https://en.wikivoyage.org,enwikivoyage,Wikivoyage,False
+212,eo,Esperanto,,https://eo.wikipedia.org,eowiki,Vikipedio,False
+213,eo,Esperanto,,https://eo.wiktionary.org,eowiktionary,Vikivortaro,False
+214,eo,Esperanto,,https://eo.wikibooks.org,eowikibooks,Vikilibroj,False
+215,eo,Esperanto,,https://eo.wikinews.org,eowikinews,Vikinovaĵoj,False
+216,eo,Esperanto,,https://eo.wikiquote.org,eowikiquote,Vikicitaro,False
+217,eo,Esperanto,,https://eo.wikisource.org,eowikisource,Vikifontaro,False
+218,eo,Esperanto,,https://eo.wikivoyage.org,eowikivoyage,Vikivojaĝo,False
+219,es,español,,https://es.wikipedia.org,eswiki,Wikipedia,False
+220,es,español,,https://es.wiktionary.org,eswiktionary,Wikcionario,False
+221,es,español,,https://es.wikibooks.org,eswikibooks,Wikilibros,False
+222,es,español,,https://es.wikinews.org,eswikinews,Wikinoticias,False
+223,es,español,,https://es.wikiquote.org,eswikiquote,Wikiquote,False
+224,es,español,,https://es.wikisource.org,eswikisource,Wikisource,False
+225,es,español,,https://es.wikiversity.org,eswikiversity,Wikiversidad,False
+226,es,español,,https://es.wikivoyage.org,eswikivoyage,Wikiviajes,False
+227,et,eesti,,https://et.wikipedia.org,etwiki,Vikipeedia,False
+228,et,eesti,,https://et.wiktionary.org,etwiktionary,Vikisõnastik,False
+229,et,eesti,,https://et.wikibooks.org,etwikibooks,Vikiõpikud,False
+230,et,eesti,,https://et.wikiquote.org,etwikiquote,Vikitsitaadid,False
+231,et,eesti,,https://et.wikisource.org,etwikisource,Vikitekstid,False
+232,eu,euskara,,https://eu.wikipedia.org,euwiki,Wikipedia,False
+233,eu,euskara,,https://eu.wiktionary.org,euwiktionary,Wiktionary,False
+234,eu,euskara,,https://eu.wikibooks.org,euwikibooks,Wikibooks,False
+235,eu,euskara,,https://eu.wikiquote.org,euwikiquote,Wikiquote,False
+236,eu,euskara,,https://eu.wikisource.org,euwikisource,Wikiteka,False
+237,ext,estremeñu,,https://ext.wikipedia.org,extwiki,Güiquipeya,False
+238,fa,فارسی,,https://fa.wikipedia.org,fawiki,ویکی‌پدیا,False
+239,fa,فارسی,,https://fa.wiktionary.org,fawiktionary,ویکی‌واژه,False
+240,fa,فارسی,,https://fa.wikibooks.org,fawikibooks,ویکی‌کتاب,False
+241,fa,فارسی,,https://fa.wikinews.org,fawikinews,ویکی‌خبر,False
+242,fa,فارسی,,https://fa.wikiquote.org,fawikiquote,ویکی‌گفتاورد,False
+243,fa,فارسی,,https://fa.wikisource.org,fawikisource,ویکی‌نبشته,False
+244,fa,فارسی,,https://fa.wikivoyage.org,fawikivoyage,ویکی‌سفر,False
+245,fat,mfantse,,https://fat.wikipedia.org,fatwiki,Wikipedia,False
+246,ff,Fulfulde,,https://ff.wikipedia.org,ffwiki,Wikipedia,False
+247,fi,suomi,,https://fi.wikipedia.org,fiwiki,Wikipedia,False
+248,fi,suomi,,https://fi.wiktionary.org,fiwiktionary,Wikisanakirja,False
+249,fi,suomi,,https://fi.wikibooks.org,fiwikibooks,Wikikirjasto,False
+250,fi,suomi,,https://fi.wikinews.org,fiwikinews,Wikiuutiset,False
+251,fi,suomi,,https://fi.wikiquote.org,fiwikiquote,Wikisitaatit,False
+252,fi,suomi,,https://fi.wikisource.org,fiwikisource,Wikiaineisto,False
+253,fi,suomi,,https://fi.wikiversity.org,fiwikiversity,Wikiopisto,False
+254,fi,suomi,,https://fi.wikivoyage.org,fiwikivoyage,Wikimatkat,False
+255,fj,Na Vosa Vakaviti,,https://fj.wikipedia.org,fjwiki,Wikipedia,False
+256,fj,Na Vosa Vakaviti,,https://fj.wiktionary.org,fjwiktionary,Wiktionary,False
+257,fo,føroyskt,,https://fo.wikipedia.org,fowiki,Wikipedia,False
+258,fo,føroyskt,,https://fo.wiktionary.org,fowiktionary,Wiktionary,False
+259,fo,føroyskt,,https://fo.wikisource.org,fowikisource,Wikiheimild,False
+260,fon,fɔ̀ngbè,,https://fon.wikipedia.org,fonwiki,Wikipedya,False
+261,fr,français,,https://fr.wikipedia.org,frwiki,Wikipédia,False
+262,fr,français,,https://fr.wiktionary.org,frwiktionary,Wiktionnaire,False
+263,fr,français,,https://fr.wikibooks.org,frwikibooks,Wikilivres,False
+264,fr,français,,https://fr.wikinews.org,frwikinews,Wikinews,False
+265,fr,français,,https://fr.wikiquote.org,frwikiquote,Wikiquote,False
+266,fr,français,,https://fr.wikisource.org,frwikisource,Wikisource,False
+267,fr,français,,https://fr.wikiversity.org,frwikiversity,Wikiversité,False
+268,fr,français,,https://fr.wikivoyage.org,frwikivoyage,Wikivoyage,False
+269,frp,arpetan,,https://frp.wikipedia.org,frpwiki,Vouiquipèdia,False
+270,frr,Nordfriisk,,https://frr.wikipedia.org,frrwiki,Wikipedia,False
+271,fur,furlan,,https://fur.wikipedia.org,furwiki,Vichipedie,False
+272,fy,Frysk,,https://fy.wikipedia.org,fywiki,Wikipedy,False
+273,fy,Frysk,,https://fy.wiktionary.org,fywiktionary,Wikiwurdboek,False
+274,fy,Frysk,,https://fy.wikibooks.org,fywikibooks,Wikibooks,False
+275,ga,Gaeilge,,https://ga.wikipedia.org,gawiki,Vicipéid,False
+276,ga,Gaeilge,,https://ga.wiktionary.org,gawiktionary,Vicífhoclóir,False
+277,ga,Gaeilge,,https://ga.wikibooks.org,gawikibooks,Vicíleabhair,False
+278,ga,Gaeilge,,https://ga.wikiquote.org,gawikiquote,Vicísliocht,False
+279,gag,Gagauz,,https://gag.wikipedia.org,gagwiki,Vikipediya,False
+280,gan,贛語,,https://gan.wikipedia.org,ganwiki,維基百科,False
+281,gcr,kriyòl gwiyannen,,https://gcr.wikipedia.org,gcrwiki,Wikipédja,False
+282,gd,Gàidhlig,,https://gd.wikipedia.org,gdwiki,Uicipeid,False
+283,gd,Gàidhlig,,https://gd.wiktionary.org,gdwiktionary,Wiktionary,False
+284,gl,galego,,https://gl.wikipedia.org,glwiki,Wikipedia,False
+285,gl,galego,,https://gl.wiktionary.org,glwiktionary,Wiktionary,False
+286,gl,galego,,https://gl.wikibooks.org,glwikibooks,Wikibooks,False
+287,gl,galego,,https://gl.wikiquote.org,glwikiquote,Wikiquote,False
+288,gl,galego,,https://gl.wikisource.org,glwikisource,Wikisource,False
+289,glk,گیلکی,,https://glk.wikipedia.org,glkwiki,Wikipedia,False
+290,gn,Avañe'ẽ,,https://gn.wikipedia.org,gnwiki,Vikipetã,False
+291,gn,Avañe'ẽ,,https://gn.wiktionary.org,gnwiktionary,Wiktionary,False
+292,gn,Avañe'ẽ,,https://gn.wikibooks.org,gnwikibooks,Wikibooks,False
+293,gom,गोंयची कोंकणी / Gõychi Konknni,,https://gom.wikipedia.org,gomwiki,विकिपीडिया,False
+294,gom,गोंयची कोंकणी / Gõychi Konknni,,https://gom.wiktionary.org,gomwiktionary,Wiktionary,False
+295,gor,Bahasa Hulontalo,,https://gor.wikipedia.org,gorwiki,Wikipedia,False
+296,gor,Bahasa Hulontalo,,https://gor.wiktionary.org,gorwiktionary,Wikikamus,False
+297,gor,Bahasa Hulontalo,,https://gor.wikiquote.org,gorwikiquote,Wikilumadu,False
+298,got,𐌲𐌿𐍄𐌹𐍃𐌺,,https://got.wikipedia.org,gotwiki,Wikipedia,False
+299,got,𐌲𐌿𐍄𐌹𐍃𐌺,,https://got.wikibooks.org,gotwikibooks,Wikibooks,False
+300,gpe,Ghanaian Pidgin,,https://gpe.wikipedia.org,gpewiki,Wikipedia,False
+301,gsw,Alemannisch,,https://als.wikipedia.org,alswiki,Wikipedia,False
+302,gu,ગુજરાતી,,https://gu.wikipedia.org,guwiki,વિકિપીડિયા,False
+303,gu,ગુજરાતી,,https://gu.wiktionary.org,guwiktionary,વિકિકોશ,False
+304,gu,ગુજરાતી,,https://gu.wikibooks.org,guwikibooks,Wikibooks,False
+305,gu,ગુજરાતી,,https://gu.wikiquote.org,guwikiquote,વિકિસૂક્તિ,False
+306,gu,ગુજરાતી,,https://gu.wikisource.org,guwikisource,વિકિસ્રોત,False
+307,guc,wayuunaiki,,https://guc.wikipedia.org,gucwiki,Wikipeetia,False
+308,gur,farefare,,https://gur.wikipedia.org,gurwiki,Wikipiidiya,False
+309,guw,gungbe,,https://guw.wikipedia.org,guwwiki,Wikipedia,False
+310,guw,gungbe,,https://guw.wiktionary.org,guwwiktionary,Wiktionary,False
+311,guw,gungbe,,https://guw.wikinews.org,guwwikinews,Wikilinlin,False
+312,guw,gungbe,,https://guw.wikiquote.org,guwwikiquote,Wikiquote,False
+313,gv,Gaelg,,https://gv.wikipedia.org,gvwiki,Wikipedia,False
+314,gv,Gaelg,,https://gv.wiktionary.org,gvwiktionary,Wiktionary,False
+315,ha,Hausa,,https://ha.wikipedia.org,hawiki,Wikipedia,False
+316,ha,Hausa,,https://ha.wiktionary.org,hawiktionary,Wiktionary,False
+317,hak,客家語 / Hak-kâ-ngî,,https://hak.wikipedia.org,hakwiki,Wikipedia,False
+318,haw,Hawaiʻi,,https://haw.wikipedia.org,hawwiki,Wikipedia,False
+319,he,עברית,,https://he.wikipedia.org,hewiki,ויקיפדיה,False
+320,he,עברית,,https://he.wiktionary.org,hewiktionary,ויקימילון,False
+321,he,עברית,,https://he.wikibooks.org,hewikibooks,ויקיספר,False
+322,he,עברית,,https://he.wikinews.org,hewikinews,ויקיחדשות,False
+323,he,עברית,,https://he.wikiquote.org,hewikiquote,ויקיציטוט,False
+324,he,עברית,,https://he.wikisource.org,hewikisource,ויקיטקסט,False
+325,he,עברית,,https://he.wikivoyage.org,hewikivoyage,ויקימסע,False
+326,hi,हिन्दी,,https://hi.wikipedia.org,hiwiki,विकिपीडिया,False
+327,hi,हिन्दी,,https://hi.wiktionary.org,hiwiktionary,विक्षनरी,False
+328,hi,हिन्दी,,https://hi.wikibooks.org,hiwikibooks,विकिपुस्तक,False
+329,hi,हिन्दी,,https://hi.wikiquote.org,hiwikiquote,विकिसूक्ति,False
+330,hi,हिन्दी,,https://hi.wikisource.org,hiwikisource,विकिस्रोत,False
+331,hi,हिन्दी,,https://hi.wikiversity.org,hiwikiversity,विकिविश्वविद्यालय,False
+332,hi,हिन्दी,,https://hi.wikivoyage.org,hiwikivoyage,विकियात्रा,False
+333,hif,Fiji Hindi,,https://hif.wikipedia.org,hifwiki,Wikipedia,False
+334,hif,Fiji Hindi,,https://hif.wiktionary.org,hifwiktionary,Sabdkosh,False
+335,ho,Hiri Motu,,https://ho.wikipedia.org,howiki,Wikipedia,False
+336,hr,hrvatski,,https://hr.wikipedia.org,hrwiki,Wikipedija,False
+337,hr,hrvatski,,https://hr.wiktionary.org,hrwiktionary,Wiktionary,False
+338,hr,hrvatski,,https://hr.wikibooks.org,hrwikibooks,Wikibooks,False
+339,hr,hrvatski,,https://hr.wikiquote.org,hrwikiquote,Wikicitat,False
+340,hr,hrvatski,,https://hr.wikisource.org,hrwikisource,Wikizvor,False
+341,hsb,hornjoserbsce,,https://hsb.wikipedia.org,hsbwiki,Wikipedija,False
+342,hsb,hornjoserbsce,,https://hsb.wiktionary.org,hsbwiktionary,Wikisłownik,False
+343,ht,Kreyòl ayisyen,,https://ht.wikipedia.org,htwiki,Wikipedya,False
+344,ht,Kreyòl ayisyen,,https://ht.wikisource.org,htwikisource,Wikisòrs,False
+345,hu,magyar,,https://hu.wikipedia.org,huwiki,Wikipédia,False
+346,hu,magyar,,https://hu.wiktionary.org,huwiktionary,Wikiszótár,False
+347,hu,magyar,,https://hu.wikibooks.org,huwikibooks,Wikikönyvek,False
+348,hu,magyar,,https://hu.wikinews.org,huwikinews,Wikihírek,False
+349,hu,magyar,,https://hu.wikiquote.org,huwikiquote,Wikidézet,False
+350,hu,magyar,,https://hu.wikisource.org,huwikisource,Wikiforrás,False
+351,hy,հայերեն,,https://hy.wikipedia.org,hywiki,Վիքիպեդիա,False
+352,hy,հայերեն,,https://hy.wiktionary.org,hywiktionary,Վիքիբառարան,False
+353,hy,հայերեն,,https://hy.wikibooks.org,hywikibooks,Վիքիգրքեր,False
+354,hy,հայերեն,,https://hy.wikiquote.org,hywikiquote,Վիքիքաղվածք,False
+355,hy,հայերեն,,https://hy.wikisource.org,hywikisource,Վիքիդարան,False
+356,hyw,Արեւմտահայերէն,,https://hyw.wikipedia.org,hywwiki,Ուիքիփետիա,False
+357,hz,Otsiherero,,https://hz.wikipedia.org,hzwiki,Wikipedia,False
+358,ia,interlingua,,https://ia.wikipedia.org,iawiki,Wikipedia,False
+359,ia,interlingua,,https://ia.wiktionary.org,iawiktionary,Wiktionario,False
+360,ia,interlingua,,https://ia.wikibooks.org,iawikibooks,Wikibooks,False
+361,iba,Jaku Iban,,https://iba.wikipedia.org,ibawiki,Wikipedia,False
+362,id,Bahasa Indonesia,,https://id.wikipedia.org,idwiki,Wikipedia,False
+363,id,Bahasa Indonesia,,https://id.wiktionary.org,idwiktionary,Wikikamus,False
+364,id,Bahasa Indonesia,,https://id.wikibooks.org,idwikibooks,Wikibuku,False
+365,id,Bahasa Indonesia,,https://id.wikiquote.org,idwikiquote,Wikikutip,False
+366,id,Bahasa Indonesia,,https://id.wikisource.org,idwikisource,Wikisumber,False
+367,id,Bahasa Indonesia,,https://id.wikivoyage.org,idwikivoyage,Wikiwisata,False
+368,ie,Interlingue,,https://ie.wikipedia.org,iewiki,Wikipedia,False
+369,ie,Interlingue,,https://ie.wiktionary.org,iewiktionary,Wiktionary,False
+370,ie,Interlingue,,https://ie.wikibooks.org,iewikibooks,Wikibooks,False
+371,ig,Igbo,,https://ig.wikipedia.org,igwiki,Wikipedia,False
+372,ig,Igbo,,https://ig.wiktionary.org,igwiktionary,Wiktionary,False
+373,ig,Igbo,,https://ig.wikiquote.org,igwikiquote,Wikiquote,False
+374,igl,Igala,,https://igl.wikipedia.org,iglwiki,Wikipídiya,False
+375,ii,ꆇꉙ,,https://ii.wikipedia.org,iiwiki,Wikipedia,False
+376,ik,Iñupiatun,,https://ik.wikipedia.org,ikwiki,Wikipedia,False
+377,ik,Iñupiatun,,https://ik.wiktionary.org,ikwiktionary,Wiktionary,False
+378,ilo,Ilokano,,https://ilo.wikipedia.org,ilowiki,Wikipedia,False
+379,inh,гӀалгӀай,,https://inh.wikipedia.org,inhwiki,Википеди,False
+380,io,Ido,,https://io.wikipedia.org,iowiki,Wikipedio,False
+381,io,Ido,,https://io.wiktionary.org,iowiktionary,Wikivortaro,False
+382,is,íslenska,,https://is.wikipedia.org,iswiki,Wikipedia,False
+383,is,íslenska,,https://is.wiktionary.org,iswiktionary,Wikiorðabók,False
+384,is,íslenska,,https://is.wikibooks.org,iswikibooks,Wikibækur,False
+385,is,íslenska,,https://is.wikiquote.org,iswikiquote,Wikivitnun,False
+386,is,íslenska,,https://is.wikisource.org,iswikisource,Wikiheimild,False
+387,it,italiano,,https://it.wikipedia.org,itwiki,Wikipedia,False
+388,it,italiano,,https://it.wiktionary.org,itwiktionary,Wikizionario,False
+389,it,italiano,,https://it.wikibooks.org,itwikibooks,Wikibooks,False
+390,it,italiano,,https://it.wikinews.org,itwikinews,Wikinotizie,False
+391,it,italiano,,https://it.wikiquote.org,itwikiquote,Wikiquote,False
+392,it,italiano,,https://it.wikisource.org,itwikisource,Wikisource,False
+393,it,italiano,,https://it.wikiversity.org,itwikiversity,Wikiversità,False
+394,it,italiano,,https://it.wikivoyage.org,itwikivoyage,Wikivoyage,False
+395,iu,ᐃᓄᒃᑎᑐᑦ / inuktitut,,https://iu.wikipedia.org,iuwiki,ᐅᐃᑭᐱᑎᐊ,False
+396,iu,ᐃᓄᒃᑎᑐᑦ / inuktitut,,https://iu.wiktionary.org,iuwiktionary,Wiktionary,False
+397,ja,日本語,,https://ja.wikipedia.org,jawiki,Wikipedia,False
+398,ja,日本語,,https://ja.wiktionary.org,jawiktionary,Wiktionary,False
+399,ja,日本語,,https://ja.wikibooks.org,jawikibooks,Wikibooks,False
+400,ja,日本語,,https://ja.wikinews.org,jawikinews,ウィキニュース,False
+401,ja,日本語,,https://ja.wikiquote.org,jawikiquote,Wikiquote,False
+402,ja,日本語,,https://ja.wikisource.org,jawikisource,Wikisource,False
+403,ja,日本語,,https://ja.wikiversity.org,jawikiversity,ウィキバーシティ,False
+404,ja,日本語,,https://ja.wikivoyage.org,jawikivoyage,ウィキボヤージュ,False
+405,jam,Patois,,https://jam.wikipedia.org,jamwiki,Wikipidia,False
+406,jbo,la .lojban.,,https://jbo.wikipedia.org,jbowiki,Wikipedia,False
+407,jbo,la .lojban.,,https://jbo.wiktionary.org,jbowiktionary,Wiktionary,False
+408,jv,Jawa,,https://jv.wikipedia.org,jvwiki,Wikipédia,False
+409,jv,Jawa,,https://jv.wiktionary.org,jvwiktionary,Wikisastra,False
+410,jv,Jawa,,https://jv.wikisource.org,jvwikisource,Wikisumber,False
+411,ka,ქართული,,https://ka.wikipedia.org,kawiki,ვიკიპედია,False
+412,ka,ქართული,,https://ka.wiktionary.org,kawiktionary,ვიქსიკონი,False
+413,ka,ქართული,,https://ka.wikibooks.org,kawikibooks,ვიკიწიგნები,False
+414,ka,ქართული,,https://ka.wikiquote.org,kawikiquote,ვიკიციტატა,False
+415,ka,ქართული,,https://ka.wikisource.org,kawikisource,ვიკიწყარო,False
+416,kaa,Qaraqalpaqsha,,https://kaa.wikipedia.org,kaawiki,Wikipedia,False
+417,kaa,Qaraqalpaqsha,,https://kaa.wiktionary.org,kaawiktionary,Wikisózlik,False
+418,kab,Taqbaylit,,https://kab.wikipedia.org,kabwiki,Wikipedia,False
+419,kbd,адыгэбзэ,,https://kbd.wikipedia.org,kbdwiki,Уикипедиэ,False
+420,kbd,адыгэбзэ,,https://kbd.wiktionary.org,kbdwiktionary,Википсалъалъэ,False
+421,kbp,Kabɩyɛ,,https://kbp.wikipedia.org,kbpwiki,Wikipediya,False
+422,kcg,Tyap,,https://kcg.wikipedia.org,kcgwiki,Wikipedia,False
+423,kcg,Tyap,,https://kcg.wiktionary.org,kcgwiktionary,Swánga̱lyiatwuki,False
+424,kg,Kongo,,https://kg.wikipedia.org,kgwiki,Wikipedia,False
+425,kge,Kumoring,,https://kge.wikipedia.org,kgewiki,Wikipidiya,False
+426,ki,Gĩkũyũ,,https://ki.wikipedia.org,kiwiki,Wikipedia,False
+427,kj,Kwanyama,,https://kj.wikipedia.org,kjwiki,Wikipedia,False
+428,kk,қазақша,,https://kk.wikipedia.org,kkwiki,Уикипедия,False
+429,kk,қазақша,,https://kk.wiktionary.org,kkwiktionary,Уикисөздік,False
+430,kk,қазақша,,https://kk.wikibooks.org,kkwikibooks,Уикикітап,False
+431,kk,қазақша,,https://kk.wikiquote.org,kkwikiquote,Уикидәйек,False
+432,kl,kalaallisut,,https://kl.wikipedia.org,klwiki,Wikipedia,False
+433,kl,kalaallisut,,https://kl.wiktionary.org,klwiktionary,Wiktionary,False
+434,km,ភាសាខ្មែរ,,https://km.wikipedia.org,kmwiki,វិគីភីឌា,False
+435,km,ភាសាខ្មែរ,,https://km.wiktionary.org,kmwiktionary,Wiktionary,False
+436,km,ភាសាខ្មែរ,,https://km.wikibooks.org,kmwikibooks,Wikibooks,False
+437,kn,ಕನ್ನಡ,,https://kn.wikipedia.org,knwiki,ವಿಕಿಪೀಡಿಯ,False
+438,kn,ಕನ್ನಡ,,https://kn.wiktionary.org,knwiktionary,ವಿಕ್ಷನರಿ,False
+439,kn,ಕನ್ನಡ,,https://kn.wikibooks.org,knwikibooks,Wikibooks,False
+440,kn,ಕನ್ನಡ,,https://kn.wikiquote.org,knwikiquote,ವಿಕಿಕೋಟ್,False
+441,kn,ಕನ್ನಡ,,https://kn.wikisource.org,knwikisource,ವಿಕಿಸೋರ್ಸ್,False
+442,knc,Yerwa Kanuri,,https://knc.wikipedia.org,kncwiki,Wikipedia,False
+443,ko,한국어,,https://ko.wikipedia.org,kowiki,위키백과,False
+444,ko,한국어,,https://ko.wiktionary.org,kowiktionary,위키낱말사전,False
+445,ko,한국어,,https://ko.wikibooks.org,kowikibooks,위키책,False
+446,ko,한국어,,https://ko.wikinews.org,kowikinews,위키뉴스,False
+447,ko,한국어,,https://ko.wikiquote.org,kowikiquote,위키인용집,False
+448,ko,한국어,,https://ko.wikisource.org,kowikisource,위키문헌,False
+449,ko,한국어,,https://ko.wikiversity.org,kowikiversity,위키배움터,False
+450,koi,перем коми,,https://koi.wikipedia.org,koiwiki,Википедия,False
+451,kr,kanuri,,https://kr.wikipedia.org,krwiki,Wikipedia,False
+452,kr,kanuri,,https://kr.wikiquote.org,krwikiquote,Wikiquote,False
+453,krc,къарачай-малкъар,,https://krc.wikipedia.org,krcwiki,Википедия,False
+454,ks,کٲشُر,,https://ks.wikipedia.org,kswiki,وِکیٖپیٖڈیا,False
+455,ks,کٲشُر,,https://ks.wiktionary.org,kswiktionary,وِکیٖلۄغَتھ,False
+456,ks,کٲشُر,,https://ks.wikibooks.org,kswikibooks,Wikibooks,False
+457,ks,کٲشُر,,https://ks.wikiquote.org,kswikiquote,Wikiquote,False
+458,ksh,Ripoarisch,,https://ksh.wikipedia.org,kshwiki,Wikipedia,False
+459,ku,kurdî,,https://ku.wikipedia.org,kuwiki,Wîkîpediya,False
+460,ku,kurdî,,https://ku.wiktionary.org,kuwiktionary,Wîkîferheng,False
+461,ku,kurdî,,https://ku.wikibooks.org,kuwikibooks,Wikibooks,False
+462,ku,kurdî,,https://ku.wikiquote.org,kuwikiquote,Wikiquote,False
+463,kus,Kʋsaal,,https://kus.wikipedia.org,kuswiki,Wikipiidia,False
+464,kv,коми,,https://kv.wikipedia.org,kvwiki,Wikipedia,False
+465,kw,kernowek,,https://kw.wikipedia.org,kwwiki,Wikipedia,False
+466,kw,kernowek,,https://kw.wiktionary.org,kwwiktionary,Wiktionary,False
+467,kw,kernowek,,https://kw.wikiquote.org,kwwikiquote,Wikiquote,False
+468,ky,кыргызча,,https://ky.wikipedia.org,kywiki,Википедия,False
+469,ky,кыргызча,,https://ky.wiktionary.org,kywiktionary,Wiktionary,False
+470,ky,кыргызча,,https://ky.wikibooks.org,kywikibooks,Wikibooks,False
+471,ky,кыргызча,,https://ky.wikiquote.org,kywikiquote,Wikiquote,False
+472,la,Latina,,https://la.wikipedia.org,lawiki,Vicipaedia,False
+473,la,Latina,,https://la.wiktionary.org,lawiktionary,Victionarium,False
+474,la,Latina,,https://la.wikibooks.org,lawikibooks,Vicilibri,False
+475,la,Latina,,https://la.wikiquote.org,lawikiquote,Vicicitatio,False
+476,la,Latina,,https://la.wikisource.org,lawikisource,Wikisource,False
+477,lad,Ladino,,https://lad.wikipedia.org,ladwiki,Vikipedya,False
+478,lb,Lëtzebuergesch,,https://lb.wikipedia.org,lbwiki,Wikipedia,False
+479,lb,Lëtzebuergesch,,https://lb.wiktionary.org,lbwiktionary,Wiktionnaire,False
+480,lb,Lëtzebuergesch,,https://lb.wikibooks.org,lbwikibooks,Wikibooks,False
+481,lb,Lëtzebuergesch,,https://lb.wikiquote.org,lbwikiquote,Wikiquote,False
+482,lbe,лакку,,https://lbe.wikipedia.org,lbewiki,Википедия,False
+483,lez,лезги,,https://lez.wikipedia.org,lezwiki,Википедия,False
+484,lfn,Lingua Franca Nova,,https://lfn.wikipedia.org,lfnwiki,Vicipedia,False
+485,lg,Luganda,,https://lg.wikipedia.org,lgwiki,Wikipedia,False
+486,li,Limburgs,,https://li.wikipedia.org,liwiki,Wikipedia,False
+487,li,Limburgs,,https://li.wiktionary.org,liwiktionary,Wiktionary,False
+488,li,Limburgs,,https://li.wikibooks.org,liwikibooks,Wikibeuk,False
+489,li,Limburgs,,https://li.wikinews.org,liwikinews,Wikinuujs,False
+490,li,Limburgs,,https://li.wikiquote.org,liwikiquote,Wikiquote,False
+491,li,Limburgs,,https://li.wikisource.org,liwikisource,Wikibrónne,False
+492,lij,Ligure,,https://lij.wikipedia.org,lijwiki,Wikipedia,False
+493,lij,Ligure,,https://lij.wikisource.org,lijwikisource,Wikivivàgna,False
+494,lld,Ladin,,https://lld.wikipedia.org,lldwiki,Wikipedia,False
+495,lmo,lombard,,https://lmo.wikipedia.org,lmowiki,Wikipedia,False
+496,lmo,lombard,,https://lmo.wiktionary.org,lmowiktionary,Wiktionary,False
+497,ln,lingála,,https://ln.wikipedia.org,lnwiki,Wikipedia,False
+498,ln,lingála,,https://ln.wiktionary.org,lnwiktionary,Wiktionary,False
+499,ln,lingála,,https://ln.wikibooks.org,lnwikibooks,Wikibooks,False
+500,lo,ລາວ,,https://lo.wikipedia.org,lowiki,ວິກິພີເດຍ,False
+501,lo,ລາວ,,https://lo.wiktionary.org,lowiktionary,Wiktionary,False
+502,lrc,لۊری شومالی,,https://lrc.wikipedia.org,lrcwiki,ڤیکیپئدیا,False
+503,lt,lietuvių,,https://lt.wikipedia.org,ltwiki,Vikipedija,False
+504,lt,lietuvių,,https://lt.wiktionary.org,ltwiktionary,Vikižodynas,False
+505,lt,lietuvių,,https://lt.wikibooks.org,ltwikibooks,Wikibooks,False
+506,lt,lietuvių,,https://lt.wikiquote.org,ltwikiquote,Wikiquote,False
+507,lt,lietuvių,,https://lt.wikisource.org,ltwikisource,Vikišaltiniai,False
+508,ltg,latgaļu,,https://ltg.wikipedia.org,ltgwiki,Vikipedeja,False
+509,lv,latviešu,,https://lv.wikipedia.org,lvwiki,Vikipēdija,False
+510,lv,latviešu,,https://lv.wiktionary.org,lvwiktionary,Wiktionary,False
+511,lv,latviešu,,https://lv.wikibooks.org,lvwikibooks,Wikibooks,False
+512,lzh,文言,,https://zh-classical.wikipedia.org,zh_classicalwiki,維基大典,False
+513,mad,Madhurâ,,https://mad.wikipedia.org,madwiki,Wikipedia,False
+514,mad,Madhurâ,,https://mad.wiktionary.org,madwiktionary,Wikikamus,False
+515,mad,Madhurâ,,https://mad.wikisource.org,madwikisource,Wikigherbhung,False
+516,mai,मैथिली,,https://mai.wikipedia.org,maiwiki,विकिपिडिया,False
+517,map-bms,Basa Banyumasan,,https://map-bms.wikipedia.org,map_bmswiki,Wikipedia,False
+518,mdf,мокшень,,https://mdf.wikipedia.org,mdfwiki,Википедиесь,False
+519,mg,Malagasy,,https://mg.wikipedia.org,mgwiki,Wikipedia,False
+520,mg,Malagasy,,https://mg.wiktionary.org,mgwiktionary,Wiktionary,False
+521,mg,Malagasy,,https://mg.wikibooks.org,mgwikibooks,Wikibooks,False
+522,mh,Ebon,,https://mh.wikipedia.org,mhwiki,Wikipedia,False
+523,mh,Ebon,,https://mh.wiktionary.org,mhwiktionary,Wiktionary,False
+524,mhr,олык марий,,https://mhr.wikipedia.org,mhrwiki,Википедий,False
+525,mi,Māori,,https://mi.wikipedia.org,miwiki,Wikipedia,False
+526,mi,Māori,,https://mi.wiktionary.org,miwiktionary,Wiktionary,False
+527,mi,Māori,,https://mi.wikibooks.org,miwikibooks,Wikibooks,False
+528,min,Minangkabau,,https://min.wikipedia.org,minwiki,Wikipedia,False
+529,min,Minangkabau,,https://min.wiktionary.org,minwiktionary,Wikikato,False
+530,min,Minangkabau,,https://min.wikibooks.org,minwikibooks,Wikibuku,False
+531,min,Minangkabau,,https://min.wikisource.org,minwikisource,Wikibasurek,False
+532,mk,македонски,,https://mk.wikipedia.org,mkwiki,Википедија,False
+533,mk,македонски,,https://mk.wiktionary.org,mkwiktionary,Викиречник,False
+534,mk,македонски,,https://mk.wikibooks.org,mkwikibooks,Викикниги,False
+535,mk,македонски,,https://mk.wikisource.org,mkwikisource,Wikisource,False
+536,ml,മലയാളം,,https://ml.wikipedia.org,mlwiki,വിക്കിപീഡിയ,False
+537,ml,മലയാളം,,https://ml.wiktionary.org,mlwiktionary,വിക്കിനിഘണ്ടു,False
+538,ml,മലയാളം,,https://ml.wikibooks.org,mlwikibooks,വിക്കിപാഠശാല,False
+539,ml,മലയാളം,,https://ml.wikiquote.org,mlwikiquote,വിക്കിചൊല്ലുകൾ,False
+540,ml,മലയാളം,,https://ml.wikisource.org,mlwikisource,വിക്കിഗ്രന്ഥശാല,False
+541,mn,монгол,,https://mn.wikipedia.org,mnwiki,Википедиа,False
+542,mn,монгол,,https://mn.wiktionary.org,mnwiktionary,Викитоль,False
+543,mn,монгол,,https://mn.wikibooks.org,mnwikibooks,Wikibooks,False
+544,mni,ꯃꯤꯇꯩ ꯂꯣꯟ,,https://mni.wikipedia.org,mniwiki,ꯋꯤꯀꯤꯄꯦꯗꯤꯌꯥ,False
+545,mni,ꯃꯤꯇꯩ ꯂꯣꯟ,,https://mni.wiktionary.org,mniwiktionary,ꯋꯤꯛꯁꯟꯅꯔꯤ,False
+546,mnw,ဘာသာမန်,,https://mnw.wikipedia.org,mnwwiki,ဝဳကဳပဳဒဳယာ,False
+547,mnw,ဘာသာမန်,,https://mnw.wiktionary.org,mnwwiktionary,ဝိက်ရှေန်နရဳ,False
+548,mos,moore,,https://mos.wikipedia.org,moswiki,Wikipidiya,False
+549,mr,मराठी,,https://mr.wikipedia.org,mrwiki,विकिपीडिया,False
+550,mr,मराठी,,https://mr.wiktionary.org,mrwiktionary,Wiktionary,False
+551,mr,मराठी,,https://mr.wikibooks.org,mrwikibooks,विकिबुक्स,False
+552,mr,मराठी,,https://mr.wikiquote.org,mrwikiquote,Wikiquote,False
+553,mr,मराठी,,https://mr.wikisource.org,mrwikisource,विकिस्रोत,False
+554,mrj,кырык мары,,https://mrj.wikipedia.org,mrjwiki,Википеди,False
+555,ms,Bahasa Melayu,,https://ms.wikipedia.org,mswiki,Wikipedia,False
+556,ms,Bahasa Melayu,,https://ms.wiktionary.org,mswiktionary,Wikikamus,False
+557,ms,Bahasa Melayu,,https://ms.wikibooks.org,mswikibooks,Wikibuku,False
+558,ms,Bahasa Melayu,,https://ms.wikiquote.org,mswikiquote,Wikipetik,False
+559,ms,Bahasa Melayu,,https://ms.wikisource.org,mswikisource,Wikisumber,False
+560,mt,Malti,,https://mt.wikipedia.org,mtwiki,Wikipedija,False
+561,mt,Malti,,https://mt.wiktionary.org,mtwiktionary,Wikizzjunarju,False
+562,mus,Mvskoke,,https://mus.wikipedia.org,muswiki,Wikipedia,False
+563,mwl,Mirandés,,https://mwl.wikipedia.org,mwlwiki,Biquipédia,False
+564,my,မြန်မာဘာသာ,,https://my.wikipedia.org,mywiki,ဝီကီပီးဒီးယား,False
+565,my,မြန်မာဘာသာ,,https://my.wiktionary.org,mywiktionary,ဝစ်ရှင်နရီ,False
+566,my,မြန်မာဘာသာ,,https://my.wikibooks.org,mywikibooks,Wikibooks,False
+567,my,မြန်မာဘာသာ,,https://my.wikisource.org,mywikisource,ဝီကီရင်းမြစ်,False
+568,myv,эрзянь,,https://myv.wikipedia.org,myvwiki,Википедиясь,False
+569,mzn,مازِرونی,,https://mzn.wikipedia.org,mznwiki,ویکی‌پدیا,False
+570,na,Dorerin Naoero,,https://na.wikipedia.org,nawiki,Wikipedia,False
+571,na,Dorerin Naoero,,https://na.wiktionary.org,nawiktionary,Wiktionary,False
+572,na,Dorerin Naoero,,https://na.wikibooks.org,nawikibooks,Wikibooks,False
+573,na,Dorerin Naoero,,https://na.wikiquote.org,nawikiquote,Wikiquote,False
+574,nah,Nāhuatl,,https://nah.wikipedia.org,nahwiki,Huiquipedia,False
+575,nah,Nāhuatl,,https://nah.wiktionary.org,nahwiktionary,Wiktionary,False
+576,nah,Nāhuatl,,https://nah.wikibooks.org,nahwikibooks,Wikibooks,False
+577,nan,閩南語 / Bân-lâm-gí,,https://zh-min-nan.wikipedia.org,zh_min_nanwiki,Wikipedia,False
+578,nan,閩南語 / Bân-lâm-gí,,https://zh-min-nan.wiktionary.org,zh_min_nanwiktionary,Wiktionary,False
+579,nan,閩南語 / Bân-lâm-gí,,https://zh-min-nan.wikibooks.org,zh_min_nanwikibooks,Wikibooks,False
+580,nan,閩南語 / Bân-lâm-gí,,https://zh-min-nan.wikiquote.org,zh_min_nanwikiquote,Wikiquote,False
+581,nan,閩南語 / Bân-lâm-gí,,https://zh-min-nan.wikisource.org,zh_min_nanwikisource,Wiki Tô·-su-kóan,False
+582,nap,Napulitano,,https://nap.wikipedia.org,napwiki,Wikipedia,False
+583,nap,Napulitano,,https://nap.wikisource.org,napwikisource,Wikisource,False
+584,nds,Plattdüütsch,,https://nds.wikipedia.org,ndswiki,Wikipedia,False
+585,nds,Plattdüütsch,,https://nds.wiktionary.org,ndswiktionary,Wiktionary,False
+586,nds,Plattdüütsch,,https://nds.wikibooks.org,ndswikibooks,Wikibooks,False
+587,nds,Plattdüütsch,,https://nds.wikiquote.org,ndswikiquote,Wikiquote,False
+588,nds-nl,Nedersaksies,,https://nds-nl.wikipedia.org,nds_nlwiki,Wikipedia,False
+589,ne,नेपाली,,https://ne.wikipedia.org,newiki,विकिपिडिया,False
+590,ne,नेपाली,,https://ne.wiktionary.org,newiktionary,Wiktionary,False
+591,ne,नेपाली,,https://ne.wikibooks.org,newikibooks,विकिपुस्तक,False
+592,new,नेपाल भाषा,,https://new.wikipedia.org,newwiki,Wikipedia,False
+593,ng,Oshiwambo,,https://ng.wikipedia.org,ngwiki,Wikipedia,False
+594,nia,Li Niha,,https://nia.wikipedia.org,niawiki,Wikipedia,False
+595,nia,Li Niha,,https://nia.wiktionary.org,niawiktionary,Wikikamus,False
+596,nl,Nederlands,,https://nl.wikipedia.org,nlwiki,Wikipedia,False
+597,nl,Nederlands,,https://nl.wiktionary.org,nlwiktionary,WikiWoordenboek,False
+598,nl,Nederlands,,https://nl.wikibooks.org,nlwikibooks,Wikibooks,False
+599,nl,Nederlands,,https://nl.wikinews.org,nlwikinews,Wikinieuws,False
+600,nl,Nederlands,,https://nl.wikiquote.org,nlwikiquote,Wikiquote,False
+601,nl,Nederlands,,https://nl.wikisource.org,nlwikisource,Wikisource,False
+602,nl,Nederlands,,https://nl.wikivoyage.org,nlwikivoyage,Wikivoyage,False
+603,nn,norsk nynorsk,,https://nn.wikipedia.org,nnwiki,Wikipedia,False
+604,nn,norsk nynorsk,,https://nn.wiktionary.org,nnwiktionary,Wiktionary,False
+605,nn,norsk nynorsk,,https://nn.wikiquote.org,nnwikiquote,Wikiquote,False
+606,no,norsk,,https://no.wikipedia.org,nowiki,Wikipedia,False
+607,no,norsk,,https://no.wiktionary.org,nowiktionary,Wiktionary,False
+608,no,norsk,,https://no.wikibooks.org,nowikibooks,Wikibøker,False
+609,no,norsk,,https://no.wikinews.org,nowikinews,Wikinytt,False
+610,no,norsk,,https://no.wikiquote.org,nowikiquote,Wikiquote,False
+611,no,norsk,,https://no.wikisource.org,nowikisource,Wikikilden,False
+612,nov,Novial,,https://nov.wikipedia.org,novwiki,Wikipedia,False
+613,nqo,ߒߞߏ,,https://nqo.wikipedia.org,nqowiki,ߥߞߌߔߘߋߞߎ,False
+614,nr,isiNdebele seSewula,,https://nr.wikipedia.org,nrwiki,Wikiphidiya,False
+615,nrm,Nouormand,,https://nrm.wikipedia.org,nrmwiki,Wikipedia,False
+616,nso,Sesotho sa Leboa,,https://nso.wikipedia.org,nsowiki,Wikipedia,False
+617,nup,Nupe,,https://nup.wikipedia.org,nupwiki,Wikipedia,False
+618,nv,Diné bizaad,,https://nv.wikipedia.org,nvwiki,Wikipedia,False
+619,ny,Chi-Chewa,,https://ny.wikipedia.org,nywiki,Wikipedia,False
+620,oc,occitan,,https://oc.wikipedia.org,ocwiki,Wikipèdia,False
+621,oc,occitan,,https://oc.wiktionary.org,ocwiktionary,Wikiccionari,False
+622,oc,occitan,,https://oc.wikibooks.org,ocwikibooks,Wikilibres,False
+623,olo,livvinkarjala,,https://olo.wikipedia.org,olowiki,Wikipedii,False
+624,om,Oromoo,,https://om.wikipedia.org,omwiki,Wikipedia,False
+625,om,Oromoo,,https://om.wiktionary.org,omwiktionary,Wiktionary,False
+626,or,ଓଡ଼ିଆ,,https://or.wikipedia.org,orwiki,ଉଇକିପିଡ଼ିଆ,False
+627,or,ଓଡ଼ିଆ,,https://or.wiktionary.org,orwiktionary,ଉଇକିଅଭିଧାନ,False
+628,or,ଓଡ଼ିଆ,,https://or.wikisource.org,orwikisource,ଉଇକିପାଠାଗାର,False
+629,os,ирон,,https://os.wikipedia.org,oswiki,Википеди,False
+630,pa,ਪੰਜਾਬੀ,,https://pa.wikipedia.org,pawiki,ਵਿਕੀਪੀਡੀਆ,False
+631,pa,ਪੰਜਾਬੀ,,https://pa.wiktionary.org,pawiktionary,Wiktionary,False
+632,pa,ਪੰਜਾਬੀ,,https://pa.wikibooks.org,pawikibooks,Wikibooks,False
+633,pa,ਪੰਜਾਬੀ,,https://pa.wikisource.org,pawikisource,ਵਿਕੀਸਰੋਤ,False
+634,pag,Pangasinan,,https://pag.wikipedia.org,pagwiki,Wikipedia,False
+635,pam,Kapampangan,,https://pam.wikipedia.org,pamwiki,Wikipedia,False
+636,pap,Papiamentu,,https://pap.wikipedia.org,papwiki,Wikipedia,False
+637,pcd,Picard,,https://pcd.wikipedia.org,pcdwiki,Wikipedia,False
+638,pcm,Naijá,,https://pcm.wikipedia.org,pcmwiki,Wikipedia,False
+639,pcm,Naijá,,https://pcm.wikiquote.org,pcmwikiquote,Wikitok,False
+640,pdc,Deitsch,,https://pdc.wikipedia.org,pdcwiki,Wikipedia,False
+641,pfl,Pälzisch,,https://pfl.wikipedia.org,pflwiki,Wikipedia,False
+642,pi,पालि,,https://pi.wikipedia.org,piwiki,Wikipedia,False
+643,pi,पालि,,https://pi.wiktionary.org,piwiktionary,Wiktionary,False
+644,pih,Norfuk / Pitkern,,https://pih.wikipedia.org,pihwiki,Wikipedia,False
+645,pl,polski,,https://pl.wikipedia.org,plwiki,Wikipedia,False
+646,pl,polski,,https://pl.wiktionary.org,plwiktionary,Wikisłownik,False
+647,pl,polski,,https://pl.wikibooks.org,plwikibooks,Wikibooks,False
+648,pl,polski,,https://pl.wikinews.org,plwikinews,Wikinews,False
+649,pl,polski,,https://pl.wikiquote.org,plwikiquote,Wikicytaty,False
+650,pl,polski,,https://pl.wikisource.org,plwikisource,Wikiźródła,False
+651,pl,polski,,https://pl.wikivoyage.org,plwikivoyage,Wikipodróże,False
+652,pms,Piemontèis,,https://pms.wikipedia.org,pmswiki,Wikipedia,False
+653,pms,Piemontèis,,https://pms.wikisource.org,pmswikisource,Wikisource,False
+654,pnb,پنجابی,,https://pnb.wikipedia.org,pnbwiki,وکیپیڈیا,False
+655,pnb,پنجابی,,https://pnb.wiktionary.org,pnbwiktionary,وکشنری,False
+656,pnt,Ποντιακά,,https://pnt.wikipedia.org,pntwiki,Βικιπαίδεια,False
+657,ps,پښتو,,https://ps.wikipedia.org,pswiki,ويکيپېډيا,False
+658,ps,پښتو,,https://ps.wiktionary.org,pswiktionary,ويکيسيند,False
+659,ps,پښتو,,https://ps.wikibooks.org,pswikibooks,ويکيتابونه,False
+660,ps,پښتو,,https://ps.wikivoyage.org,pswikivoyage,ويکيسفر,False
+661,pt,português,,https://pt.wikipedia.org,ptwiki,Wikipédia,False
+662,pt,português,,https://pt.wiktionary.org,ptwiktionary,Wikcionário,False
+663,pt,português,,https://pt.wikibooks.org,ptwikibooks,Wikilivros,False
+664,pt,português,,https://pt.wikinews.org,ptwikinews,Wikinotícias,False
+665,pt,português,,https://pt.wikiquote.org,ptwikiquote,Wikiquote,False
+666,pt,português,,https://pt.wikisource.org,ptwikisource,Wikisource,False
+667,pt,português,,https://pt.wikiversity.org,ptwikiversity,Wikiversidade,False
+668,pt,português,,https://pt.wikivoyage.org,ptwikivoyage,Wikivoyage,False
+669,pwn,pinayuanan,,https://pwn.wikipedia.org,pwnwiki,Wikipedia,False
+670,qu,Runa Simi,,https://qu.wikipedia.org,quwiki,Wikipedia,False
+671,qu,Runa Simi,,https://qu.wiktionary.org,quwiktionary,Wiktionary,False
+672,qu,Runa Simi,,https://qu.wikibooks.org,quwikibooks,Wikibooks,False
+673,qu,Runa Simi,,https://qu.wikiquote.org,quwikiquote,Wikiquote,False
+674,rki,ရခိုင်,,https://rki.wikipedia.org,rkiwiki,ဝီကီးပီးဒီးယား,False
+675,rm,rumantsch,,https://rm.wikipedia.org,rmwiki,Wikipedia,False
+676,rm,rumantsch,,https://rm.wiktionary.org,rmwiktionary,Wiktionary,False
+677,rm,rumantsch,,https://rm.wikibooks.org,rmwikibooks,Wikibooks,False
+678,rmy,romani čhib,,https://rmy.wikipedia.org,rmywiki,Vikipidiya,False
+679,rn,ikirundi,,https://rn.wikipedia.org,rnwiki,Wikipedia,False
+680,rn,ikirundi,,https://rn.wiktionary.org,rnwiktionary,Wiktionary,False
+681,ro,română,,https://ro.wikipedia.org,rowiki,Wikipedia,False
+682,ro,română,,https://ro.wiktionary.org,rowiktionary,Wikționar,False
+683,ro,română,,https://ro.wikibooks.org,rowikibooks,Wikimanuale,False
+684,ro,română,,https://ro.wikinews.org,rowikinews,Wikiștiri,False
+685,ro,română,,https://ro.wikiquote.org,rowikiquote,Wikicitat,False
+686,ro,română,,https://ro.wikisource.org,rowikisource,Wikisource,False
+687,ro,română,,https://ro.wikivoyage.org,rowikivoyage,Wikivoyage,False
+688,roa-tara,tarandíne,,https://roa-tara.wikipedia.org,roa_tarawiki,Wikipedia,False
+689,rsk,руски,,https://rsk.wikipedia.org,rskwiki,Википедия,False
+690,ru,русский,,https://ru.wikipedia.org,ruwiki,Википедия,False
+691,ru,русский,,https://ru.wiktionary.org,ruwiktionary,Викисловарь,False
+692,ru,русский,,https://ru.wikibooks.org,ruwikibooks,Викиучебник,False
+693,ru,русский,,https://ru.wikinews.org,ruwikinews,Викиновости,False
+694,ru,русский,,https://ru.wikiquote.org,ruwikiquote,Викицитатник,False
+695,ru,русский,,https://ru.wikisource.org,ruwikisource,Викитека,False
+696,ru,русский,,https://ru.wikiversity.org,ruwikiversity,Викиверситет,False
+697,ru,русский,,https://ru.wikivoyage.org,ruwikivoyage,Wikivoyage,False
+698,rue,русиньскый,,https://rue.wikipedia.org,ruewiki,Вікіпедія,False
+699,rup,armãneashti,,https://roa-rup.wikipedia.org,roa_rupwiki,Wikipedia,False
+700,rup,armãneashti,,https://roa-rup.wiktionary.org,roa_rupwiktionary,Wiktionary,False
+701,rw,Ikinyarwanda,,https://rw.wikipedia.org,rwwiki,Wikipedia,False
+702,rw,Ikinyarwanda,,https://rw.wiktionary.org,rwwiktionary,Wiktionary,False
+703,sa,संस्कृतम्,,https://sa.wikipedia.org,sawiki,विकिपीडिया,False
+704,sa,संस्कृतम्,,https://sa.wiktionary.org,sawiktionary,विकिशब्दकोशः,False
+705,sa,संस्कृतम्,,https://sa.wikibooks.org,sawikibooks,विकिपुस्तकानि,False
+706,sa,संस्कृतम्,,https://sa.wikiquote.org,sawikiquote,विकिसूक्तिः,False
+707,sa,संस्कृतम्,,https://sa.wikisource.org,sawikisource,विकिस्रोतः,False
+708,sah,саха тыла,,https://sah.wikipedia.org,sahwiki,Бикипиэдьийэ,False
+709,sah,саха тыла,,https://sah.wikiquote.org,sahwikiquote,Биики_Домох,False
+710,sah,саха тыла,,https://sah.wikisource.org,sahwikisource,Бикитиэкэ,False
+711,sat,ᱥᱟᱱᱛᱟᱲᱤ,,https://sat.wikipedia.org,satwiki,ᱣᱤᱠᱤᱯᱤᱰᱤᱭᱟ,False
+712,sat,ᱥᱟᱱᱛᱟᱲᱤ,,https://sat.wiktionary.org,satwiktionary,ᱣᱤᱠᱤ ᱟᱹᱲᱟᱹ ᱢᱩᱨᱟᱹᱭ,False
+713,sc,sardu,,https://sc.wikipedia.org,scwiki,Wikipedia,False
+714,sc,sardu,,https://sc.wiktionary.org,scwiktionary,Wiktionary,False
+715,scn,sicilianu,,https://scn.wikipedia.org,scnwiki,Wikipedia,False
+716,scn,sicilianu,,https://scn.wiktionary.org,scnwiktionary,Wikizziunariu,False
+717,sco,Scots,,https://sco.wikipedia.org,scowiki,Wikipedia,False
+718,sd,سنڌي,,https://sd.wikipedia.org,sdwiki,وڪيپيڊيا,False
+719,sd,سنڌي,,https://sd.wiktionary.org,sdwiktionary,Wiktionary,False
+720,sd,سنڌي,,https://sd.wikinews.org,sdwikinews,Wikinews,False
+721,se,davvisámegiella,,https://se.wikipedia.org,sewiki,Wikipedia,False
+722,se,davvisámegiella,,https://se.wikibooks.org,sewikibooks,Wikibooks,False
+723,sg,Sängö,,https://sg.wikipedia.org,sgwiki,Wikipedia,False
+724,sg,Sängö,,https://sg.wiktionary.org,sgwiktionary,Wiktionary,False
+725,sgs,žemaitėška,,https://bat-smg.wikipedia.org,bat_smgwiki,Wikipedia,False
+726,sh,srpskohrvatski / српскохрватски,,https://sh.wikipedia.org,shwiki,Wikipedija,False
+727,sh,srpskohrvatski / српскохрватски,,https://sh.wiktionary.org,shwiktionary,Wikirječnik,False
+728,shi,Taclḥit,,https://shi.wikipedia.org,shiwiki,Wikipedia,False
+729,shn,တႆး,,https://shn.wikipedia.org,shnwiki,ဝီႇၶီႇၽီးတီးယႃး,False
+730,shn,တႆး,,https://shn.wiktionary.org,shnwiktionary,ဝိၵ်ႇသျိၼ်ႇၼရီႇ,False
+731,shn,တႆး,,https://shn.wikibooks.org,shnwikibooks,ဝီႇၶီႇပပ်ႉ,False
+732,shn,တႆး,,https://shn.wikinews.org,shnwikinews,ဝီႇၶီႇၶၢဝ်ႇ,False
+733,shn,တႆး,,https://shn.wikivoyage.org,shnwikivoyage,ဝီႇၶီႇဝွႆးဢဵတ်ႇꩡ်,False
+734,shy,tacawit,,https://shy.wiktionary.org,shywiktionary,Wikasegzawal,False
+735,si,සිංහල,,https://si.wikipedia.org,siwiki,විකිපීඩියා,False
+736,si,සිංහල,,https://si.wiktionary.org,siwiktionary,Wiktionary,False
+737,si,සිංහල,,https://si.wikibooks.org,siwikibooks,Wikibooks,False
+738,simple,Simple English,,https://simple.wikipedia.org,simplewiki,Wikipedia,False
+739,simple,Simple English,,https://simple.wiktionary.org,simplewiktionary,Wiktionary,False
+740,simple,Simple English,,https://simple.wikibooks.org,simplewikibooks,Wikibooks,False
+741,simple,Simple English,,https://simple.wikiquote.org,simplewikiquote,Wikiquote,False
+742,sk,slovenčina,,https://sk.wikipedia.org,skwiki,Wikipédia,False
+743,sk,slovenčina,,https://sk.wiktionary.org,skwiktionary,Wikislovník,False
+744,sk,slovenčina,,https://sk.wikibooks.org,skwikibooks,Wikiknihy,False
+745,sk,slovenčina,,https://sk.wikiquote.org,skwikiquote,Wikicitáty,False
+746,sk,slovenčina,,https://sk.wikisource.org,skwikisource,Wikizdroje,False
+747,skr,سرائیکی,,https://skr.wikipedia.org,skrwiki,وکیپیڈیا,False
+748,skr,سرائیکی,,https://skr.wiktionary.org,skrwiktionary,وکشنری,False
+749,sl,slovenščina,,https://sl.wikipedia.org,slwiki,Wikipedija,False
+750,sl,slovenščina,,https://sl.wiktionary.org,slwiktionary,Wikislovar,False
+751,sl,slovenščina,,https://sl.wikibooks.org,slwikibooks,Wikiknjige,False
+752,sl,slovenščina,,https://sl.wikiquote.org,slwikiquote,Wikinavedek,False
+753,sl,slovenščina,,https://sl.wikisource.org,slwikisource,Wikivir,False
+754,sl,slovenščina,,https://sl.wikiversity.org,slwikiversity,Wikiverza,False
+755,sm,Gagana Samoa,,https://sm.wikipedia.org,smwiki,Wikipedia,False
+756,sm,Gagana Samoa,,https://sm.wiktionary.org,smwiktionary,Wiktionary,False
+757,smn,anarâškielâ,,https://smn.wikipedia.org,smnwiki,Wikipedia,False
+758,sn,chiShona,,https://sn.wikipedia.org,snwiki,Wikipedia,False
+759,sn,chiShona,,https://sn.wiktionary.org,snwiktionary,Wiktionary,False
+760,so,Soomaaliga,,https://so.wikipedia.org,sowiki,Wikipedia,False
+761,so,Soomaaliga,,https://so.wiktionary.org,sowiktionary,Wiktionary,False
+762,sq,shqip,,https://sq.wikipedia.org,sqwiki,Wikipedia,False
+763,sq,shqip,,https://sq.wiktionary.org,sqwiktionary,Wiktionary,False
+764,sq,shqip,,https://sq.wikibooks.org,sqwikibooks,Wikibooks,False
+765,sq,shqip,,https://sq.wikinews.org,sqwikinews,Wikilajme,False
+766,sq,shqip,,https://sq.wikiquote.org,sqwikiquote,Wikiquote,False
+767,sr,српски / srpski,,https://sr.wikipedia.org,srwiki,Википедија,False
+768,sr,српски / srpski,,https://sr.wiktionary.org,srwiktionary,Викиречник,False
+769,sr,српски / srpski,,https://sr.wikibooks.org,srwikibooks,Викикњиге,False
+770,sr,српски / srpski,,https://sr.wikinews.org,srwikinews,Викиновости,False
+771,sr,српски / srpski,,https://sr.wikiquote.org,srwikiquote,Викицитат,False
+772,sr,српски / srpski,,https://sr.wikisource.org,srwikisource,Викизворник,False
+773,srn,Sranantongo,,https://srn.wikipedia.org,srnwiki,Wikipedia,False
+774,ss,SiSwati,,https://ss.wikipedia.org,sswiki,Wikipedia,False
+775,ss,SiSwati,,https://ss.wiktionary.org,sswiktionary,Wiktionary,False
+776,st,Sesotho,,https://st.wikipedia.org,stwiki,Wikipedia,False
+777,st,Sesotho,,https://st.wiktionary.org,stwiktionary,Wiktionary,False
+778,stq,Seeltersk,,https://stq.wikipedia.org,stqwiki,Wikipedia,False
+779,su,Sunda,,https://su.wikipedia.org,suwiki,Wikipedia,False
+780,su,Sunda,,https://su.wiktionary.org,suwiktionary,Wiktionary,False
+781,su,Sunda,,https://su.wikibooks.org,suwikibooks,Wikibooks,False
+782,su,Sunda,,https://su.wikiquote.org,suwikiquote,Wikiquote,False
+783,su,Sunda,,https://su.wikisource.org,suwikisource,Wikipabukon,False
+784,sv,svenska,,https://sv.wikipedia.org,svwiki,Wikipedia,False
+785,sv,svenska,,https://sv.wiktionary.org,svwiktionary,Wiktionary,False
+786,sv,svenska,,https://sv.wikibooks.org,svwikibooks,Wikibooks,False
+787,sv,svenska,,https://sv.wikinews.org,svwikinews,Wikinews,False
+788,sv,svenska,,https://sv.wikiquote.org,svwikiquote,Wikiquote,False
+789,sv,svenska,,https://sv.wikisource.org,svwikisource,Wikisource,False
+790,sv,svenska,,https://sv.wikiversity.org,svwikiversity,Wikiversity,False
+791,sv,svenska,,https://sv.wikivoyage.org,svwikivoyage,Wikivoyage,False
+792,sw,Kiswahili,,https://sw.wikipedia.org,swwiki,Wikipedia,False
+793,sw,Kiswahili,,https://sw.wiktionary.org,swwiktionary,Wiktionary,False
+794,sw,Kiswahili,,https://sw.wikibooks.org,swwikibooks,Wikibooks,False
+795,syl,ꠍꠤꠟꠐꠤ,,https://syl.wikipedia.org,sylwiki,ꠃꠁꠇꠤꠙꠤꠒꠤꠀ,False
+796,szl,ślůnski,,https://szl.wikipedia.org,szlwiki,Wikipedia,False
+797,szy,Sakizaya,,https://szy.wikipedia.org,szywiki,Wikipitiya,False
+798,ta,தமிழ்,,https://ta.wikipedia.org,tawiki,விக்கிப்பீடியா,False
+799,ta,தமிழ்,,https://ta.wiktionary.org,tawiktionary,விக்சனரி,False
+800,ta,தமிழ்,,https://ta.wikibooks.org,tawikibooks,விக்கிநூல்கள்,False
+801,ta,தமிழ்,,https://ta.wikinews.org,tawikinews,விக்கிசெய்தி,False
+802,ta,தமிழ்,,https://ta.wikiquote.org,tawikiquote,விக்கிமேற்கோள்,False
+803,ta,தமிழ்,,https://ta.wikisource.org,tawikisource,விக்கிமூலம்,False
+804,tay,Tayal,,https://tay.wikipedia.org,taywiki,Wikipidia,False
+805,tcy,ತುಳು,,https://tcy.wikipedia.org,tcywiki,ವಿಕಿಪೀಡಿಯ,False
+806,tcy,ತುಳು,,https://tcy.wiktionary.org,tcywiktionary,ವಿಕ್ಷನರಿ,False
+807,tcy,ತುಳು,,https://tcy.wikisource.org,tcywikisource,ವಿಕಿಸೋರ್ಸ್,False
+808,tdd,ᥖᥭᥰ ᥖᥬᥲ ᥑᥨᥒᥰ,,https://tdd.wikipedia.org,tddwiki,ᥝᥤᥱ ᥑᥤᥱ ᥚᥤᥱ ᥖᥤᥱ ᥕᥣᥱ,False
+809,te,తెలుగు,,https://te.wikipedia.org,tewiki,వికీపీడియా,False
+810,te,తెలుగు,,https://te.wiktionary.org,tewiktionary,విక్షనరీ,False
+811,te,తెలుగు,,https://te.wikibooks.org,tewikibooks,Wikibooks,False
+812,te,తెలుగు,,https://te.wikiquote.org,tewikiquote,వికీవ్యాఖ్య,False
+813,te,తెలుగు,,https://te.wikisource.org,tewikisource,వికీసోర్స్,False
+814,tet,tetun,,https://tet.wikipedia.org,tetwiki,Wikipedia,False
+815,tg,тоҷикӣ,,https://tg.wikipedia.org,tgwiki,Википедиа,False
+816,tg,тоҷикӣ,,https://tg.wiktionary.org,tgwiktionary,Wiktionary,False
+817,tg,тоҷикӣ,,https://tg.wikibooks.org,tgwikibooks,Wikibooks,False
+818,th,ไทย,,https://th.wikipedia.org,thwiki,วิกิพีเดีย,False
+819,th,ไทย,,https://th.wiktionary.org,thwiktionary,Wiktionary,False
+820,th,ไทย,,https://th.wikibooks.org,thwikibooks,วิกิตำรา,False
+821,th,ไทย,,https://th.wikinews.org,thwikinews,Wikinews,False
+822,th,ไทย,,https://th.wikiquote.org,thwikiquote,วิกิคำคม,False
+823,th,ไทย,,https://th.wikisource.org,thwikisource,วิกิซอร์ซ,False
+824,ti,ትግርኛ,,https://ti.wikipedia.org,tiwiki,ዊኪፔዲያ,False
+825,ti,ትግርኛ,,https://ti.wiktionary.org,tiwiktionary,ዊኪ-መዝገበ-ቃላት,False
+826,tig,ትግሬ,,https://tig.wikipedia.org,tigwiki,ዊኪፒድያ,False
+827,tk,Türkmençe,,https://tk.wikipedia.org,tkwiki,Wikipediýa,False
+828,tk,Türkmençe,,https://tk.wiktionary.org,tkwiktionary,Wikisözlük,False
+829,tk,Türkmençe,,https://tk.wikibooks.org,tkwikibooks,Wikibooks,False
+830,tk,Türkmençe,,https://tk.wikiquote.org,tkwikiquote,Wikiquote,False
+831,tl,Tagalog,,https://tl.wikipedia.org,tlwiki,Wikipedia,False
+832,tl,Tagalog,,https://tl.wiktionary.org,tlwiktionary,Wiksiyonaryo,False
+833,tl,Tagalog,,https://tl.wikibooks.org,tlwikibooks,Wikibooks,False
+834,tl,Tagalog,,https://tl.wikiquote.org,tlwikiquote,Wikiquote,False
+835,tl,Tagalog,,https://tl.wikisource.org,tlwikisource,Wikisource,False
+836,tly,tolışi,,https://tly.wikipedia.org,tlywiki,Vikipedija,False
+837,tn,Setswana,,https://tn.wikipedia.org,tnwiki,Wikipedia,False
+838,tn,Setswana,,https://tn.wiktionary.org,tnwiktionary,Wiktionary,False
+839,to,lea faka-Tonga,,https://to.wikipedia.org,towiki,Wikipedia,False
+840,to,lea faka-Tonga,,https://to.wiktionary.org,towiktionary,Wiktionary,False
+841,tok,toki pona,,https://tok.wikipedia.org,tokwiki,lipu Wikipesija,False
+842,tpi,Tok Pisin,,https://tpi.wikipedia.org,tpiwiki,Wikipedia,False
+843,tpi,Tok Pisin,,https://tpi.wiktionary.org,tpiwiktionary,Wiktionary,False
+844,tr,Türkçe,,https://tr.wikipedia.org,trwiki,Vikipedi,False
+845,tr,Türkçe,,https://tr.wiktionary.org,trwiktionary,Vikisözlük,False
+846,tr,Türkçe,,https://tr.wikibooks.org,trwikibooks,Vikikitap,False
+847,tr,Türkçe,,https://tr.wikinews.org,trwikinews,Vikihaber,False
+848,tr,Türkçe,,https://tr.wikiquote.org,trwikiquote,Vikisöz,False
+849,tr,Türkçe,,https://tr.wikisource.org,trwikisource,Vikikaynak,False
+850,tr,Türkçe,,https://tr.wikivoyage.org,trwikivoyage,Vikigezgin,False
+851,trv,Seediq,,https://trv.wikipedia.org,trvwiki,Wikipidiya,False
+852,ts,Xitsonga,,https://ts.wikipedia.org,tswiki,Wikipedia,False
+853,ts,Xitsonga,,https://ts.wiktionary.org,tswiktionary,Wiktionary,False
+854,tt,татарча / tatarça,,https://tt.wikipedia.org,ttwiki,Wikipedia,False
+855,tt,татарча / tatarça,,https://tt.wiktionary.org,ttwiktionary,Wiktionary,False
+856,tt,татарча / tatarça,,https://tt.wikibooks.org,ttwikibooks,Wikibooks,False
+857,tt,татарча / tatarça,,https://tt.wikiquote.org,ttwikiquote,Wikiquote,False
+858,tum,chiTumbuka,,https://tum.wikipedia.org,tumwiki,Wikipedia,False
+859,tw,Twi,,https://tw.wikipedia.org,twwiki,Wikipedia,False
+860,tw,Twi,,https://tw.wiktionary.org,twwiktionary,Wiktionary,False
+861,ty,reo tahiti,,https://ty.wikipedia.org,tywiki,Wikipedia,False
+862,tyv,тыва дыл,,https://tyv.wikipedia.org,tyvwiki,Википедия,False
+863,udm,удмурт,,https://udm.wikipedia.org,udmwiki,Википедия,False
+864,ug,ئۇيغۇرچە / Uyghurche,,https://ug.wikipedia.org,ugwiki,Wikipedia,False
+865,ug,ئۇيغۇرچە / Uyghurche,,https://ug.wiktionary.org,ugwiktionary,Wiktionary,False
+866,ug,ئۇيغۇرچە / Uyghurche,,https://ug.wikibooks.org,ugwikibooks,Wikibooks,False
+867,ug,ئۇيغۇرچە / Uyghurche,,https://ug.wikiquote.org,ugwikiquote,Wikiquote,False
+868,uk,українська,,https://uk.wikipedia.org,ukwiki,Вікіпедія,False
+869,uk,українська,,https://uk.wiktionary.org,ukwiktionary,Вікісловник,False
+870,uk,українська,,https://uk.wikibooks.org,ukwikibooks,Вікіпідручник,False
+871,uk,українська,,https://uk.wikinews.org,ukwikinews,Вікіновини,False
+872,uk,українська,,https://uk.wikiquote.org,ukwikiquote,Вікіцитати,False
+873,uk,українська,,https://uk.wikisource.org,ukwikisource,Вікіджерела,False
+874,uk,українська,,https://uk.wikivoyage.org,ukwikivoyage,Вікімандри,False
+875,ur,اردو,,https://ur.wikipedia.org,urwiki,ویکیپیڈیا,False
+876,ur,اردو,,https://ur.wiktionary.org,urwiktionary,ویکی لغت,False
+877,ur,اردو,,https://ur.wikibooks.org,urwikibooks,ویکی کتب,False
+878,ur,اردو,,https://ur.wikiquote.org,urwikiquote,ویکی اقتباس,False
+879,uz,oʻzbekcha / ўзбекча,,https://uz.wikipedia.org,uzwiki,Vikipediya,False
+880,uz,oʻzbekcha / ўзбекча,,https://uz.wiktionary.org,uzwiktionary,Vikilugʻat,False
+881,uz,oʻzbekcha / ўзбекча,,https://uz.wikibooks.org,uzwikibooks,Vikikitob,False
+882,uz,oʻzbekcha / ўзбекча,,https://uz.wikiquote.org,uzwikiquote,Vikiiqtibos,False
+883,ve,Tshivenda,,https://ve.wikipedia.org,vewiki,Wikipedia,False
+884,vec,vèneto,,https://vec.wikipedia.org,vecwiki,Wikipedia,False
+885,vec,vèneto,,https://vec.wiktionary.org,vecwiktionary,Wikisionario,False
+886,vec,vèneto,,https://vec.wikisource.org,vecwikisource,Wikisource,False
+887,vep,vepsän kel’,,https://vep.wikipedia.org,vepwiki,Vikipedii,False
+888,vi,Tiếng Việt,,https://vi.wikipedia.org,viwiki,Wikipedia,False
+889,vi,Tiếng Việt,,https://vi.wiktionary.org,viwiktionary,Wiktionary,False
+890,vi,Tiếng Việt,,https://vi.wikibooks.org,viwikibooks,Wikibooks,False
+891,vi,Tiếng Việt,,https://vi.wikiquote.org,viwikiquote,Wikiquote,False
+892,vi,Tiếng Việt,,https://vi.wikisource.org,viwikisource,Wikisource,False
+893,vi,Tiếng Việt,,https://vi.wikivoyage.org,viwikivoyage,Wikivoyage,False
+894,vls,West-Vlams,,https://vls.wikipedia.org,vlswiki,Wikipedia,False
+895,vo,Volapük,,https://vo.wikipedia.org,vowiki,Vükiped,False
+896,vo,Volapük,,https://vo.wiktionary.org,vowiktionary,Vükivödabuk,False
+897,vo,Volapük,,https://vo.wikibooks.org,vowikibooks,Vükibuks,False
+898,vo,Volapük,,https://vo.wikiquote.org,vowikiquote,Wikiquote,False
+899,vro,võro,,https://fiu-vro.wikipedia.org,fiu_vrowiki,Wikipedia,False
+900,wa,walon,,https://wa.wikipedia.org,wawiki,Wikipedia,False
+901,wa,walon,,https://wa.wiktionary.org,wawiktionary,Wiccionaire,False
+902,wa,walon,,https://wa.wikibooks.org,wawikibooks,Wikibooks,False
+903,wa,walon,,https://wa.wikisource.org,wawikisource,Wikisource,False
+904,war,Winaray,,https://war.wikipedia.org,warwiki,Wikipedia,False
+905,wo,Wolof,,https://wo.wikipedia.org,wowiki,Wikipedia,False
+906,wo,Wolof,,https://wo.wiktionary.org,wowiktionary,Wiktionary,False
+907,wo,Wolof,,https://wo.wikiquote.org,wowikiquote,Wikiquote,False
+908,wuu,吴语,,https://wuu.wikipedia.org,wuuwiki,维基百科,False
+909,xal,хальмг,,https://xal.wikipedia.org,xalwiki,Wikipedia,False
+910,xh,isiXhosa,,https://xh.wikipedia.org,xhwiki,Wikipedia,False
+911,xh,isiXhosa,,https://xh.wiktionary.org,xhwiktionary,Wiktionary,False
+912,xh,isiXhosa,,https://xh.wikibooks.org,xhwikibooks,Wikibooks,False
+913,xmf,მარგალური,,https://xmf.wikipedia.org,xmfwiki,ვიკიპედია,False
+914,yi,ייִדיש,,https://yi.wikipedia.org,yiwiki,װיקיפּעדיע,False
+915,yi,ייִדיש,,https://yi.wiktionary.org,yiwiktionary,װיקיװערטערבוך,False
+916,yi,ייִדיש,,https://yi.wikisource.org,yiwikisource,װיקיביבליאָטעק,False
+917,yo,Yorùbá,,https://yo.wikipedia.org,yowiki,Wikipedia,False
+918,yo,Yorùbá,,https://yo.wiktionary.org,yowiktionary,Wiktionary,False
+919,yo,Yorùbá,,https://yo.wikibooks.org,yowikibooks,Wikibooks,False
+920,yue,粵語,,https://zh-yue.wikipedia.org,zh_yuewiki,維基百科,False
+921,yue,粵語,,https://yue.wiktionary.org,yuewiktionary,維基辭典,False
+922,za,Vahcuengh,,https://za.wikipedia.org,zawiki,Wikipedia,False
+923,za,Vahcuengh,,https://za.wiktionary.org,zawiktionary,Wiktionary,False
+924,za,Vahcuengh,,https://za.wikibooks.org,zawikibooks,Wikibooks,False
+925,za,Vahcuengh,,https://za.wikiquote.org,zawikiquote,Wikiquote,False
+926,zea,Zeêuws,,https://zea.wikipedia.org,zeawiki,Wikipedia,False
+927,zgh,ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ,,https://zgh.wikipedia.org,zghwiki,ⵡⵉⴽⵉⴱⵉⴷⵢⴰ,False
+928,zgh,ⵜⴰⵎⴰⵣⵉⵖⵜ ⵜⴰⵏⴰⵡⴰⵢⵜ,,https://zgh.wiktionary.org,zghwiktionary,ⵡⵉⴽⵉⵎⴰⵡⴰⵍ,False
+929,zh,中文,,https://zh.wikipedia.org,zhwiki,Wikipedia,False
+930,zh,中文,,https://zh.wiktionary.org,zhwiktionary,Wiktionary,False
+931,zh,中文,,https://zh.wikibooks.org,zhwikibooks,Wikibooks,False
+932,zh,中文,,https://zh.wikinews.org,zhwikinews,Wikinews,False
+933,zh,中文,,https://zh.wikiquote.org,zhwikiquote,Wikiquote,False
+934,zh,中文,,https://zh.wikisource.org,zhwikisource,Wikisource,False
+935,zh,中文,,https://zh.wikiversity.org,zhwikiversity,維基學院,False
+936,zh,中文,,https://zh.wikivoyage.org,zhwikivoyage,维基导游,False
+937,zu,isiZulu,,https://zu.wikipedia.org,zuwiki,Wikipedia,False
+938,zu,isiZulu,,https://zu.wiktionary.org,zuwiktionary,Wiktionary,False
+939,zu,isiZulu,,https://zu.wikibooks.org,zuwikibooks,Wikibooks,False
+940,special,special,,https://advisors.wikimedia.org,advisorswiki,Advisors,False
+941,special,special,,https://advisory.wikimedia.org,advisorywiki,Advisory Board,False
+942,special,special,,https://ae.wikimedia.org,aewikimedia,Wikimedia United Arab Emirates,False
+943,special,special,,https://am.wikimedia.org,amwikimedia,Վիքիմեդիա Հայաստան,False
+944,special,special,,https://api.wikimedia.org,apiportalwiki,API Portal,False
+945,special,special,,https://ar.wikimedia.org,arwikimedia,Wikimedia Argentina,False
+946,special,special,,https://arbcom-cs.wikipedia.org,arbcom_cswiki,Arbitrážní výbor,False
+947,special,special,,https://arbcom-de.wikipedia.org,arbcom_dewiki,Arbitration Committee,False
+948,special,special,,https://arbcom-en.wikipedia.org,arbcom_enwiki,Arbitration Committee,False
+949,special,special,,https://arbcom-fi.wikipedia.org,arbcom_fiwiki,Arbitration Committee,False
+950,special,special,,https://wikipedia-it-arbcom.wikimedia.org,arbcom_itwiki,Wikipedia,False
+951,special,special,,https://arbcom-nl.wikipedia.org,arbcom_nlwiki,Arbitration Committee,False
+952,special,special,,https://wikipedia-pl-arbcom.wikimedia.org,arbcom_plwiki,Komitet Arbitrażowy,False
+953,special,special,,https://arbcom-ru.wikipedia.org,arbcom_ruwiki,Арбитражный комитет русской Википедии,False
+954,special,special,,https://wikipedia-zh-arbcom.wikimedia.org,arbcom_zhwiki,中文维基百科仲裁委员会,False
+955,special,special,,https://auditcom.wikimedia.org,auditcomwiki,Audit Committee,False
+956,special,special,,https://az.wikimedia.org,azwikimedia,Azərbaycan vikimediaçıları istifadəçi qrupu,False
+957,special,special,,https://bd.wikimedia.org,bdwikimedia,উইকিমিডিয়া বাংলাদেশ,False
+958,special,special,,https://be.wikimedia.org,bewikimedia,Wikimedia Belgium,False
+959,special,special,,https://beta.wikiversity.org,betawikiversity,Wikiversity,False
+960,special,special,,https://board.wikimedia.org,boardwiki,Board,False
+961,special,special,,https://boardgovcom.wikimedia.org,boardgovcomwiki,Board Governance Committee,False
+962,special,special,,https://br.wikimedia.org,brwikimedia,Wikimedia Brasil,False
+963,special,special,,https://ca.wikimedia.org,cawikimedia,Wikimedia Canada,False
+964,special,special,,https://chair.wikimedia.org,chairwiki,Wikimedia Board Chair,False
+965,special,special,,https://affcom.wikimedia.org,chapcomwiki,Affcom,False
+966,special,special,,https://checkuser.wikimedia.org,checkuserwiki,CheckUser Wiki,False
+967,special,special,,https://cn.wikimedia.org,cnwikimedia,中国维基媒体用户组,False
+968,special,special,,https://co.wikimedia.org,cowikimedia,Wikimedia Colombia,False
+969,special,special,,https://collab.wikimedia.org,collabwiki,Collab,False
+970,special,special,,https://commons.wikimedia.org,commonswiki,Wikimedia Commons,False
+971,special,special,,https://dk.wikimedia.org,dkwikimedia,Wikimedia Danmark,False
+972,special,special,,https://donate.wikimedia.org,donatewiki,Donate,False
+973,special,special,,https://ec.wikimedia.org,ecwikimedia,Wikimedistas de Ecuador,False
+974,special,special,,https://electcom.wikimedia.org,electcomwiki,Wikipedia,False
+975,special,special,,https://ee.wikimedia.org,etwikimedia,Wikimedia Eesti,False
+976,special,special,,https://exec.wikimedia.org,execwiki,Wikimedia Executive,False
+977,special,special,,https://fdc.wikimedia.org,fdcwiki,Wikimedia FDC,False
+978,special,special,,https://fi.wikimedia.org,fiwikimedia,Wikimedia Suomi,False
+979,special,special,,https://foundation.wikimedia.org,foundationwiki,Wikimedia Foundation Governance Wiki,False
+980,special,special,,https://ge.wikimedia.org,gewikimedia,ვიკიმედია საქართველო,False
+981,special,special,,https://gr.wikimedia.org,grwikimedia,Wikimedia User Group Greece,False
+982,special,special,,https://grants.wikimedia.org,grantswiki,Wikimedia Foundation Grants Discussion,False
+983,special,special,,https://hi.wikimedia.org,hiwikimedia,Hindi Wikimedians User Group,False
+984,special,special,,https://id.wikimedia.org,idwikimedia,Wikimedia Indonesia,False
+985,special,special,,https://id-internal.wikimedia.org,id_internalwikimedia,Wikimedia Indonesia (internal),False
+986,special,special,,https://iegcom.wikimedia.org,iegcomwiki,Individual Engagement Grants Committee Wiki,False
+987,special,special,,https://il.wikimedia.org,ilwikimedia,ויקימדיה,False
+988,special,special,,https://incubator.wikimedia.org,incubatorwiki,Wikimedia Incubator,False
+989,special,special,,https://internal.wikimedia.org,internalwiki,Internal,False
+990,special,special,,https://wikitech.wikimedia.org,labswiki,Wikipedia,False
+991,special,special,,https://legalteam.wikimedia.org,legalteamwiki,Legal Team Wiki,False
+992,special,special,,https://login.wikimedia.org,loginwiki,Wikimedia Login Wiki,False
+993,special,special,,https://mai.wikimedia.org,maiwikimedia,मैथिली विकिमिडियन्स,False
+994,special,special,,https://www.mediawiki.org,mediawikiwiki,MediaWiki,False
+995,special,special,,https://meta.wikimedia.org,metawiki,Meta-Wiki,False
+996,special,special,,https://mk.wikimedia.org,mkwikimedia,Викимедија Македонија,False
+997,special,special,,https://movementroles.wikimedia.org,movementroleswiki,Movement Roles,False
+998,special,special,,https://mx.wikimedia.org,mxwikimedia,Wikimedia México,False
+999,special,special,,https://ng.wikimedia.org,ngwikimedia,Wikimedia Nigeria,False
+1000,special,special,,https://nl.wikimedia.org,nlwikimedia,Wikimedia,False
+1001,special,special,,https://no.wikimedia.org,nowikimedia,Wikimedia Norge,False
+1002,special,special,,https://noboard-chapters.wikimedia.org,noboard_chapterswikimedia,Wikimedia Norway Internal Board,False
+1003,special,special,,https://nostalgia.wikipedia.org,nostalgiawiki,Wikipedia,False
+1004,special,special,,https://nyc.wikimedia.org,nycwikimedia,Wikimedia New York City,False
+1005,special,special,,https://nz.wikimedia.org,nzwikimedia,Wikimedia,False
+1006,special,special,,https://office.wikimedia.org,officewiki,Wikimedia Office,False
+1007,special,special,,https://ombuds.wikimedia.org,ombudsmenwiki,Ombuds Wiki,False
+1008,special,special,,https://vrt-wiki.wikimedia.org,otrs_wikiwiki,VRT Wiki,False
+1009,special,special,,https://outreach.wikimedia.org,outreachwiki,Outreach Wiki,False
+1010,special,special,,https://pa-us.wikimedia.org,pa_uswikimedia,Wikimedia Pennsylvania,False
+1011,special,special,,https://pl.wikimedia.org,plwikimedia,Wikimedia,False
+1012,special,special,,https://projectcom.wikimedia.org,projectcomwiki,Project Grants Committee,False
+1013,special,special,,https://pt.wikimedia.org,ptwikimedia,Wikimedia Portugal,False
+1014,special,special,,https://punjabi.wikimedia.org,punjabiwikimedia,Punjabi Wikimedians,False
+1015,special,special,,https://quality.wikimedia.org,qualitywiki,Wikimedia Quality,False
+1016,special,special,,https://romd.wikimedia.org,romdwikimedia,Wikimedia,False
+1017,special,special,,https://rs.wikimedia.org,rswikimedia,Викимедија,False
+1018,special,special,,https://ru.wikimedia.org,ruwikimedia,Викимедиа,False
+1019,special,special,,https://se.wikimedia.org,sewikimedia,Wikimedia,False
+1020,special,special,,https://searchcom.wikimedia.org,searchcomwiki,Search Committee,False
+1021,special,special,,https://wikisource.org,sourceswiki,Wikisource,False
+1022,special,special,,https://spcom.wikimedia.org,spcomwiki,Spcom,False
+1023,special,special,,https://species.wikimedia.org,specieswiki,Wikispecies,False
+1024,special,special,,https://steward.wikimedia.org,stewardwiki,Steward Wiki,False
+1025,special,special,,https://strategy.wikimedia.org,strategywiki,Strategic Planning,False
+1026,special,special,,https://sysop-it.wikipedia.org,sysop_itwiki,Italian Wikipedia sysops wiki,False
+1027,special,special,,https://wikipedia-pl-sysop.wikimedia.org,sysop_plwiki,Wiki administratorów polskojęzycznej Wikipedii,False
+1028,special,special,,https://techconduct.wikimedia.org,techconductwiki,CoC committee,False
+1029,special,special,,https://ten.wikipedia.org,tenwiki,Wikipedia 10,False
+1030,special,special,,https://test.wikipedia.org,testwiki,Wikipedia,False
+1031,special,special,,https://test2.wikipedia.org,test2wiki,Wikipedia,False
+1032,special,special,,https://test-commons.wikimedia.org,testcommonswiki,Test Wikimedia Commons,False
+1033,special,special,,https://test.wikidata.org,testwikidatawiki,Wikipedia,False
+1034,special,special,,https://th.wikimedia.org,thwikimedia,Wikimedia,False
+1035,special,special,,https://thankyou.wikipedia.org,thankyouwiki,Thank You,False
+1036,special,special,,https://tr.wikimedia.org,trwikimedia,Wikimedia Türkiye,False
+1037,special,special,,https://transitionteam.wikimedia.org,transitionteamwiki,Transition Team Wiki,False
+1038,special,special,,https://u4c.wikimedia.org,u4cwiki,U4C Wiki,False
+1039,special,special,,https://ua.wikimedia.org,uawikimedia,Вікімедіа Україна,False
+1040,special,special,,https://usability.wikimedia.org,usabilitywiki,Wikimedia Usability Initiative,False
+1041,special,special,,https://ve.wikimedia.org,vewikimedia,Wikimedia,False
+1042,special,special,,https://vote.wikimedia.org,votewiki,Wikimedia Vote Wiki,False
+1043,special,special,,https://wb.wikimedia.org,wbwikimedia,West Bengal Wikimedians,False
+1044,special,special,,https://wg-en.wikipedia.org,wg_enwiki,Wikipedia Working Group,False
+1045,special,special,,https://www.wikidata.org,wikidatawiki,Wikipedia,False
+1046,special,special,,https://www.wikifunctions.org,wikifunctionswiki,Wikifunctions,False
+1047,special,special,,https://wikimania.wikimedia.org,wikimaniawiki,Wikipedia,False
+1048,special,special,,https://wikimania2005.wikimedia.org,wikimania2005wiki,Wikipedia,False
+1049,special,special,,https://wikimania2006.wikimedia.org,wikimania2006wiki,Wikipedia,False
+1050,special,special,,https://wikimania2007.wikimedia.org,wikimania2007wiki,Wikipedia,False
+1051,special,special,,https://wikimania2008.wikimedia.org,wikimania2008wiki,Wikipedia,False
+1052,special,special,,https://wikimania2009.wikimedia.org,wikimania2009wiki,Wikipedia,False
+1053,special,special,,https://wikimania2010.wikimedia.org,wikimania2010wiki,Wikipedia,False
+1054,special,special,,https://wikimania2011.wikimedia.org,wikimania2011wiki,Wikipedia,False
+1055,special,special,,https://wikimania2012.wikimedia.org,wikimania2012wiki,Wikipedia,False
+1056,special,special,,https://wikimania2013.wikimedia.org,wikimania2013wiki,Wikipedia,False
+1057,special,special,,https://wikimania2014.wikimedia.org,wikimania2014wiki,Wikipedia,False
+1058,special,special,,https://wikimania2015.wikimedia.org,wikimania2015wiki,Wikipedia,False
+1059,special,special,,https://wikimania2016.wikimedia.org,wikimania2016wiki,Wikipedia,False
+1060,special,special,,https://wikimania2017.wikimedia.org,wikimania2017wiki,Wikipedia,False
+1061,special,special,,https://wikimania2018.wikimedia.org,wikimania2018wiki,Wikipedia,False
+1062,special,special,,https://wikimaniateam.wikimedia.org,wikimaniateamwiki,WikimaniaTeam,False
