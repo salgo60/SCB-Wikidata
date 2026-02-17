@@ -1,0 +1,1785 @@
+
+    <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Artiklar naturreservat not ok 2 links in Wikipedia</title>
+      <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+      
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      table.pivot {
+        border-collapse: collapse;
+        width: 100%;
+        font-size: 12px;
+      }
+      table.pivot th, table.pivot td {
+        border: 1px solid #999;
+        padding: 6px 8px;
+        text-align: left;
+        vertical-align: top;
+        white-space: normal;
+      }
+      table.pivot th {
+        cursor: pointer;
+        background: #f2f2f2;
+      }
+      table.pivot th:hover {
+        background: #e2e2e2;
+      }
+      table.pivot thead th {
+        position: sticky;
+        top: 0;
+        background: #f2f2f2;
+        z-index: 2;
+      }
+      table.pivot th::after {
+        content: "";
+        float: right;
+        opacity: 0.4;
+      }
+      table.pivot th.sorted-asc::after {
+        content: " ▲";
+      }
+      table.pivot th.sorted-desc::after {
+        content: " ▼";
+      }
+      /* Row coloring by status */
+      table.pivot tr[data-status="dead"] {
+         background-color: #fdecea;  /* light red */
+      }
+      table.pivot tr[data-status="dead"] td:nth-child(2) i {
+          color: #1565c0;
+        }
+
+      table.pivot tr[data-status="error"] {
+          background-color: #fff4e5;  /* light orange */
+      }
+
+      table.pivot td a {
+        color: #0645ad;
+        text-decoration: none;
+      }
+      table.pivot td a:hover {
+        text-decoration: underline;
+      }
+      .meta {
+        background: #f8f8f8;
+        border: 1px solid #ccc;
+        padding: 12px;
+        margin-bottom: 20px;
+        font-size: 13px;
+      }
+      .meta h2 {
+        margin-top: 0;
+      }
+    </style>
+    
+    </head>
+    <body>
+      <h1>Wikipedia → Artiklar naturreservat not ok 2 v1</h1>
+      
+    <div class="meta">
+      <h2>Summary</h2>
+    
+      <p><strong>Rerun:</strong> 2026-02-17 10:38:01</p>
+      <p><strong>Script:</strong>
+         <a href="https://github.com/salgo60/SCB-Wikidata/blob/master/notebook/lansstyrelsen_68.ipynb" target="_blank">lansstyrelsen_68.ipynb</a>
+      </p>
+    
+      <p>
+        <strong>Links checked:</strong> 99<br>
+        <strong style="color:#2e7d32;">OK:</strong> 0 (0.0%)<br>
+        <strong style="color:#c62828;">Broken:</strong> 92 (92.9%)<br>
+        &nbsp;&nbsp;↳ Archived: 19<br>
+        &nbsp;&nbsp;↳ Lost: 73<br>
+        <strong style="color:#ef6c00;">Errors:</strong> 7 (7.1%)
+      </p>
+      <p><strong>Issue:</strong>
+         <a href="https://github.com/salgo60/SCB-Wikidata/issues/68" target="_blank">68</a>
+      </p>
+    
+      <p><strong>Datakällor:</strong><br>
+         Wikidata<br>
+         MediaWiki API – exturlusage
+      </p>
+    
+      <h2>Domains with broken links</h2>
+      <p>Top domains ranked by broken-link impact.</p>
+      <table class="dataframe pivot">
+  <thead>
+    <tr style="text-align: right;">
+      <th>domain</th>
+      <th>total_links</th>
+      <th>broken_links</th>
+      <th>error_links</th>
+      <th>broken_pct</th>
+      <th>error_pct</th>
+      <th>problem_pct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>lanstema.lst.se</td>
+      <td>4</td>
+      <td>0</td>
+      <td>4</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>projektwebbar.lansstyrelsen.se</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>www.h.lst.se</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>www.lansstyrelsen.se</td>
+      <td>91</td>
+      <td>91</td>
+      <td>0</td>
+      <td>100.0</td>
+      <td>0.0</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>www5.e.lst.se</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0.0</td>
+      <td>100.0</td>
+      <td>100.0</td>
+    </tr>
+  </tbody>
+</table>
+    </div>
+    
+      <p>Sorterbar tabell. Klicka på kolumnrubriker för sortering.</p>
+      <table class="dataframe pivot">
+  <thead>
+    <tr style="text-align: right;">
+      <th>status_icon</th>
+      <th>archive</th>
+      <th>lang</th>
+      <th>page_title</th>
+      <th>url</th>
+      <th>wiki_link</th>
+      <th>status</th>
+      <th>final_url</th>
+      <th>ia_url</th>
+      <th>ia_status</th>
+      <th>reason</th>
+      <th>is_wikidata</th>
+      <th>domain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>da</td>
+      <td><a href="https://da.wikipedia.org/wiki/Flommens%20naturreservat" target="_blank" title="Wikipedia (da)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Flommens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/skane/Sv/djur-och-natur/skyddad-natur/naturreservat/vellinge/flolmmen/Pages/_index.aspx" target="_blank">http://www.lansstyrelsen.se/skane/Sv/djur-och-natur/skyddad-natur/naturreservat/vellinge/flolmmen/Pages/_index.aspx</a></td>
+      <td>https://da.wikipedia.org/wiki/Flommens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/skane/Sv/djur-och-natur/skyddad-natur/naturreservat/vellinge/flolmmen/Pages/_index.aspx</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>de</td>
+      <td><a href="https://de.wikipedia.org/wiki/Naturreservat%20Sjaunja" target="_blank" title="Wikipedia (de)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Naturreservat Sjaunja</a></td>
+      <td><a href="http://www.lansstyrelsen.se/norrbotten/Sv/djur-och-natur/skyddad-natur/naturreservat/gallivare/Pages/sjaunja.aspx?keyword=sjaunja" target="_blank">http://www.lansstyrelsen.se/norrbotten/Sv/djur-och-natur/skyddad-natur/naturreservat/gallivare/Pages/sjaunja.aspx?keyword=sjaunja</a></td>
+      <td>https://de.wikipedia.org/wiki/Naturreservat_Sjaunja</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/norrbotten/Sv/djur-och-natur/skyddad-natur/naturreservat/gallivare/Pages/sjaunja.aspx?keyword=sjaunja</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>de</td>
+      <td><a href="https://de.wikipedia.org/wiki/Naturreservat%20Petg%C3%A4rdetr%C3%A4sk" target="_blank" title="Wikipedia (de)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Naturreservat Petgärdeträsk</a></td>
+      <td><a href="http://www.lansstyrelsen.se/kalmar/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/natura2000/Natura2000objektexternversion2010.pdf" target="_blank">http://www.lansstyrelsen.se/kalmar/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/natura2000/Natura2000objektexternversion2010.pdf</a></td>
+      <td>https://de.wikipedia.org/wiki/Naturreservat_Petgärdeträsk</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/kalmar/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/natura2000/Natura2000objektexternversion2010.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>de</td>
+      <td><a href="https://de.wikipedia.org/wiki/Naturreservat%20Petg%C3%A4rdetr%C3%A4sk" target="_blank" title="Wikipedia (de)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Naturreservat Petgärdeträsk</a></td>
+      <td><a href="http://www.lansstyrelsen.se/kalmar/sv/om-lansstyrelsen/om-lanet/besoksmal/natur/Pages/Petgardetrask_och_Djurstad_trask.aspx" target="_blank">http://www.lansstyrelsen.se/kalmar/sv/om-lansstyrelsen/om-lanet/besoksmal/natur/Pages/Petgardetrask_och_Djurstad_trask.aspx</a></td>
+      <td>https://de.wikipedia.org/wiki/Naturreservat_Petgärdeträsk</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/kalmar/sv/om-lansstyrelsen/om-lanet/besoksmal/natur/Pages/Petgardetrask_och_Djurstad_trask.aspx</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>de</td>
+      <td><a href="https://de.wikipedia.org/wiki/Naturreservat%20Ottenby" target="_blank" title="Wikipedia (de)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Naturreservat Ottenby</a></td>
+      <td><a href="http://www.lansstyrelsen.se/kalmar/sv/djur-och-natur/skyddad-natur/natura2000/Pages/index.aspx" target="_blank">http://www.lansstyrelsen.se/kalmar/sv/djur-och-natur/skyddad-natur/natura2000/Pages/index.aspx</a></td>
+      <td>https://de.wikipedia.org/wiki/Naturreservat_Ottenby</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/kalmar/sv/djur-och-natur/skyddad-natur/natura2000/Pages/index.aspx</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>de</td>
+      <td><a href="https://de.wikipedia.org/wiki/Naturreservat%20Djurstad%20tr%C3%A4sk" target="_blank" title="Wikipedia (de)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Naturreservat Djurstad träsk</a></td>
+      <td><a href="http://www.h.lst.se/NR/rdonlyres/30A707D7-78F8-4668-986B-D79C525404D6/0/Natura2000objektexternversion.pdf" target="_blank">http://www.h.lst.se/NR/rdonlyres/30A707D7-78F8-4668-986B-D79C525404D6/0/Natura2000objektexternversion.pdf</a></td>
+      <td>https://de.wikipedia.org/wiki/Naturreservat_Djurstad_träsk</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/kalmar/NR/rdonlyres/30A707D7-78F8-4668-986B-D79C525404D6/0/Natura2000objektexternversion.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.h.lst.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Lybecks%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Lybecks naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/skane/Sv/djur-och-natur/skyddad-natur/ovriga_skyddsformer/nationellt-vardefulla-vatten/vattenbeskrivning/Pages/Krageholmssjon.aspx?keyword=lybeck" target="_blank">http://www.lansstyrelsen.se/skane/Sv/djur-och-natur/skyddad-natur/ovriga_skyddsformer/nationellt-vardefulla-vatten/vattenbeskrivning/Pages/Krageholmssjon.aspx?keyword=lybeck</a></td>
+      <td>https://sv.wikipedia.org/wiki/Lybecks_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/skane/Sv/djur-och-natur/skyddad-natur/ovriga_skyddsformer/nationellt-vardefulla-vatten/vattenbeskrivning/Pages/Krageholmssjon.aspx?keyword=lybeck</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/%C3%84lg%C3%B6ns%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Älgöns naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/vastragotaland/Sv/djur-och-natur/skyddad-natur/naturreservat/lanets-naturreservat/kungalv/algon/Pages/index.aspx" target="_blank">http://www.lansstyrelsen.se/vastragotaland/Sv/djur-och-natur/skyddad-natur/naturreservat/lanets-naturreservat/kungalv/algon/Pages/index.aspx</a></td>
+      <td>https://sv.wikipedia.org/wiki/Älgöns_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/vastragotaland/Sv/djur-och-natur/skyddad-natur/naturreservat/lanets-naturreservat/kungalv/algon/Pages/index.aspx</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Sandvikens%20naturreservat%2C%20Gotland" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Sandvikens naturreservat, Gotland</a></td>
+      <td><a href="http://www.lansstyrelsen.se/gotland/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/natura-2000/natura-2000-pa-gotland/sandviken.pdf" target="_blank">http://www.lansstyrelsen.se/gotland/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/natura-2000/natura-2000-pa-gotland/sandviken.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Sandvikens_naturreservat,_Gotland</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/gotland/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/natura-2000/natura-2000-pa-gotland/sandviken.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/H%C3%A5llsungamyrens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Hållsungamyrens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/vastragotaland/Sv/djur-och-natur/skyddad-natur/naturreservat/lanets-naturreservat/kungalv/hallsungamyren/Pages/index.aspx" target="_blank">http://www.lansstyrelsen.se/vastragotaland/Sv/djur-och-natur/skyddad-natur/naturreservat/lanets-naturreservat/kungalv/hallsungamyren/Pages/index.aspx</a></td>
+      <td>https://sv.wikipedia.org/wiki/Hållsungamyrens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/vastragotaland/Sv/djur-och-natur/skyddad-natur/naturreservat/lanets-naturreservat/kungalv/hallsungamyren/Pages/index.aspx</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="error" title="Request error: HTTPConnectionPool(host='projektwebbar.lansstyrelsen.se', port=80): Max retries exceeded with url: /viss/Sv/detta-beskrivs-i-viss/statusklassning/Pages/default.aspx (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x30fb09bb0>, 'Connection to projektwebbar.lansstyrelsen.se timed out. (connect timeout=15)'))" style="color:#ef6c00; font-size:14px; cursor:pointer;"><i class="fa-solid fa-triangle-exclamation"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Stentj%C3%A4rnen%20%28Bodsj%C3%B6%20socken%2C%20J%C3%A4mtland%2C%20i%20Havmyrens%20naturreservat%29" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Stentjärnen (Bodsjö socken, Jämtland, i Havmyrens naturreservat)</a></td>
+      <td><a href="http://projektwebbar.lansstyrelsen.se/viss/Sv/detta-beskrivs-i-viss/statusklassning/Pages/default.aspx" target="_blank">http://projektwebbar.lansstyrelsen.se/viss/Sv/detta-beskrivs-i-viss/statusklassning/Pages/default.aspx</a></td>
+      <td>https://sv.wikipedia.org/wiki/Stentjärnen_(Bodsjö_socken,_Jämtland,_i_Havmyrens_naturreservat)</td>
+      <td>error</td>
+      <td>http://projektwebbar.lansstyrelsen.se/viss/Sv/detta-beskrivs-i-viss/statusklassning/Pages/default.aspx</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>HTTPConnectionPool(host='projektwebbar.lansstyrelsen.se', port=80): Max retries exceeded with url: /viss/Sv/detta-beskrivs-i-viss/statusklassning/Pages/default.aspx (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x30fb09bb0>, 'Connection to projektwebbar.lansstyrelsen.se timed out. (connect timeout=15)'))</td>
+      <td>False</td>
+      <td>projektwebbar.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/R%C3%B6r%C3%B6%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Rörö naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/vastragotaland/SiteCollectionDocuments/Sv/samhallsplanering-och-kulturmiljo/planfragor/planeringsunderlag/riksintresse-naturvard.pdf" target="_blank">http://www.lansstyrelsen.se/vastragotaland/SiteCollectionDocuments/Sv/samhallsplanering-och-kulturmiljo/planfragor/planeringsunderlag/riksintresse-naturvard.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Rörö_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/vastragotaland/SiteCollectionDocuments/Sv/samhallsplanering-och-kulturmiljo/planfragor/planeringsunderlag/riksintresse-naturvard.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="error" title="Request error: HTTPConnectionPool(host='projektwebbar.lansstyrelsen.se', port=80): Max retries exceeded with url: /viss/Sv/detta-beskrivs-i-viss/miljoproblem-och-paverkan/miljoproblem/Pages/default.aspx (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x31fbfe210>, 'Connection to projektwebbar.lansstyrelsen.se timed out. (connect timeout=15)'))" style="color:#ef6c00; font-size:14px; cursor:pointer;"><i class="fa-solid fa-triangle-exclamation"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Stentj%C3%A4rnen%20%28Bodsj%C3%B6%20socken%2C%20J%C3%A4mtland%2C%20i%20Havmyrens%20naturreservat%29" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Stentjärnen (Bodsjö socken, Jämtland, i Havmyrens naturreservat)</a></td>
+      <td><a href="http://projektwebbar.lansstyrelsen.se/viss/Sv/detta-beskrivs-i-viss/miljoproblem-och-paverkan/miljoproblem/Pages/default.aspx" target="_blank">http://projektwebbar.lansstyrelsen.se/viss/Sv/detta-beskrivs-i-viss/miljoproblem-och-paverkan/miljoproblem/Pages/default.aspx</a></td>
+      <td>https://sv.wikipedia.org/wiki/Stentjärnen_(Bodsjö_socken,_Jämtland,_i_Havmyrens_naturreservat)</td>
+      <td>error</td>
+      <td>http://projektwebbar.lansstyrelsen.se/viss/Sv/detta-beskrivs-i-viss/miljoproblem-och-paverkan/miljoproblem/Pages/default.aspx</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>HTTPConnectionPool(host='projektwebbar.lansstyrelsen.se', port=80): Max retries exceeded with url: /viss/Sv/detta-beskrivs-i-viss/miljoproblem-och-paverkan/miljoproblem/Pages/default.aspx (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x31fbfe210>, 'Connection to projektwebbar.lansstyrelsen.se timed out. (connect timeout=15)'))</td>
+      <td>False</td>
+      <td>projektwebbar.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Lappland%20%28naturreservat%29" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Lappland (naturreservat)</a></td>
+      <td><a href="http://www.lansstyrelsen.se/vastmanland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/natura-2000/F%C3%B6rslag%20till%20bevarandeplan/Bevarandeplan_Lappland_SE0250018.pdf" target="_blank">http://www.lansstyrelsen.se/vastmanland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/natura-2000/F%C3%B6rslag%20till%20bevarandeplan/Bevarandeplan_Lappland_SE0250018.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Lappland_(naturreservat)</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/vastmanland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/natura-2000/F%C3%B6rslag%20till%20bevarandeplan/Bevarandeplan_Lappland_SE0250018.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Hummelholm%20%28naturreservat%29" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Hummelholm (naturreservat)</a></td>
+      <td><a href="http://www.lansstyrelsen.se/vasterbotten/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/Nordmaling/Hummelholm/SE0810008%20Hummelholm%20ln.pdf" target="_blank">http://www.lansstyrelsen.se/vasterbotten/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/Nordmaling/Hummelholm/SE0810008%20Hummelholm%20ln.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Hummelholm_(naturreservat)</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/vasterbotten/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/Nordmaling/Hummelholm/SE0810008%20Hummelholm%20ln.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Treh%C3%B6rningen%20%28naturreservat%2C%20Nordmalings%20kommun%29" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Trehörningen (naturreservat, Nordmalings kommun)</a></td>
+      <td><a href="http://www.lansstyrelsen.se/vasterbotten/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/Nordmaling/Treh%C3%B6rningen/Beslut%20Treh%C3%B6rningen%20inkl%20allt_liten.pdf" target="_blank">http://www.lansstyrelsen.se/vasterbotten/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/Nordmaling/Treh%C3%B6rningen/Beslut%20Treh%C3%B6rningen%20inkl%20allt_liten.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Trehörningen_(naturreservat,_Nordmalings_kommun)</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/vasterbotten/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/Nordmaling/Treh%C3%B6rningen/Beslut%20Treh%C3%B6rningen%20inkl%20allt_liten.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Balbergets%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Balbergets naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/vasterbotten/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/bjurholm/balberget/Balberget%20Bevarandeplan.pdf" target="_blank">http://www.lansstyrelsen.se/vasterbotten/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/bjurholm/balberget/Balberget%20Bevarandeplan.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Balbergets_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/vasterbotten/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/bjurholm/balberget/Balberget%20Bevarandeplan.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Tribladtj%C3%A4rns%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Tribladtjärns naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/vasterbotten/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/Natura%202000/Alla%20bevarandeplaner/Tribladtj%C3%A4rn.pdf" target="_blank">http://www.lansstyrelsen.se/vasterbotten/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/Natura%202000/Alla%20bevarandeplaner/Tribladtj%C3%A4rn.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Tribladtjärns_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/vasterbotten/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/Natura%202000/Alla%20bevarandeplaner/Tribladtj%C3%A4rn.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Nedre%20Lagn%C3%B6%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Nedre Lagnö naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/%C3%96sterg%C3%B6tlands%20naturv%C3%A5rdsr%C3%A5d/M%C3%B6tesanteckning%20120403.pdf" target="_blank">http://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/%C3%96sterg%C3%B6tlands%20naturv%C3%A5rdsr%C3%A5d/M%C3%B6tesanteckning%20120403.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Nedre_Lagnö_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/%C3%96sterg%C3%B6tlands%20naturv%C3%A5rdsr%C3%A5d/M%C3%B6tesanteckning%20120403.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/H%C3%B6gbondens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Högbondens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/vasternorrland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/Natura-2000/Bevarandeplaner/hogbonden-se0710042.pdf" target="_blank">http://www.lansstyrelsen.se/vasternorrland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/Natura-2000/Bevarandeplaner/hogbonden-se0710042.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Högbondens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/vasternorrland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/Natura-2000/Bevarandeplaner/hogbonden-se0710042.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/F%C3%A5gels%C3%A5ngsdalens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Fågelsångsdalens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/skane/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/lund/Fagelsangsdalen/Fagelsangsdalen_sk_plan_1993-m-karta.pdf" target="_blank">http://www.lansstyrelsen.se/skane/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/lund/Fagelsangsdalen/Fagelsangsdalen_sk_plan_1993-m-karta.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Fågelsångsdalens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/skane/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/lund/Fagelsangsdalen/Fagelsangsdalen_sk_plan_1993-m-karta.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Sundby%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Sundby naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/stockholm/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/natura2000/Varnofladen.pdf" target="_blank">http://www.lansstyrelsen.se/stockholm/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/natura2000/Varnofladen.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Sundby_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/stockholm/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/natura2000/Varnofladen.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/J%C3%A4rvaf%C3%A4ltets%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Järvafältets naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/stockholm/Sv/djur-och-natur/skyddad-natur/naturreservat/sollentuna/ostra-jarvafaltet/Pages/default.aspx" target="_blank">http://www.lansstyrelsen.se/stockholm/Sv/djur-och-natur/skyddad-natur/naturreservat/sollentuna/ostra-jarvafaltet/Pages/default.aspx</a></td>
+      <td>https://sv.wikipedia.org/wiki/Järvafältets_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/stockholm/Sv/djur-och-natur/skyddad-natur/naturreservat/sollentuna/ostra-jarvafaltet/Pages/default.aspx</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/J%C3%A4rvaf%C3%A4ltets%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Järvafältets naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/stockholm/Sv/djur-och-natur/skyddad-natur/naturreservat/jarfalla/vastra-jarvafaltet/Pages/default.aspx" target="_blank">http://www.lansstyrelsen.se/stockholm/Sv/djur-och-natur/skyddad-natur/naturreservat/jarfalla/vastra-jarvafaltet/Pages/default.aspx</a></td>
+      <td>https://sv.wikipedia.org/wiki/Järvafältets_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/stockholm/Sv/djur-och-natur/skyddad-natur/naturreservat/jarfalla/vastra-jarvafaltet/Pages/default.aspx</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/%C3%96sbytr%C3%A4sks%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Ösbyträsks naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/stockholm/Sv/djur-och-natur/skyddad-natur/naturreservat/varmdo/osbytrask/Pages/default.aspx" target="_blank">http://www.lansstyrelsen.se/stockholm/Sv/djur-och-natur/skyddad-natur/naturreservat/varmdo/osbytrask/Pages/default.aspx</a></td>
+      <td>https://sv.wikipedia.org/wiki/Ösbyträsks_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/stockholm/Sv/djur-och-natur/skyddad-natur/naturreservat/varmdo/osbytrask/Pages/default.aspx</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Stockholmsgata%20%28naturreservat%29" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Stockholmsgata (naturreservat)</a></td>
+      <td><a href="http://www.lansstyrelsen.se/vasternorrland/Sv/djur-och-natur/skyddad-natur/naturreservat-i-vasternorrland/ornskoldsviks-kommun/stockholmsgata/Pages/default.aspx" target="_blank">http://www.lansstyrelsen.se/vasternorrland/Sv/djur-och-natur/skyddad-natur/naturreservat-i-vasternorrland/ornskoldsviks-kommun/stockholmsgata/Pages/default.aspx</a></td>
+      <td>https://sv.wikipedia.org/wiki/Stockholmsgata_(naturreservat)</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/vasternorrland/Sv/djur-och-natur/skyddad-natur/naturreservat-i-vasternorrland/ornskoldsviks-kommun/stockholmsgata/Pages/default.aspx</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Hummelviks%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Hummelviks naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/vasternorrland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/Natura-2000/Bevarandeplaner/hummelvik-se0710190.pdf" target="_blank">http://www.lansstyrelsen.se/vasternorrland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/Natura-2000/Bevarandeplaner/hummelvik-se0710190.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Hummelviks_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/vasternorrland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/Natura-2000/Bevarandeplaner/hummelvik-se0710190.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/G%C3%B6rv%C3%A4lns%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Görvälns naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/stockholm/Sv/djur-och-natur/skyddad-natur/naturreservat/jarfalla/gorvaln/Pages/default.aspx" target="_blank">http://www.lansstyrelsen.se/stockholm/Sv/djur-och-natur/skyddad-natur/naturreservat/jarfalla/gorvaln/Pages/default.aspx</a></td>
+      <td>https://sv.wikipedia.org/wiki/Görvälns_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/stockholm/Sv/djur-och-natur/skyddad-natur/naturreservat/jarfalla/gorvaln/Pages/default.aspx</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Velamsunds%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Velamsunds naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/stockholm/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/natura2000/Velamsund.pdf" target="_blank">http://www.lansstyrelsen.se/stockholm/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/natura2000/Velamsund.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Velamsunds_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/stockholm/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/natura2000/Velamsund.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/%C3%85gelsj%C3%B6n%20%28naturreservat%29" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Ågelsjön (naturreservat)</a></td>
+      <td><a href="http://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/norrkoping/%C3%85gelsj%C3%B6n/%C3%85gelsj%C3%B6n%20skpl%20bp%20151211.pdf" target="_blank">http://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/norrkoping/%C3%85gelsj%C3%B6n/%C3%85gelsj%C3%B6n%20skpl%20bp%20151211.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Ågelsjön_(naturreservat)</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/norrkoping/%C3%85gelsj%C3%B6n/%C3%85gelsj%C3%B6n%20skpl%20bp%20151211.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/%C3%85gelsj%C3%B6n%20%28naturreservat%29" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Ågelsjön (naturreservat)</a></td>
+      <td><a href="http://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/natura-2000/bevarandeplaner-kommunvis/Bevplan_SE0230363_agelsjon_faststalld_101020_kompr.pdf" target="_blank">http://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/natura-2000/bevarandeplaner-kommunvis/Bevplan_SE0230363_agelsjon_faststalld_101020_kompr.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Ågelsjön_(naturreservat)</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/natura-2000/bevarandeplaner-kommunvis/Bevplan_SE0230363_agelsjon_faststalld_101020_kompr.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Fj%C3%A4llmossens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Fjällmossens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/projekt/Life%20to%20admire/%C3%96sterg%C3%B6tland_Fj%C3%A4llmossen_2014%20fastst%C3%A4lld.pdf" target="_blank">http://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/projekt/Life%20to%20admire/%C3%96sterg%C3%B6tland_Fj%C3%A4llmossen_2014%20fastst%C3%A4lld.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Fjällmossens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/projekt/Life%20to%20admire/%C3%96sterg%C3%B6tland_Fj%C3%A4llmossen_2014%20fastst%C3%A4lld.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Fj%C3%A4llmossens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Fjällmossens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/projekt/Life%20to%20admire/%C3%96sterg%C3%B6tland_Levererad%20rapport%20Fj%C3%A4llmossen.pdf" target="_blank">http://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/projekt/Life%20to%20admire/%C3%96sterg%C3%B6tland_Levererad%20rapport%20Fj%C3%A4llmossen.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Fjällmossens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/projekt/Life%20to%20admire/%C3%96sterg%C3%B6tland_Levererad%20rapport%20Fj%C3%A4llmossen.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Fj%C3%A4llmossens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Fjällmossens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/projekt/Life%20to%20admire/Bildspel%20Addmireprojektet%20Fj%C3%A4llmossen%202012.pdf" target="_blank">http://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/projekt/Life%20to%20admire/Bildspel%20Addmireprojektet%20Fj%C3%A4llmossen%202012.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Fjällmossens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/projekt/Life%20to%20admire/Bildspel%20Addmireprojektet%20Fj%C3%A4llmossen%202012.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Fj%C3%A4llmossens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Fjällmossens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/naturreservat/norrkoping/fjallmossen/fjallmossenskpl.pdf" target="_blank">http://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/naturreservat/norrkoping/fjallmossen/fjallmossenskpl.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Fjällmossens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/naturreservat/norrkoping/fjallmossen/fjallmossenskpl.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Fj%C3%A4llmossens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Fjällmossens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/sodermanland/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/naturreservat/nykoping/fjallmossen/%C2%A7NR%C2%A7rdonlyres%C2%A7CFB2E48D-AB0C-498E-8B10-6BB6C8C81D18%C2%A70%C2%A7fjallmossen2.pdf" target="_blank">http://www.lansstyrelsen.se/sodermanland/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/naturreservat/nykoping/fjallmossen/%C2%A7NR%C2%A7rdonlyres%C2%A7CFB2E48D-AB0C-498E-8B10-6BB6C8C81D18%C2%A70%C2%A7fjallmossen2.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Fjällmossens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/sodermanland/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/naturreservat/nykoping/fjallmossen/%C2%A7NR%C2%A7rdonlyres%C2%A7CFB2E48D-AB0C-498E-8B10-6BB6C8C81D18%C2%A70%C2%A7fjallmossen2.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Fj%C3%A4llmossens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Fjällmossens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/naturreservat/norrkoping/fjallmossen/SE0230157Bevarandeplan_klar070301.pdf" target="_blank">http://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/naturreservat/norrkoping/fjallmossen/SE0230157Bevarandeplan_klar070301.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Fjällmossens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/ostergotland/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/naturreservat/norrkoping/fjallmossen/SE0230157Bevarandeplan_klar070301.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Fj%C3%A4llmossens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Fjällmossens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/ostergotland/Sv/djur-och-natur/skyddad-natur/projekt/life-ad(d)mire/projektlanens-omraden/ostergotland/Pages/fjallmossen.aspx" target="_blank">http://www.lansstyrelsen.se/ostergotland/Sv/djur-och-natur/skyddad-natur/projekt/life-ad(d)mire/projektlanens-omraden/ostergotland/Pages/fjallmossen.aspx</a></td>
+      <td>https://sv.wikipedia.org/wiki/Fjällmossens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/ostergotland/Sv/djur-och-natur/skyddad-natur/projekt/life-ad(d)mire/projektlanens-omraden/ostergotland/Pages/fjallmossen.aspx</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Judarskogens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Judarskogens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/stockholm/Sv/djur-och-natur/skyddad-natur/naturreservat/stockholm/judarskogen/Pages/default.aspx" target="_blank">http://www.lansstyrelsen.se/stockholm/Sv/djur-och-natur/skyddad-natur/naturreservat/stockholm/judarskogen/Pages/default.aspx</a></td>
+      <td>https://sv.wikipedia.org/wiki/Judarskogens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/stockholm/Sv/djur-och-natur/skyddad-natur/naturreservat/stockholm/judarskogen/Pages/default.aspx</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Judarskogens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Judarskogens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/stockholm/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/natura2000/Judarskogen.pdf" target="_blank">http://www.lansstyrelsen.se/stockholm/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/natura2000/Judarskogen.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Judarskogens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/stockholm/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/natura2000/Judarskogen.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Brobacka%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Brobacka naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/vastragotaland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat-i-lanet/alingsas/Brobacka.pdf" target="_blank">http://www.lansstyrelsen.se/vastragotaland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat-i-lanet/alingsas/Brobacka.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Brobacka_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/vastragotaland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat-i-lanet/alingsas/Brobacka.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Judarskogens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Judarskogens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/Stockholm/Sv/djur-och-natur/friluftsliv/utflyktsguide/utflyktsguiden-pa-webben/Pages/17-judarskogen-och-kyrksjoloten.aspx" target="_blank">http://www.lansstyrelsen.se/Stockholm/Sv/djur-och-natur/friluftsliv/utflyktsguide/utflyktsguiden-pa-webben/Pages/17-judarskogen-och-kyrksjoloten.aspx</a></td>
+      <td>https://sv.wikipedia.org/wiki/Judarskogens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/Stockholm/Sv/djur-och-natur/friluftsliv/utflyktsguide/utflyktsguiden-pa-webben/Pages/17-judarskogen-och-kyrksjoloten.aspx</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/H%C3%A4llholmens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Hällholmens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/gotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/hallholmen-skotselplan.pdf" target="_blank">http://www.lansstyrelsen.se/gotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/hallholmen-skotselplan.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Hällholmens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/gotland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/hallholmen-skotselplan.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Stickelsbergs%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Stickelsbergs naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/Stockholm/Sv/djur-och-natur/skyddad-natur/naturreservat/varmdo/saltaro-skarmaro/Pages/default.aspx" target="_blank">http://www.lansstyrelsen.se/Stockholm/Sv/djur-och-natur/skyddad-natur/naturreservat/varmdo/saltaro-skarmaro/Pages/default.aspx</a></td>
+      <td>https://sv.wikipedia.org/wiki/Stickelsbergs_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/Stockholm/Sv/djur-och-natur/skyddad-natur/naturreservat/varmdo/saltaro-skarmaro/Pages/default.aspx</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Stickelsbergs%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Stickelsbergs naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/stockholm/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/Naturreservat/beslut-och-skotselplan-2/Saltaro-Skarmaro_1983-10-31_andring_beslut.pdf" target="_blank">http://www.lansstyrelsen.se/stockholm/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/Naturreservat/beslut-och-skotselplan-2/Saltaro-Skarmaro_1983-10-31_andring_beslut.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Stickelsbergs_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/stockholm/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/Naturreservat/beslut-och-skotselplan-2/Saltaro-Skarmaro_1983-10-31_andring_beslut.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Bergsj%C3%B6ns%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Bergsjöns naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/VastraGotaland/Sv/nyheter/2017/Sidor/Risvedens-skyddade-skogar-blir-storre.aspx" target="_blank">http://www.lansstyrelsen.se/VastraGotaland/Sv/nyheter/2017/Sidor/Risvedens-skyddade-skogar-blir-storre.aspx</a></td>
+      <td>https://sv.wikipedia.org/wiki/Bergsjöns_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/VastraGotaland/Sv/nyheter/2017/Sidor/Risvedens-skyddade-skogar-blir-storre.aspx</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Kroksj%C3%B6ns%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Kroksjöns naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/VastraGotaland/Sv/nyheter/2016/Pages/risvedens-vildmark-blir-naturreservat.aspx" target="_blank">http://www.lansstyrelsen.se/VastraGotaland/Sv/nyheter/2016/Pages/risvedens-vildmark-blir-naturreservat.aspx</a></td>
+      <td>https://sv.wikipedia.org/wiki/Kroksjöns_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/VastraGotaland/Sv/nyheter/2016/Pages/risvedens-vildmark-blir-naturreservat.aspx</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Rammdalens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Rammdalens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/VastraGotaland/Sv/nyheter/2016/Pages/risvedens-vildmark-blir-naturreservat.aspx" target="_blank">http://www.lansstyrelsen.se/VastraGotaland/Sv/nyheter/2016/Pages/risvedens-vildmark-blir-naturreservat.aspx</a></td>
+      <td>https://sv.wikipedia.org/wiki/Rammdalens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/VastraGotaland/Sv/nyheter/2016/Pages/risvedens-vildmark-blir-naturreservat.aspx</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Treh%C3%B6rningens%20naturreservat%2C%20V%C3%A4sterg%C3%B6tland" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Trehörningens naturreservat, Västergötland</a></td>
+      <td><a href="http://www.lansstyrelsen.se/VastraGotaland/Sv/nyheter/2016/Pages/risvedens-vildmark-blir-naturreservat.aspx" target="_blank">http://www.lansstyrelsen.se/VastraGotaland/Sv/nyheter/2016/Pages/risvedens-vildmark-blir-naturreservat.aspx</a></td>
+      <td>https://sv.wikipedia.org/wiki/Trehörningens_naturreservat,_Västergötland</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/VastraGotaland/Sv/nyheter/2016/Pages/risvedens-vildmark-blir-naturreservat.aspx</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/F%C3%A4rdsleskogens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Färdsleskogens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/VastraGotaland/Sv/nyheter/2017/Sidor/Risvedens-skyddade-skogar-blir-storre.aspx" target="_blank">http://www.lansstyrelsen.se/VastraGotaland/Sv/nyheter/2017/Sidor/Risvedens-skyddade-skogar-blir-storre.aspx</a></td>
+      <td>https://sv.wikipedia.org/wiki/Färdsleskogens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/VastraGotaland/Sv/nyheter/2017/Sidor/Risvedens-skyddade-skogar-blir-storre.aspx</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Bogesundslandets%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Bogesundslandets naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/Stockholm/Sv/djur-och-natur/friluftsliv/utflyktsguide/utflyktsguiden-pa-webben/Pages/12-bogesundslandet.aspx" target="_blank">http://www.lansstyrelsen.se/Stockholm/Sv/djur-och-natur/friluftsliv/utflyktsguide/utflyktsguiden-pa-webben/Pages/12-bogesundslandet.aspx</a></td>
+      <td>https://sv.wikipedia.org/wiki/Bogesundslandets_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/Stockholm/Sv/djur-och-natur/friluftsliv/utflyktsguide/utflyktsguiden-pa-webben/Pages/12-bogesundslandet.aspx</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Skilsn%C3%A4s%20naturreservat%20%28J%C3%B6nk%C3%B6pings%20l%C3%A4n%29" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Skilsnäs naturreservat (Jönköpings län)</a></td>
+      <td><a href="https://www.lansstyrelsen.se/kronoberg/besok-och-upptack/naturreservat/skilsnas/" target="_blank">https://www.lansstyrelsen.se/kronoberg/besok-och-upptack/naturreservat/skilsnas/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Skilsnäs_naturreservat_(Jönköpings_län)</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/kronoberg/besok-och-upptack/naturreservat/skilsnas/</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Lind%C3%B6%20uddes%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Lindö uddes naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/blekinge/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/lindo/Lindo-infoskylt.pdf" target="_blank">http://www.lansstyrelsen.se/blekinge/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/lindo/Lindo-infoskylt.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Lindö_uddes_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/blekinge/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/lindo/Lindo-infoskylt.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Moabackens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Moabackens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/blekinge/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/moabacken/Moabacken%20Infoskylt.pdf" target="_blank">http://www.lansstyrelsen.se/blekinge/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/moabacken/Moabacken%20Infoskylt.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Moabackens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/blekinge/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/moabacken/Moabacken%20Infoskylt.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/S%C3%A4nneshults%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Sänneshults naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/blekinge/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/sanneshult/Sanneshult-infoskylt.pdf" target="_blank">http://www.lansstyrelsen.se/blekinge/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/sanneshult/Sanneshult-infoskylt.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Sänneshults_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/blekinge/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/sanneshult/Sanneshult-infoskylt.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Furildens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Furildens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/gotland/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/natura-2000/natura-2000-pa-gotland/furilden.pdf" target="_blank">http://www.lansstyrelsen.se/gotland/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/natura-2000/natura-2000-pa-gotland/furilden.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Furildens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/gotland/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/natura-2000/natura-2000-pa-gotland/furilden.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Nordanbergsbergets%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Nordanbergsbergets naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/jamtland/besok-och-upptack/naturreservat/nordanbergsberget.html/" target="_blank">https://www.lansstyrelsen.se/jamtland/besok-och-upptack/naturreservat/nordanbergsberget.html/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Nordanbergsbergets_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/jamtland/besok-och-upptack/naturreservat/nordanbergsberget.html/</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Sp%C3%A5manslokens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Spåmanslokens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/jamtland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/spamansloken/Beslut-och-skotselplan-Spamansloken.pdf" target="_blank">http://www.lansstyrelsen.se/jamtland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/spamansloken/Beslut-och-skotselplan-Spamansloken.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Spåmanslokens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/jamtland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/spamansloken/Beslut-och-skotselplan-Spamansloken.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Masugnsbyn%20%28naturreservat%29" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Masugnsbyn (naturreservat)</a></td>
+      <td><a href="https://www.lansstyrelsen.se/norrbotten/besok-och-upptack/naturreservat/pajala/masugnsbyn.html" target="_blank">https://www.lansstyrelsen.se/norrbotten/besok-och-upptack/naturreservat/pajala/masugnsbyn.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Masugnsbyn_(naturreservat)</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/norrbotten/besok-och-upptack/naturreservat/pajala/masugnsbyn.html</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20190716231005/https://www.lansstyrelsen.se/skane/besok-och-upptack/naturreservat/simrishamn/esperod" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Esper%C3%B6ds%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Esperöds naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/skane/besok-och-upptack/naturreservat/simrishamn/esperod" target="_blank">https://www.lansstyrelsen.se/skane/besok-och-upptack/naturreservat/simrishamn/esperod</a></td>
+      <td>https://sv.wikipedia.org/wiki/Esperöds_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/skane/besok-och-upptack/naturreservat/simrishamn/esperod</td>
+      <td>http://web.archive.org/web/20190716231005/https://www.lansstyrelsen.se/skane/besok-och-upptack/naturreservat/simrishamn/esperod</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20180710133532/https://www.lansstyrelsen.se/sodermanland/besok-och-upptack/naturreservat/naturreservatet-gokstenen.html" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/G%C3%B6kstenens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Gökstenens naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/sodermanland/besok-och-upptack/naturreservat/naturreservatet-gokstenen.html" target="_blank">https://www.lansstyrelsen.se/sodermanland/besok-och-upptack/naturreservat/naturreservatet-gokstenen.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Gökstenens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/sodermanland/besok-och-upptack/naturreservat/naturreservatet-gokstenen.html</td>
+      <td>http://web.archive.org/web/20180710133532/https://www.lansstyrelsen.se/sodermanland/besok-och-upptack/naturreservat/naturreservatet-gokstenen.html</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/S%C3%B6derfj%C3%A4rdens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Söderfjärdens naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/sodermanland/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/naturreservat/soderfjarden/%C2%A7NR%C2%A7rdonlyres%C2%A7E35CBE56-6185-42FE-B90E-392BD0A9E56C%C2%A70%C2%A7soderfjarden2.pdf" target="_blank">http://www.lansstyrelsen.se/sodermanland/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/naturreservat/soderfjarden/%C2%A7NR%C2%A7rdonlyres%C2%A7E35CBE56-6185-42FE-B90E-392BD0A9E56C%C2%A70%C2%A7soderfjarden2.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Söderfjärdens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/sodermanland/SiteCollectionDocuments/sv/djur-och-natur/skyddad-natur/naturreservat/soderfjarden/%C2%A7NR%C2%A7rdonlyres%C2%A7E35CBE56-6185-42FE-B90E-392BD0A9E56C%C2%A70%C2%A7soderfjarden2.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/%C3%85rby%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Årby naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/sodermanland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/arby/beslut-arby-naturreservat-reviderat-2010.pdf" target="_blank">http://www.lansstyrelsen.se/sodermanland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/arby/beslut-arby-naturreservat-reviderat-2010.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Årby_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/sodermanland/SiteCollectionDocuments/Sv/djur-och-natur/skyddad-natur/naturreservat/arby/beslut-arby-naturreservat-reviderat-2010.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Uppsala%20kungs%C3%A4ngs%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Uppsala kungsängs naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/uppsala/besok-och-upptack/naturreservat/uppsala-kungsangs-naturreservat.html" target="_blank">https://www.lansstyrelsen.se/uppsala/besok-och-upptack/naturreservat/uppsala-kungsangs-naturreservat.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Uppsala_kungsängs_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/uppsala/besok-och-upptack/naturreservat/uppsala-kungsangs-naturreservat.html</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3AProjekt%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Projekt naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/vasterbotten/besok-och-upptack/naturreservat/alsberget.html" target="_blank">https://www.lansstyrelsen.se/vasterbotten/besok-och-upptack/naturreservat/alsberget.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Projekt_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/vasterbotten/besok-och-upptack/naturreservat/alsberget.html</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3AProjekt%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Projekt naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/vasterbotten/besok-och-upptack/naturreservat/bonden.html" target="_blank">https://www.lansstyrelsen.se/vasterbotten/besok-och-upptack/naturreservat/bonden.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Projekt_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/vasterbotten/besok-och-upptack/naturreservat/bonden.html</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20191118231000/https://www.lansstyrelsen.se/ostergotland/besok-och-upptack/naturreservat/barsjoskogen-naturreservat.html" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3AProjekt%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Projekt naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/ostergotland/besok-och-upptack/naturreservat/barsjoskogen-naturreservat.html" target="_blank">https://www.lansstyrelsen.se/ostergotland/besok-och-upptack/naturreservat/barsjoskogen-naturreservat.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Projekt_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/ostergotland/besok-och-upptack/naturreservat/barsjoskogen-naturreservat.html</td>
+      <td>http://web.archive.org/web/20191118231000/https://www.lansstyrelsen.se/ostergotland/besok-och-upptack/naturreservat/barsjoskogen-naturreservat.html</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3AProjekt%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Projekt naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/vastra-gotaland/besok-och-upptack/naturreservat/kroksjon.html" target="_blank">https://www.lansstyrelsen.se/vastra-gotaland/besok-och-upptack/naturreservat/kroksjon.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Projekt_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/vastra-gotaland/besok-och-upptack/naturreservat/kroksjon.html</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3AProjekt%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Projekt naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/vastra-gotaland/besok-och-upptack/naturreservat/lakarebo.html" target="_blank">https://www.lansstyrelsen.se/vastra-gotaland/besok-och-upptack/naturreservat/lakarebo.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Projekt_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/vastra-gotaland/besok-och-upptack/naturreservat/lakarebo.html</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20191118100950/https://www.lansstyrelsen.se/vastra-gotaland/besok-och-upptack/naturreservat/larkemossen.html" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3AProjekt%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Projekt naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/vastra-gotaland/besok-och-upptack//naturreservat/larkemossen.html" target="_blank">https://www.lansstyrelsen.se/vastra-gotaland/besok-och-upptack//naturreservat/larkemossen.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Projekt_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/vastra-gotaland/besok-och-upptack//naturreservat/larkemossen.html</td>
+      <td>http://web.archive.org/web/20191118100950/https://www.lansstyrelsen.se/vastra-gotaland/besok-och-upptack/naturreservat/larkemossen.html</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3AProjekt%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Projekt naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/jamtland/besok-och-upptack/naturreservat/nordanbergsberget.html/" target="_blank">https://www.lansstyrelsen.se/jamtland/besok-och-upptack/naturreservat/nordanbergsberget.html/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Projekt_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/jamtland/besok-och-upptack/naturreservat/nordanbergsberget.html/</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3AProjekt%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Projekt naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/vasterbotten/besok-och-upptack/naturreservat/stenvattsberget.html" target="_blank">https://www.lansstyrelsen.se/vasterbotten/besok-och-upptack/naturreservat/stenvattsberget.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Projekt_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/vasterbotten/besok-och-upptack/naturreservat/stenvattsberget.html</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3AProjekt%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Projekt naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/vasternorrland/besok-och-upptack/naturreservat/stormyrskogen---vaglost-skogs--och-myrlandskap.htmlStormyrskogen" target="_blank">https://www.lansstyrelsen.se/vasternorrland/besok-och-upptack/naturreservat/stormyrskogen---vaglost-skogs--och-myrlandskap.htmlStormyrskogen</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Projekt_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/vasternorrland/besok-och-upptack/naturreservat/stormyrskogen---vaglost-skogs--och-myrlandskap.htmlStormyrskogen</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3AProjekt%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Projekt naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/ostergotland/besok-och-upptack/naturreservat/vassviksbergets-naturreservat.html" target="_blank">https://www.lansstyrelsen.se/ostergotland/besok-och-upptack/naturreservat/vassviksbergets-naturreservat.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Projekt_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/ostergotland/besok-och-upptack/naturreservat/vassviksbergets-naturreservat.html</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3AProjekt%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Projekt naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/vasterbotten/besok-och-upptack/naturreservat/ytter-gravaberg.html" target="_blank">https://www.lansstyrelsen.se/vasterbotten/besok-och-upptack/naturreservat/ytter-gravaberg.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Projekt_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/vasterbotten/besok-och-upptack/naturreservat/ytter-gravaberg.html</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160312093538/http://www.lansstyrelsen.se/ostergotland/Sv/publikationer/publicerade-publikationer/2004/Pages/haleberget-folder.aspx/" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3AProjekt%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Projekt naturreservat</a></td>
+      <td><a href="http://www.lansstyrelsen.se/ostergotland/Sv/publikationer/publicerade-publikationer/2004/Pages/haleberget-folder.aspx/" target="_blank">http://www.lansstyrelsen.se/ostergotland/Sv/publikationer/publicerade-publikationer/2004/Pages/haleberget-folder.aspx/</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Projekt_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/ostergotland/Sv/publikationer/publicerade-publikationer/2004/Pages/haleberget-folder.aspx/</td>
+      <td>http://web.archive.org/web/20160312093538/http://www.lansstyrelsen.se/ostergotland/Sv/publikationer/publicerade-publikationer/2004/Pages/haleberget-folder.aspx/</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20210727143232/https://www.lansstyrelsen.se/ostergotland/tjanster/publikationer/haleberget-folder.html" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipedia%3AProjekt%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipedia:Projekt naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/ostergotland/tjanster/publikationer/haleberget-folder.html" target="_blank">https://www.lansstyrelsen.se/ostergotland/tjanster/publikationer/haleberget-folder.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipedia:Projekt_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/ostergotland/tjanster/publikationer/haleberget-folder.html</td>
+      <td>http://web.archive.org/web/20210727143232/https://www.lansstyrelsen.se/ostergotland/tjanster/publikationer/haleberget-folder.html</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Wikipediadiskussion%3AProjekt%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Wikipediadiskussion:Projekt naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/download/18.2e0f9f621636c844027345b0/1528970168218/Lugnet-beslut-skotsel-ejs%C3%A4nd.pdf" target="_blank">https://www.lansstyrelsen.se/download/18.2e0f9f621636c844027345b0/1528970168218/Lugnet-beslut-skotsel-ejs%C3%A4nd.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Wikipediadiskussion:Projekt_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/download/18.2e0f9f621636c844027345b0/1528970168218/Lugnet-beslut-skotsel-ejs%C3%A4nd.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Lista%20%C3%B6ver%20naturreservat%20i%20%C3%96rebro%20l%C3%A4n" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Lista över naturreservat i Örebro län</a></td>
+      <td><a href="https://www.lansstyrelsen.se/orebbro/besok-och-upptack.html" target="_blank">https://www.lansstyrelsen.se/orebbro/besok-och-upptack.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Lista_över_naturreservat_i_Örebro_län</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/orebbro/besok-och-upptack.html</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20180818182100/https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6deb5/1526068371318/Broknapparna_1992-06-23_andring_beslut_skotselplan.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Broknapparnas%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Broknapparnas naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6deb5/1526068371318/Broknapparna_1992-06-23_andring_beslut_skotselplan.pdf" target="_blank">https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6deb5/1526068371318/Broknapparna_1992-06-23_andring_beslut_skotselplan.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Broknapparnas_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6deb5/1526068371318/Broknapparna_1992-06-23_andring_beslut_skotselplan.pdf</td>
+      <td>http://web.archive.org/web/20180818182100/https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6deb5/1526068371318/Broknapparna_1992-06-23_andring_beslut_skotselplan.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240117034155/https://www.lansstyrelsen.se/sodermanland/besok-och-upptack/naturreservat/malmkopings-naturreservat.html" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Malmk%C3%B6pings%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Malmköpings naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/sodermanland/besok-och-upptack/naturreservat/malmkopings-naturreservat.html" target="_blank">https://www.lansstyrelsen.se/sodermanland/besok-och-upptack/naturreservat/malmkopings-naturreservat.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Malmköpings_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/sodermanland/besok-och-upptack/naturreservat/malmkopings-naturreservat.html</td>
+      <td>http://web.archive.org/web/20240117034155/https://www.lansstyrelsen.se/sodermanland/besok-och-upptack/naturreservat/malmkopings-naturreservat.html</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20180826113527/https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e282/1526068488237/Norra_Bjorkfjarden_1995-11-23_beslut_skotselplan.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Norra%20Bj%C3%B6rkfj%C3%A4rdens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Norra Björkfjärdens naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e282/1526068488237/Norra_Bjorkfjarden_1995-11-23_beslut_skotselplan.pdf" target="_blank">https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e282/1526068488237/Norra_Bjorkfjarden_1995-11-23_beslut_skotselplan.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Norra_Björkfjärdens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e282/1526068488237/Norra_Bjorkfjarden_1995-11-23_beslut_skotselplan.pdf</td>
+      <td>http://web.archive.org/web/20180826113527/https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e282/1526068488237/Norra_Bjorkfjarden_1995-11-23_beslut_skotselplan.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20180828203308/https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e3ea/1526068502530/Svalgarn_1993-05-03_beslut_skotselplan.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Svalgarns%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Svalgarns naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e3ea/1526068502530/Svalgarn_1993-05-03_beslut_skotselplan.pdf" target="_blank">https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e3ea/1526068502530/Svalgarn_1993-05-03_beslut_skotselplan.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Svalgarns_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e3ea/1526068502530/Svalgarn_1993-05-03_beslut_skotselplan.pdf</td>
+      <td>http://web.archive.org/web/20180828203308/https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e3ea/1526068502530/Svalgarn_1993-05-03_beslut_skotselplan.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20181003101556/https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6df16/1526068367908/Digermyren_2017-10-31_Beslut_skpl.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Digermyrens%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Digermyrens naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6df16/1526068367908/Digermyren_2017-10-31_Beslut_skpl.pdf" target="_blank">https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6df16/1526068367908/Digermyren_2017-10-31_Beslut_skpl.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Digermyrens_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6df16/1526068367908/Digermyren_2017-10-31_Beslut_skpl.pdf</td>
+      <td>http://web.archive.org/web/20181003101556/https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6df16/1526068367908/Digermyren_2017-10-31_Beslut_skpl.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220402205256/http://www.lansstyrelsen.se/download/18.2e0f9f621636c84402712229/1527588760469/BES_NR_Lundakrabukten.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Lund%C3%A5krabukten%20%28naturreservat%29" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Lundåkrabukten (naturreservat)</a></td>
+      <td><a href="https://www.lansstyrelsen.se/download/18.2e0f9f621636c84402712229/1527588760469/BES_NR_Lundakrabukten.pdf" target="_blank">https://www.lansstyrelsen.se/download/18.2e0f9f621636c84402712229/1527588760469/BES_NR_Lundakrabukten.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Lundåkrabukten_(naturreservat)</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/download/18.2e0f9f621636c84402712229/1527588760469/BES_NR_Lundakrabukten.pdf</td>
+      <td>http://web.archive.org/web/20220402205256/http://www.lansstyrelsen.se/download/18.2e0f9f621636c84402712229/1527588760469/BES_NR_Lundakrabukten.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220128033258/https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e3ee/1526068501863/Svartsjon_2011-07-11_beslut_skotselplan.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Svartsj%C3%B6ns%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Svartsjöns naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e3ee/1526068501863/Svartsjon_2011-07-11_beslut_skotselplan.pdf" target="_blank">https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e3ee/1526068501863/Svartsjon_2011-07-11_beslut_skotselplan.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Svartsjöns_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e3ee/1526068501863/Svartsjon_2011-07-11_beslut_skotselplan.pdf</td>
+      <td>http://web.archive.org/web/20220128033258/https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e3ee/1526068501863/Svartsjon_2011-07-11_beslut_skotselplan.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20200721160743/https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6df2b/1526068367423/Farstanas_1967-06-28_beslut_NR.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Farstan%C3%A4s%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Farstanäs naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6df2b/1526068367423/Farstanas_1967-06-28_beslut_NR.pdf" target="_blank">https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6df2b/1526068367423/Farstanas_1967-06-28_beslut_NR.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Farstanäs_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6df2b/1526068367423/Farstanas_1967-06-28_beslut_NR.pdf</td>
+      <td>http://web.archive.org/web/20200721160743/https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6df2b/1526068367423/Farstanas_1967-06-28_beslut_NR.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Gr%C3%B6ssj%C3%B6n%20%28naturreservat%29" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Grössjön (naturreservat)</a></td>
+      <td><a href="https://www.lansstyrelsen.se/download/18.6ae610001636c9c68e537a24/1529580376349/Gr%C3%B6ssj%C3%B6n%20Beslut%20och%20sk%C3%B6tselplan%20utan%20s%C3%A4ndlista.pdf" target="_blank">https://www.lansstyrelsen.se/download/18.6ae610001636c9c68e537a24/1529580376349/Gr%C3%B6ssj%C3%B6n%20Beslut%20och%20sk%C3%B6tselplan%20utan%20s%C3%A4ndlista.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Grössjön_(naturreservat)</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/download/18.6ae610001636c9c68e537a24/1529580376349/Gr%C3%B6ssj%C3%B6n%20Beslut%20och%20sk%C3%B6tselplan%20utan%20s%C3%A4ndlista.pdf</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20210918095312/https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e017/1526068493915/Kappsta_1995-12-18_beslut_skotselplan.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Kappsta%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Kappsta naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e017/1526068493915/Kappsta_1995-12-18_beslut_skotselplan.pdf" target="_blank">https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e017/1526068493915/Kappsta_1995-12-18_beslut_skotselplan.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Kappsta_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e017/1526068493915/Kappsta_1995-12-18_beslut_skotselplan.pdf</td>
+      <td>http://web.archive.org/web/20210918095312/https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e017/1526068493915/Kappsta_1995-12-18_beslut_skotselplan.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20210919203247/https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e01f/1526068495493/Kolartorp_2011-07-11_beslut_skotselplan.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Kolartorps%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Kolartorps naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e01f/1526068495493/Kolartorp_2011-07-11_beslut_skotselplan.pdf" target="_blank">https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e01f/1526068495493/Kolartorp_2011-07-11_beslut_skotselplan.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Kolartorps_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e01f/1526068495493/Kolartorp_2011-07-11_beslut_skotselplan.pdf</td>
+      <td>http://web.archive.org/web/20210919203247/https://www.lansstyrelsen.se/download/18.1dfa69ad1630328ad7c6e01f/1526068495493/Kolartorp_2011-07-11_beslut_skotselplan.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20220804170026/https://www.lansstyrelsen.se/download/18.11a2cbf716d6c8f9f7434a3f/1572966133080/Dakota_utan%20s%C3%A4ndlista_2019-10-30.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Dakota%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Dakota naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/download/18.11a2cbf716d6c8f9f7434a3f/1572966133080/Dakota_utan%20s%C3%A4ndlista_2019-10-30.pdf" target="_blank">https://www.lansstyrelsen.se/download/18.11a2cbf716d6c8f9f7434a3f/1572966133080/Dakota_utan%20s%C3%A4ndlista_2019-10-30.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Dakota_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/download/18.11a2cbf716d6c8f9f7434a3f/1572966133080/Dakota_utan%20s%C3%A4ndlista_2019-10-30.pdf</td>
+      <td>http://web.archive.org/web/20220804170026/https://www.lansstyrelsen.se/download/18.11a2cbf716d6c8f9f7434a3f/1572966133080/Dakota_utan%20s%C3%A4ndlista_2019-10-30.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20240610232849/https://www.lansstyrelsen.se/download/18.6ae610001636c9c68e537c28/1529582077031/Stop%C3%A5n-beslut-skotsel-ejs%C3%A4nd.pdf" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Stop%C3%A5n%20%28naturreservat%29" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Stopån (naturreservat)</a></td>
+      <td><a href="https://www.lansstyrelsen.se/download/18.6ae610001636c9c68e537c28/1529582077031/Stop%C3%A5n-beslut-skotsel-ejs%C3%A4nd.pdf" target="_blank">https://www.lansstyrelsen.se/download/18.6ae610001636c9c68e537c28/1529582077031/Stop%C3%A5n-beslut-skotsel-ejs%C3%A4nd.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Stopån_(naturreservat)</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/download/18.6ae610001636c9c68e537c28/1529582077031/Stop%C3%A5n-beslut-skotsel-ejs%C3%A4nd.pdf</td>
+      <td>http://web.archive.org/web/20240610232849/https://www.lansstyrelsen.se/download/18.6ae610001636c9c68e537c28/1529582077031/Stop%C3%A5n-beslut-skotsel-ejs%C3%A4nd.pdf</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td><a href="http://web.archive.org/web/20160915202353/http://www.lansstyrelsen.se/Stockholm/Sv/djur-och-natur/friluftsliv/utflyktsguide/utflyktsguiden-pa-webben/26bjorno/Pages/default.aspx?keyword=Ingar%C3%B6" target="_blank" title="Archived copy (Internet Archive)"><i class="fa-solid fa-box-archive" style="color:#1565c0;"></i></a></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Bj%C3%B6rn%C3%B6%20naturreservat%2C%20V%C3%A4rmd%C3%B6%20kommun" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Björnö naturreservat, Värmdö kommun</a></td>
+      <td><a href="http://www.lansstyrelsen.se/Stockholm/Sv/djur-och-natur/friluftsliv/utflyktsguide/utflyktsguiden-pa-webben/26bjorno/Pages/default.aspx?keyword=Ingar%C3%B6#" target="_blank">http://www.lansstyrelsen.se/Stockholm/Sv/djur-och-natur/friluftsliv/utflyktsguide/utflyktsguiden-pa-webben/26bjorno/Pages/default.aspx?keyword=Ingar%C3%B6#</a></td>
+      <td>https://sv.wikipedia.org/wiki/Björnö_naturreservat,_Värmdö_kommun</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/Stockholm/Sv/djur-och-natur/friluftsliv/utflyktsguide/utflyktsguiden-pa-webben/26bjorno/Pages/default.aspx?keyword=Ingar%C3%B6</td>
+      <td>http://web.archive.org/web/20160915202353/http://www.lansstyrelsen.se/Stockholm/Sv/djur-och-natur/friluftsliv/utflyktsguide/utflyktsguiden-pa-webben/26bjorno/Pages/default.aspx?keyword=Ingar%C3%B6</td>
+      <td>available</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="dead" title="Broken link: HTTP 404" style="color:#c62828; font-size:14px; cursor:pointer;"><i class="fa-solid fa-circle-xmark"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Yftb%C3%A5kks%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Yftbåkks naturreservat</a></td>
+      <td><a href="https://www.lansstyrelsen.se/dalarna/om-oss/nyheter-och-press/aktuella-nyheter/nyheter---dalarna/2024-07-25-yftbakk---nytt-naturreservat-i-mora-skyddar-sandodlan.html" target="_blank">https://www.lansstyrelsen.se/dalarna/om-oss/nyheter-och-press/aktuella-nyheter/nyheter---dalarna/2024-07-25-yftbakk---nytt-naturreservat-i-mora-skyddar-sandodlan.html</a></td>
+      <td>https://sv.wikipedia.org/wiki/Yftbåkks_naturreservat</td>
+      <td>dead</td>
+      <td>https://www.lansstyrelsen.se/dalarna/om-oss/nyheter-och-press/aktuella-nyheter/nyheter---dalarna/2024-07-25-yftbakk---nytt-naturreservat-i-mora-skyddar-sandodlan.html</td>
+      <td>None</td>
+      <td>missing</td>
+      <td>HTTP 404</td>
+      <td>False</td>
+      <td>www.lansstyrelsen.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="error" title="Request error: HTTPConnectionPool(host='www5.e.lst.se', port=80): Max retries exceeded with url: /reservat/lst/reservat.asp?id=84&sprak=se (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x137aea840>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))" style="color:#ef6c00; font-size:14px; cursor:pointer;"><i class="fa-solid fa-triangle-exclamation"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Kv%C3%A4d%C3%B6fj%C3%A4rden%20%28naturreservat%29" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Kvädöfjärden (naturreservat)</a></td>
+      <td><a href="http://www5.e.lst.se/reservat/lst/reservat.asp?id=84&sprak=se" target="_blank">http://www5.e.lst.se/reservat/lst/reservat.asp?id=84&sprak=se</a></td>
+      <td>https://sv.wikipedia.org/wiki/Kvädöfjärden_(naturreservat)</td>
+      <td>error</td>
+      <td>http://www5.e.lst.se/reservat/lst/reservat.asp?id=84&sprak=se</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>HTTPConnectionPool(host='www5.e.lst.se', port=80): Max retries exceeded with url: /reservat/lst/reservat.asp?id=84&sprak=se (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x137aea840>: Failed to establish a new connection: [Errno 8] nodename nor servname provided, or not known'))</td>
+      <td>False</td>
+      <td>www5.e.lst.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="error" title="Request error: HTTPConnectionPool(host='lanstema.lst.se', port=80): Max retries exceeded with url: /mvpdf/regdos2000542.pdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x137c1b710>, 'Connection to lanstema.lst.se timed out. (connect timeout=15)'))" style="color:#ef6c00; font-size:14px; cursor:pointer;"><i class="fa-solid fa-triangle-exclamation"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Treh%C3%B6rningens%20naturreservat%2C%20V%C3%A4sterg%C3%B6tland" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Trehörningens naturreservat, Västergötland</a></td>
+      <td><a href="http://lanstema.lst.se/mvpdf/regdos2000542.pdf" target="_blank">http://lanstema.lst.se/mvpdf/regdos2000542.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Trehörningens_naturreservat,_Västergötland</td>
+      <td>error</td>
+      <td>http://lanstema.lst.se/mvpdf/regdos2000542.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>HTTPConnectionPool(host='lanstema.lst.se', port=80): Max retries exceeded with url: /mvpdf/regdos2000542.pdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x137c1b710>, 'Connection to lanstema.lst.se timed out. (connect timeout=15)'))</td>
+      <td>False</td>
+      <td>lanstema.lst.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="error" title="Request error: HTTPConnectionPool(host='lanstema.lst.se', port=80): Max retries exceeded with url: /mvpdf/regdos2000528.pdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x137ae9df0>, 'Connection to lanstema.lst.se timed out. (connect timeout=15)'))" style="color:#ef6c00; font-size:14px; cursor:pointer;"><i class="fa-solid fa-triangle-exclamation"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Anfastebo%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Anfastebo naturreservat</a></td>
+      <td><a href="http://lanstema.lst.se/mvpdf/regdos2000528.pdf" target="_blank">http://lanstema.lst.se/mvpdf/regdos2000528.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Anfastebo_naturreservat</td>
+      <td>error</td>
+      <td>http://lanstema.lst.se/mvpdf/regdos2000528.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>HTTPConnectionPool(host='lanstema.lst.se', port=80): Max retries exceeded with url: /mvpdf/regdos2000528.pdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x137ae9df0>, 'Connection to lanstema.lst.se timed out. (connect timeout=15)'))</td>
+      <td>False</td>
+      <td>lanstema.lst.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="error" title="Request error: HTTPConnectionPool(host='lanstema.lst.se', port=80): Max retries exceeded with url: /mvpdf/regdos2000558.pdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x137aa2930>, 'Connection to lanstema.lst.se timed out. (connect timeout=15)'))" style="color:#ef6c00; font-size:14px; cursor:pointer;"><i class="fa-solid fa-triangle-exclamation"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Kroksj%C3%B6ns%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Kroksjöns naturreservat</a></td>
+      <td><a href="http://lanstema.lst.se/mvpdf/regdos2000558.pdf" target="_blank">http://lanstema.lst.se/mvpdf/regdos2000558.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Kroksjöns_naturreservat</td>
+      <td>error</td>
+      <td>http://lanstema.lst.se/mvpdf/regdos2000558.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>HTTPConnectionPool(host='lanstema.lst.se', port=80): Max retries exceeded with url: /mvpdf/regdos2000558.pdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x137aa2930>, 'Connection to lanstema.lst.se timed out. (connect timeout=15)'))</td>
+      <td>False</td>
+      <td>lanstema.lst.se</td>
+    </tr>
+    <tr>
+      <td><span class="status-icon" data-status="error" title="Request error: HTTPConnectionPool(host='lanstema.lst.se', port=80): Max retries exceeded with url: /mvpdf/regdos2005516.pdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x1379a8470>, 'Connection to lanstema.lst.se timed out. (connect timeout=15)'))" style="color:#ef6c00; font-size:14px; cursor:pointer;"><i class="fa-solid fa-triangle-exclamation"></i></span></td>
+      <td></td>
+      <td>sv</td>
+      <td><a href="https://sv.wikipedia.org/wiki/Risheds%20naturreservat" target="_blank" title="Wikipedia (sv)"><i class="fa-brands fa-wikipedia-w" style="margin-right:6px;"></i>Risheds naturreservat</a></td>
+      <td><a href="http://lanstema.lst.se/mvpdf/regdos2005516.pdf" target="_blank">http://lanstema.lst.se/mvpdf/regdos2005516.pdf</a></td>
+      <td>https://sv.wikipedia.org/wiki/Risheds_naturreservat</td>
+      <td>error</td>
+      <td>http://lanstema.lst.se/mvpdf/regdos2005516.pdf</td>
+      <td>None</td>
+      <td>skipped</td>
+      <td>HTTPConnectionPool(host='lanstema.lst.se', port=80): Max retries exceeded with url: /mvpdf/regdos2005516.pdf (Caused by ConnectTimeoutError(<urllib3.connection.HTTPConnection object at 0x1379a8470>, 'Connection to lanstema.lst.se timed out. (connect timeout=15)'))</td>
+      <td>False</td>
+      <td>lanstema.lst.se</td>
+    </tr>
+  </tbody>
+</table>
+      
+    <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Propagate status from first cell to row
+        document.querySelectorAll("table.pivot tbody tr").forEach(row => {
+            const statusCell = row.querySelector(".status-icon");
+            if (statusCell) {
+                row.dataset.status = statusCell.dataset.status;
+            }
+        });
+        let showOnlyBroken = false;
+
+        document.querySelectorAll(".status-icon").forEach(icon => {
+            icon.addEventListener("click", event => {
+                event.stopPropagation(); // prevent column sort
+                showOnlyBroken = !showOnlyBroken;
+        
+                document.querySelectorAll("table.pivot tbody tr").forEach(row => {
+                    if (showOnlyBroken) {
+                        row.style.display =
+                            row.dataset.status === "dead" ? "" : "none";
+                    } else {
+                        row.style.display = "";
+                    }
+                });
+            });
+        });
+
+        document.querySelectorAll("table.pivot th").forEach((header, colIndex) => {
+            header.addEventListener("click", () => {
+                const table = header.closest("table");
+                const tbody = table.querySelector("tbody");
+                const rows = Array.from(tbody.querySelectorAll("tr"));
+                const asc = !header.classList.contains("sorted-asc");
+
+                rows.sort((a, b) => {
+                    const A = a.children[colIndex].innerText.trim();
+                    const B = b.children[colIndex].innerText.trim();
+                    const numA = parseFloat(A.replace(",", "."));
+                    const numB = parseFloat(B.replace(",", "."));
+                    if (!isNaN(numA) && !isNaN(numB)) {
+                        return asc ? numA - numB : numB - numA;
+                    }
+                    return asc ? A.localeCompare(B) : B.localeCompare(A);
+                });
+
+                table.querySelectorAll("th").forEach(th =>
+                    th.classList.remove("sorted-asc", "sorted-desc")
+                );
+                header.classList.add(asc ? "sorted-asc" : "sorted-desc");
+                rows.forEach(row => tbody.appendChild(row));
+            });
+        });
+    });
+    </script>
+    
+      <h2>Broken-link summary by Wikipedia language</h2>
+     <p>
+       Languages ranked by broken-link impact (broken + error links).
+     </p>
+    <table class="dataframe pivot">
+  <thead>
+    <tr style="text-align: right;">
+      <th>lang</th>
+      <th>total_links</th>
+      <th>broken_links</th>
+      <th>broken_archived</th>
+      <th>broken_lost</th>
+      <th>broken_pct</th>
+      <th>problem_pct</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sv</td>
+      <td>93</td>
+      <td>86</td>
+      <td>19</td>
+      <td>67</td>
+      <td>92.5</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>de</td>
+      <td>5</td>
+      <td>5</td>
+      <td>0</td>
+      <td>5</td>
+      <td>100.0</td>
+      <td>100.0</td>
+    </tr>
+    <tr>
+      <td>da</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>100.0</td>
+      <td>100.0</td>
+    </tr>
+  </tbody>
+</table>
+    </body>
+    </html>
+    
