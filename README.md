@@ -7,4 +7,5 @@ Tanken en [skuggbacklog](https://github.com/salgo60/Wikidata_riksdagen-corpus/bl
 
 # Myndighetsregistret
 * [SCB Myndighetsregister](https://myndighetsregistret.scb.se/)
+* video "[Myndighetsparadoxen 2026](https://www.youtube.com/watch?v=0SO8IyM4QME)"
 * video "[Myndighetsregistret SFS 2007:755 en tidskapsel som samlar damm](https://youtu.be/BPU9dhbXI1I?si=zbCO8GiuvylMut-i)"
